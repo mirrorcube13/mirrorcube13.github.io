@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Lato|Spectral+SC');
+
+body {
+      position: relative; 
+  }
+
+h1, h2, h3, h4, h5,h6{
+	font-family: 'Lato', sans-serif;
+}
+p{
+	font-family: 'Lato', sans-serif;
+	/*font-style: italic;*/
+}
+
+footer{
+	
+	background-color: #19232E;
+	min-height: 50px;
+  	overflow: auto;
+}
+footer p{
+	margin-top: 10px;
+	font-size: 16px;
+    color: #FFF;
+}
+
+/*для навбара*/
+
+/*.navbar{
+  margin:0;
+}
+*/
+.navbar-inverse .navbar-nav > .active > a{
+	background-color: #F16565;
+}
+/**********************************************************************************************/
+
+/*основные блоки */
+ #section1 {
+ 	padding-top:20px;
+ 	height:100px;color: #fff;
+ 	background-color: #1E88E5;
+ 	min-height: 100px;
+  	overflow: hidden;
+ 	}
+ #section2 {
+ 	padding-top:20px;
+ 	height:520px;color: #fff;
+ 	background-color: #2c3e50;
+ 	min-height: 100px;
+  	overflow: hidden;
+ 	}
+        #section2 p{
+        margin-top: 5px;
+        font-size: 17px;
+        text-align: left;
+        }
+        #section2 img{
+        margin-top: 20px;
+        height: 370px;
+        margin-bottom: 50px;
+            overflow: hidden;
+        }
+        #section2 h1{
+        text-align: center;
+        }
+
+
+ #section3 {
+ 	padding-top:50px;
+ 	
+ 	color: #000;
+	background-color: #FFFFFF;
+	min-height: 100px;
+  	overflow: hidden;
+    margin-bottom: 50px;
+ 	}
+        #section3 p{
+            text-align: center;
+        
+        margin-top: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 20px;
+        }
+
+    
+ #section41 {
+ 	padding-top:50px;
+ 	
+ 	color: #fff;
+ 	background-color: #4a76a8;
+ 	min-height: 100px;
+  	overflow: hidden;
+
+ 	}
+        #section41 h1{
+        text-align: center;
+        margin-bottom: 60px;
+        }
+        #section41 img{
+        height: 250px;
+        width: 400px;
+        margin-bottom: 50px;
+        }
+   
+ #section42 {
+ 	padding-top:20px;
+ 	
+ 	color: #000;
+ 	background-color: #FFF;
+    min-height: 100px;
+  	overflow: hidden;
+    margin-bottom: 50px;
+ 	}
+        #section42 input{
+        color: #000;
+        font-size: 25px;
+        }
+        #section42 textarea{
+        color: #000;
+        font-size: 25px;
+        }
+
+
+
+ #section5 {
+ 	padding-top:50px;
+ 	
+ 	color: #fff;
+	background-color: #2c3e50;
+	min-height: 100px;
+  	overflow: hidden;
+ 	}
+        #section5 a{
+        margin-top: 10px;
+        color: #FFF;
+        font-size: 40px;
+        margin-bottom: 50px;
+        }
+        #section5 a:hover{
+        color: #F16565;
+        }
+        #section5 p{
+        font-size: 20px;
+        margin-bottom: 50px;
+        }
+    
+ 	
+
+
+
+
+/*текст поверх видео*/
+.video-container .text {
+    z-index: 100;
+    position: absolute;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    width: 100%;
+    margin-top: 22%;
+    color:#ffffff;
+}
+.video-container .text h1{
+    color:#ffffff;
+    font-family: 'Spectral SC', serif;
+    font-size: 70px; 
+    text-transform: uppercase;  
+}
+/*стрелка на фоне*/
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+
+.arrow p {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    font-size: 70px;
+    border-radius: 2px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 50px;
+}
+
+/*нужный css*/
+.centered{
+	text-align: center;
+}
+
+
+/*появление*/
+/*.section {
+            padding: 2rem;
+            height: 30rem;
+            position: relative;
+            text-align: center;
+        }
+        .section:nth-child(2n+2) {
+            background-color: #eee;
+        }
+        .section .label {
+            position: absolute;
+            padding: .375rem;
+            box-sizing: border-box;
+            color: #999;
+            border: 1px solid #999;
+            top: 0;
+            left: 2rem;
+            background-color: #fff;
+            height: 2rem;
+        }
+        *[class^="revealator"] {
+            height: 15rem;
+            width: 20rem;
+            border: 1px solid #999;
+            background-color: rgba(0,0,0,.1);
+            margin: 0 auto;
+            display: inline-block;
+        }*/
