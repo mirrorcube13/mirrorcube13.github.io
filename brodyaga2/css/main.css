@@ -173,7 +173,19 @@ hr.light {
         color: #fff;
         font-family:'Dancing Script';
         text-transform: none;
+        
         }
+
+@media screen and (max-width: 480px) {
+    #section1{
+        /*height : 50vh;*/
+    }
+    #section1 h1{
+        margin-top: 40vh;
+        font-size: 60px;
+        }
+
+}
 
 
 
@@ -181,7 +193,6 @@ hr.light {
  	padding-top:6em;
  	height:500px;
     color: #fff;
- 	background-color: #4a76a8;
  	min-height: 100px;
   	overflow: hidden;
  	}
@@ -202,6 +213,20 @@ hr.light {
         font-size: 35px;
         }
 
+@media screen and (max-width: 480px) {
+    #section2{
+    padding-top:0em;
+    }
+    #section2 h2{
+    font-size: 22px;
+    }
+    #section2 p{
+    margin-top: 5px;
+    font-size: 18px;
+    }
+
+}
+
 
  #section3 {
  	padding-top:50px; 	
@@ -211,11 +236,6 @@ hr.light {
   	overflow: hidden;
     margin-bottom: 50px;
  	}
-        #section3 p{
-        text-align: center;        
-        font-size: 20px;
-        }
-
     
  #section4 {
  	padding-top:50px; 	
@@ -280,6 +300,15 @@ hr.light {
         font-size: 35px;
         color: #fff;
         }
+@media screen and (max-width: 480px) {
+    #section6{
+    max-height: 50vh;
+    }
+    #section6 h3{
+    padding-top: 1.5em;
+    font-size: 26px;
+    }
+}
 
 /*карта*/
  #section7 {
@@ -291,23 +320,40 @@ hr.light {
     padding-right: 0;
     padding-left: 0;
     }
+@media screen and (max-width: 480px) {
+    #section7 h1{
+    font-size: 30px;
+    }
+}
 
+/*перед футером*/
  #section9 {
- 	padding-top:10px;
- 	margin-top:-5px;
- 	color: #fff;
-	/*background-color: #2c3e50;*/
+    padding-top:10px;
+    margin-top:-5px;
+    color: #fff;
     background-image: url(../img/footer.jpg);
-	min-height: 100px;
-  	overflow: hidden;
     background-attachment:fixed;
- 	}
+    /*background-color: #4872a3;*/
+    /*background: linear-gradient(to top, #2c3e50, #9AB4CE);*/
+    min-height: 100px;
+    overflow: hidden;
+    }
         #section9 ul{
-        text-align: left;
+        text-align: justify;
+        padding-left: 8em;
         }
         #section9 li{
-        list-style-type: none; /* Убираем маркеры */
+        list-style-type: none;
+        /* Убираем маркеры */
         }
+    @media screen and (max-width: 480px) {
+        #section9 li {
+        text-indent: 2em;
+        }
+        #section9 ul{
+        padding-left: 4em;
+        }
+    }
 
         #section9 a{
         margin-top: 10px;

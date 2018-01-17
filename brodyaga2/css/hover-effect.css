@@ -16,12 +16,24 @@
 
 .view .mask,
 .view .content {
-  width: 370px;
-  height: 250px;
+  width: 340px;
+  height: 213px;
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0
+}
+@media screen and (max-width: 480px) {
+
+.view {
+  margin-left: -0.5em;
+}
+.view .mask,
+.view .content {
+  width: 340px;
+  height: 213px;
+}
+
 }
 
 .view img {
@@ -44,11 +56,24 @@
 .view p {
   font-family: Merriweather, serif;
   font-style: italic;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   color: #fff;
   padding: 0px 20px 0px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .view p {
+      font-size: 16px;
+      text-align: center;
+      padding-right: 5em;
+    }
+    .view a {
+      font-size: 14px;
+    }
+    
+
 }
 
 .view a.info {
@@ -73,8 +98,16 @@
 .view-first img {
   /*1*/
   transition: all 0.2s linear;
-  width: 370px;
-  height: 250px;
+  width: 340px;
+  height: 213px;
+}
+
+@media screen and (max-width: 480px) {
+  .view-first img {
+  transition: all 0.2s linear;
+  width: 300px;
+  height: 200px;
+  }
 }
 
 .view-first .mask {
