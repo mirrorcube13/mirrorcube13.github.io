@@ -1,11 +1,15 @@
+
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 body{
 	width: 100%;
 }
-
+.green{
+	color: #7bc846; 
+}
 .centered{
 	text-align: center;
 }
@@ -14,18 +18,36 @@ body{
 	margin: auto;
 	position: relative;
 }
-.strip1{
-	text-align: center;
-	width: 100vw;
-	color: rgba(0,0,0,0.5);
-	margin: 20px 0;
-}	
-
+.strip2{
+	width: 5%;
+	margin: auto;
+	color: #7bc846;
+	background-color: #7bc846;
+	height: 2px;
+	border: none;
+}
 
 #section1{
-	height: 70vh;
+	height: 72vh;
 	background-image: url(./img/1.jpg);
+	color: #fff;
 }
+	#section1 h1{
+		padding-top: 20vh;
+		font-size: 32px;
+		text-transform: uppercase;
+	}
+	#section1 h2{
+		padding-top: 7vh;
+		text-transform: uppercase;
+		font-size: 65px;
+		font-weight: 900;
+	}
+	#section1 h3{
+		padding-top: 4vh;
+		text-transform: uppercase;
+		letter-spacing: 23px;
+	}
 
 #section2{
 min-height:350px;
@@ -37,19 +59,58 @@ min-height:350px;
 	#section2 p{
 	padding:5% 20%;		
 	}
-#section3 {
-	padding-top:50px;
-	height:500px;
-	background-color: #ff9800;
+
+#section22{
+min-height:350px;
+
+}
+	#section22 img{
+		padding-top: 50px;
+		width: 150px;
+	}
+	#section22 h1{
+		text-transform: uppercase;
+		font-size: 25px;
+		padding-top: 5%;	
+	}
+	#section22 p{
+		padding:5% 20%;
+		font-size: 20px;
+		color: #737373;		
+	}
+
+#section3{
+min-height:350px;
 }
 	#section3 img{
-		padding-top: 50px;
-		width: 200px;
+		padding: 50px 0 20px 0;
+		width: 150px;
 	}
- 
+	#section3 h1{
+		text-transform: uppercase;
+		padding-top: 55px;
+		font-size: 40px;
+		font-weight: 900;
+		letter-spacing: 1px;	
+	}
+	#section3 h2{
+		color: #737373;
+		letter-spacing: 5px;
+		padding: 20px 0;	
+	}
+	#section3 p{		
+		padding: 20px 0;
+		font-size: 20px;
+		padding: 30px 30vw;	
+	}
+	#section3 h3{
+		padding-top: 5px;
+	}
+
+
 #section4 {
 	padding-top:50px;
-	height:400px;
+	height:350px;
 	color: #fff;
 	background-color: #00bcd4;
 	background-image: url(img/mountains.jpg);
@@ -58,32 +119,69 @@ min-height:350px;
 }
 	#section4 img{
 	padding-top: 50px;
-	width: 50px;
+	width: 70px;
 	}
+	#section4 h1{
+	text-transform: uppercase;
+	padding-top: 5%;
+	font-size: 36px;
+	letter-spacing: 3px;
+	}
+
 
 #section5 {
  	padding-top:50px;
- 	min-height:300px;
- 	color: #fff;
+ 	min-height:500px;
  	background-color: #009688;
+
 }
+	#section5 h1{
+	text-transform: uppercase;
+	padding-top: 5%;
+	font-size: 36px;
+	letter-spacing: 3px;
+	text-align: left;
+	}
+	#section5 h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #737373;
+	text-align: left;
+	padding-top: 5px;
+	}
+
+	#section5 p{
+	padding-top: 15px;
+	font-size: 20px;
+	text-align: justify;
+	color: #737373;
+	}
+
+
+
+
+.block{
+	width: 150px;
+	height: 300px;
+	background-color: #A19D9D;
+}
+
+
+
 #section6 {
  	padding-top:50px;
  	min-height:300px;
- 	color: #fff;
+
  	background-color: #96AAA8;
- 		background-image: url(img/mountains.jpg);
+ 	background-image: url(img/mountains.jpg);
 	background-position: center bottom;
 	background-size: cover;
 }
 #section7 {
  	padding-top:50px;
  	min-height:300px;
- 	color: #fff;
  	background-color: #ACBA5D;
 }
-
-
 
 
 
@@ -100,7 +198,71 @@ min-height:350px;
 .col3 { background: #ECD5DE; right: 0; width: 33%; }
 /***************************************/
 
+/***************************************/
+/*флексы для 2 и 3*/
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  min-height:350px;
+}
+
+.flex-container > div {
+  background-color: #FFFFFF;
+  /*min-width: 150px;*/
+  margin: 0px;
+  text-align: center;
+  flex-basis: 350px;
+}
+
+/***************************************/
+/*флексы для 4*/
  
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  min-height:350px;
+}
+
+.flex-container2 > div {
+  background-color: #FFFFFF;
+  /*min-width: 150px;*/
+  margin: 25px;
+  text-align: center;
+  flex-basis: 450px;
+  padding: 0 50px;
+}
+/***************************************/
+
+/***************************************/
+/*скилл*/
+
+.skills_bg {
+  width: 100%;
+  background-color: #505050;
+  height: 1px;
+  margin-top: 1px;
+}
+
+.skills {
+  height: 5px;
+  background-color: #7bc846;
+}
+
+.des {width: 95%;}
+.dev {width: 80%;}
+.ani {width: 50%;}
 
 
+/***************************************/
+table{
+	width: 100%;
+	padding-top: 20px;
+}
+.first{
+	padding-top: 65px;
+}
+td{
+	font-size: 20px;
+	text-transform: uppercase;
+}
