@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+}
+
+.centered{
+	text-align: center;
+}
+.container{
+	width: 70vw;	
+	margin: auto;
+	position: relative;
+}
+.strip1{
+	text-align: center;
+	width: 100vw;
+	color: rgba(0,0,0,0.5);
+	margin: 20px 0;
+}	
+
+
+#section1{
+	height: 70vh;
+	background-image: url(./img/1.jpg);
+}
+
+#section2{
+min-height:350px;
+}
+	#section2 img{
+		padding-top: 50px;
+		width: 150px;
+	}
+	#section2 p{
+	padding:5% 20%;		
+	}
+#section3 {
+	padding-top:50px;
+	height:500px;
+	background-color: #ff9800;
+}
+	#section3 img{
+		padding-top: 50px;
+		width: 200px;
+	}
+ 
+#section4 {
+	padding-top:50px;
+	height:400px;
+	color: #fff;
+	background-color: #00bcd4;
+	background-image: url(img/mountains.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+	#section4 img{
+	padding-top: 50px;
+	width: 50px;
+	}
+
+#section5 {
+ 	padding-top:50px;
+ 	min-height:300px;
+ 	color: #fff;
+ 	background-color: #009688;
+}
+#section6 {
+ 	padding-top:50px;
+ 	min-height:300px;
+ 	color: #fff;
+ 	background-color: #96AAA8;
+ 		background-image: url(img/mountains.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+#section7 {
+ 	padding-top:50px;
+ 	min-height:300px;
+ 	color: #fff;
+ 	background-color: #ACBA5D;
+}
+
+
+
+
+
+/***************************************/
+/*3 колонки*/
+
+.col1, .col2, .col3{
+	min-height: 350px;
+	position: absolute;
+}
+
+.col1 { background: #C7E3E4; width: 33%; }
+.col2 { background: #E0D2C7; left: 33%; width: 34%; }
+.col3 { background: #ECD5DE; right: 0; width: 33%; }
+/***************************************/
+
+
+ 
+
+
