@@ -1,0 +1,535 @@
+/*body { padding-top: 50px; }
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+a{
+    color: #fff;
+}
+a:hover{
+color: red;
+text-decoration: none;
+color: #7bc846;
+}
+.centered{
+    text-align: center;
+}
+.green{
+    color: #7bc846; 
+}
+.container{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+footer{
+    height: 150px;
+    background-color: #4F7496;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/**********************************************************************************************/
+
+    /* цвет фона и рамки навигационного меню */
+    .navbar-default {
+        background: rgba(255, 255, 255, 0.8);
+/*      height: 70px;*/
+        border: none;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    /* цвет текста, содержащий название сайта или бренда */
+    .navbar-default .navbar-brand {
+        color: #000;
+        font-size: 26px;
+        padding-left: 5s0%; 
+    }
+    .navbar-default .navbar-brand i{
+        font-size: 18px;
+    }
+    .navbar-right{
+     padding-right: 20%;
+    }
+    /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #7bc846;
+    }
+    /* Цвет пунктов навигационного меню */
+    .navbar-default .navbar-nav > li > a {
+        color: #000;
+        font-size: 26px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #7bc846;
+    }
+    /* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #7bc846;
+        background: rgba(40, 40, 40, 0.8);
+    }
+
+    /* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+/*    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background-color: #D5D5D5;
+    }*/
+
+    /* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
+/*    .navbar-default .navbar-nav > .dropdown > a .caret {
+        border-top-color: #777;
+        border-bottom-color: #777;
+    }*/
+    /* Цвет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+/*    .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+    .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+        border-top-color: #333;
+        border-bottom-color: #333;*/
+    }
+    /* Цвет стрелочки (треугольничка), открывшегося пункта меню */
+/*    .navbar-default .navbar-nav > .open > a .caret, 
+    .navbar-default .navbar-nav > .open > a:hover .caret, 
+    .navbar-default .navbar-nav > .open > a:focus .caret {
+        border-top-color: #555;
+        border-bottom-color: #555;
+    }*/
+
+    /* CSS стили для мобильных устройств */
+    /* Цвет рамки у кнопки, которая открывает меню */
+    .navbar-default .navbar-toggle {
+        border-color: #DDD;
+    }
+    /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #DDD;
+    }
+    /* Цвет полосочек в кнопочке, которая открывает меню */
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #CCC;
+    }
+     
+    @media (max-width: 767px) {
+    /* Цвет пунктов меню в раскрывающихся списках */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #777;
+        }
+    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #333;
+            background-color: transparent;
+        }
+    }
+
+/**********************************************************************************************/
+
+#section1{
+    height: 72vh;
+    background-image: url(../img/1.jpg);
+    color: #fff;
+}
+    #section1 h1{
+        padding-top: 20vh;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    #section1 h2{
+        padding-top: 7vh;
+        text-transform: uppercase;
+        font-size: 65px;
+        font-weight: 600;
+    }
+    #section1 h3{
+        padding-top: 4vh;
+        text-transform: uppercase;
+        letter-spacing: 23px;
+        font-family: 'Lato', sans-serif;
+    }
+
+#section2{
+min-height:350px;
+}
+    #section2 img{
+        padding-top: 50px;
+        width: 150px;
+    }
+    #section2 h1{
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-top: 20px;    
+    }
+    #section2 p{
+        font-size: 20px;
+        color: #737373;
+        padding: 0 55px;    
+    }
+
+#section3{
+min-height:350px;
+margin-bottom: 100px;
+}
+    #section3 img{
+        padding: 50px 0 20px 0;
+        width: 150px;
+    }
+    #section3 h1{
+        text-transform: uppercase;
+        padding-top: 55px;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;    
+    }
+    #section3 h2{
+        color: #737373;
+        letter-spacing: 5px;
+        padding: 20px 0;
+        font-family: 'Lato', sans-serif;   
+    }
+    #section3 p{        
+        padding: 30px 250px;
+        font-size: 20px; 
+    }
+    #section3 h3{
+        padding-top: 5px;
+    }
+
+#section4 {
+    padding-top:50px;
+    height:350px;
+    color: #fff;
+    background-color: #00bcd4;
+    background-image: url(../img/mountains.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    #section4 img{
+    padding-top: 50px;
+    width: 70px;
+    }
+    #section4 h1{
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-size: 36px;
+    letter-spacing: 3px;
+    }
+
+#section5 {
+    padding:50px 0;
+    min-height:500px;
+}
+#section5 .row{
+    margin-bottom: 70px;
+
+}
+    #section5 h1{
+    text-transform: uppercase;
+    padding-top: 5%;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: left;
+    font-weight: 600;
+    }
+    #section5 h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #737373;
+    text-align: left;
+    padding-top: 5px;
+    }
+
+    #section5 p{
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: justify;
+    color: #737373;
+    }
+
+    #section5 h4{
+    text-transform: uppercase;
+    padding-top: 13%;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    #section5 h5{
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #737373;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    }
+
+.padding-table{
+        padding-top: 80px;
+    }
+    #section5 h3{
+        font-size: 20px;
+        padding-top: 5px;
+        text-transform: uppercase;
+    }
+
+#section6 {
+    padding-top:50px;
+    min-height:200px;
+    color: #fff;
+    background-color: #96AAA8;
+    text-align: center;
+    background-image: url(../img/mountains.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    #section6 h1{
+        font-size: 60px;
+        color: #7bc846;
+    }
+    #section6 h2{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+#section7 {
+    padding-top:50px;
+    min-height:700px;
+}
+    #section7 h1{
+        text-transform: uppercase;
+        padding-top: 55px;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-align: center; 
+    }
+    #section7 h2{
+        color: #737373;
+        letter-spacing: 5px;
+        padding: 20px 0;
+        text-align: center; 
+    }
+    #section7 img{      
+    width: 450px;
+    margin: 5px;
+    padding: 20px;  
+    }
+
+#section8 {
+    padding-top:50px;
+    min-height:700px;
+}
+    #section8 h1{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-align: center; 
+    }
+    #section8 h2{
+        color: #737373;
+        letter-spacing: 5px;
+        padding: 20px 0;
+        text-align: center;     
+    }
+    #section8 h3{
+        color: #fff;
+        font-size: 40px;
+        /*padding: 20px 0;*/
+        text-align: center;     
+    }
+    #section8 sup{
+        font-size: 20px;    
+    }
+    #section8 h4{
+        text-transform: uppercase;
+        padding: 25px 0;
+        font-size: 22px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    #section8 li{
+        font-size: 20px;
+        text-align: center;
+        color: #737373;
+        font-weight: 400;
+    }
+
+
+
+.form{
+    height: 700px;
+    margin: 50px auto;
+    border-width: 1px;
+    border-style: solid;
+    color: #BCBCBC; 
+}
+
+.form .cl1{
+    height: 64%;
+    border-width: 1px;
+    border-style: solid;
+    background-image: url(../img/note.jpg);
+    color: #BCBCBC;
+}
+.form .cl11{
+    margin: 15px;
+/*    448px=64%; 448-(15*2)-2=416px;  */
+    height: 416px;
+    border-width: 1px;
+    border-style: solid;
+    color: #BCBCBC;
+}
+.form .cl2{
+    height: 28%;
+    border-width: 1px;
+    border-style: solid; 
+}
+.form .cl3{
+    height: 8%;
+    border-width: 1px;
+    border-style: solid;
+}
+.form .cl33{
+    background-color: #7bc846;
+    height: 100%;
+    width: 9%;
+    float: right;
+}
+ #section8 a{
+    color: #FF0000;
+}
+ #section8 i{
+    color: #FF0000;
+    margin: auto;
+}
+
+.block_last{
+    height: 300px;
+    background-color: #BCBCBC;
+    margin: 70px 0;
+}
+
+
+/***************************************/
+/*линии*/
+
+.strip1{
+    margin: 70px 0 20px 0;
+    color: #C7C7C7;
+    background-color: #C7C7C7;
+    height: 1px;
+    border: none;
+}
+.strip2{
+    width: 5%;
+    margin: auto;
+    color: #7bc846;
+    background-color: #7bc846;
+    height: 2px;
+    border: none;
+}
+.strip3{
+    width: 15%;
+    margin: auto;
+    color: #7bc846;
+    background-color: #7bc846;
+    height: 2px;
+    border: none;
+}
+.strip4{
+    margin: 15px 0;
+}
+
+/*черта вертикальная*/
+.line { 
+    border-width: 3px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #737373;
+    height: 20px;
+    top: 0;
+   }
+
+
+/***************************************/
+/*скилл*/
+
+.skills_bg {
+  width: 100%;
+  background-color: #505050;
+  height: 1px;
+  margin-top: 1px;
+}
+
+.skills {
+  height: 5px;
+  background-color: #7bc846;
+}
+
+.des {width: 95%;}
+.dev {width: 80%;}
+.ani {width: 50%;}
+
+
+/***************************************/
+/*блоки 1-2*/
+.block1, .block2{
+    width: 100%;
+    height: 300px;
+    background-color: #EEEEEE;
+    box-shadow: 5px -2px 14px -8px #000000;
+}
+
+/***************************************/
+/*блоки 3-4*/
+.block3, .block5{
+margin: 50px auto auto auto;
+width: 200px;
+min-height: 400px;
+background-color: #EEEEEE;
+box-shadow: 5px -2px 14px -8px #000000;
+}
+.radius {
+  width: 120px;
+  height: 60px;
+  border: 2px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: #7bc846;
+  margin: auto;
+}
+.block4{
+margin: 50px auto auto auto;
+width: 200px;
+min-height: 400px;
+background-color: #7bc846;
+box-shadow: 5px -2px 14px -8px #000000;
+}
+.radius2 {
+  width: 120px;
+  height: 60px;
+  border: 2px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: #EEEEEE;
+  margin: auto;
+}
+
