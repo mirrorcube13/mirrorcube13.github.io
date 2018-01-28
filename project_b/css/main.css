@@ -150,7 +150,7 @@ td{
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #4D5AE0}
+.dropdown-content a:hover {background-color: #80AFEA}
 
 .dropdown:hover .dropdown-content {
     display: block;
