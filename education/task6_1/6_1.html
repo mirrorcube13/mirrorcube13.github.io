@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6.2</title>
+	<style>
+  body {
+    margin:0;
+    background: lightblue;
+    width: 100%;
+    text-align: center;
+  }
+
+  .block1 {
+            background: white url(left.jpg) repeat-y left top;
+            max-width: calc(100% - 500px);
+            min-width: 500px;
+            margin: 5px auto;
+            border: none;
+            border-radius: 20px;
+        }
+  .block2 {
+            background: url(right.jpg) repeat-y right top;
+            width: 100%;
+            margin: 0;
+            border: none;
+            border-radius: 20px;
+        }
+  .block3{
+  	font-size: 20px;
+  	    height: 80vh;
+        width: 100%;
+        margin: auto;
+  	}
+.box{
+  display: inline-block;
+  height: 100px;
+  background: lightblue;
+  border: solid 1px;
+}
+.box1{
+  display: table;
+  height: 100px;
+}
+.box2{
+  display: table-cell;vertical-align: middle;
+}
+</style>
+</head>
+<body>
+
+
+<div class="block1">
+	<div class="block2">
+		
+<div class="block3">
+	<ul>
+   <li style="height: 100%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="box"><span class="box1"><span class="box2">Quis laboriosam dicta</span></span></span> provident neque delectus blanditiis reiciendis placeat aut.</li> 
+  </ul>
+
+
+
+
+</div>
+	
+
+
+	</div>
+</div>
+	
+</body>
+</html>
