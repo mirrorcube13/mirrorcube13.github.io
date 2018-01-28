@@ -1,6 +1,11 @@
 .block1, .block2, .block3, .block4{
 	margin: 16px 0;
 }
+.block1 {
+background-color: #F0D708;
+}
+
+
 .block1 h1{
 border-style: dashed;
 border-color: #FF0000;
@@ -8,13 +13,16 @@ padding: 0;
 }
 .block2 {
 margin: 0 auto;
-width: 50%;
+/*width: 50%;
 min-width: 200px;
-max-width:  700px;
+max-width:  700px;*/
 border-style: solid;
 border-color: #1AC512;
 border-width: 1px;
 padding: 3px 15px;
+background-image: url(SG1998.jpg);
+background-repeat: no-repeat;
+background-position: center center;
 }
 
 @media (max-width: 320px) {
@@ -27,7 +35,9 @@ padding: 3px 15px;
 border-left: solid #0000FF 1px;
 border-right: double #FF0000 3px;
 border-top: dotted #000000 1px;
-border-bottom: solid #008000 3px
+border-bottom: solid #008000 3px;
+background-image: url(skrip.gif);
+ background-repeat: repeat;
 }
 .block4 p{
 border-style: solid;
