@@ -12,7 +12,6 @@ a{
     color: #fff;
 }
 a:hover{
-color: red;
 text-decoration: none;
 color: #7bc846;
 }
@@ -28,13 +27,34 @@ color: #7bc846;
 }
 footer{
     height: 150px;
-    background-color: #4F7496;
+    background-color: #3E3E3E;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
 }
 .left{
     float: left;
 }
 .right{
     float: right;
+}
+.margin60{
+    margin-top: 60px;
+}
+.padding30{
+    padding-top: 30px;
+}
+button{
+    background-color: #7bc846;
+    color: #fff;
+    min-width: 120px;
+    min-height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-weight: bold;
 }
 /**********************************************************************************************/
 
@@ -140,7 +160,7 @@ footer{
 /**********************************************************************************************/
 
 #section1{
-    height: 72vh;
+    height: 75vh;
     background-image: url(../img/1.jpg);
     color: #fff;
 }
@@ -163,6 +183,9 @@ footer{
         text-transform: uppercase;
         letter-spacing: 23px;
         font-family: 'Lato', sans-serif;
+    }
+    #section1 button{
+    margin-top: 5vh;
     }
 
 #section2{
@@ -289,6 +312,12 @@ margin-bottom: 100px;
         padding-top: 5px;
         text-transform: uppercase;
     }
+    #section5 .row-green:hover{
+        color: #7bc846;
+    }    
+    #section5 button{
+        margin-top: 25px;
+    }
 
 #section6 {
     padding-top:50px;
@@ -329,9 +358,9 @@ margin-bottom: 100px;
         text-align: center; 
     }
     #section7 img{      
-    width: 450px;
-    margin: 5px;
-    padding: 20px;  
+        width: 450px;
+        margin: 5px;
+        padding: 20px;  
     }
 
 #section8 {
@@ -341,7 +370,7 @@ margin-bottom: 100px;
     #section8 h1{
         text-transform: uppercase;
         font-size: 40px;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: 1px;
         text-align: center; 
     }
@@ -352,7 +381,6 @@ margin-bottom: 100px;
         text-align: center;     
     }
     #section8 h3{
-        color: #fff;
         font-size: 40px;
         /*padding: 20px 0;*/
         text-align: center;     
@@ -372,8 +400,43 @@ margin-bottom: 100px;
         text-align: center;
         color: #737373;
         font-weight: 400;
+        list-style-type: none;
     }
-
+    #section8 a{
+    }
+    #section8 i{
+    }
+    #section8 button{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+/*форма*/
+    #section8 h5{
+        padding-top: 10%;
+        font-size: 32px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #fff;
+        text-align: center;
+    }
+    #section8 h6{
+        text-transform: uppercase;
+        padding: 25px 0 0 25px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #000;
+    }
+        #section8 p{
+        padding: 0 25px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #000;
+    }
 
 
 .form{
@@ -390,7 +453,19 @@ margin-bottom: 100px;
     border-style: solid;
     background-image: url(../img/note.jpg);
     color: #BCBCBC;
+    background-size: cover;
+    text-align: center;
 }
+.form .cl1 a{
+    color: #fff;
+    font-size: 32px;
+    padding: 0 25px;
+
+}
+.form .cl1 a:hover{
+    color: #7bc846;
+}
+
 .form .cl11{
     margin: 15px;
 /*    448px=64%; 448-(15*2)-2=416px;  */
@@ -415,18 +490,38 @@ margin-bottom: 100px;
     width: 9%;
     float: right;
 }
- #section8 a{
-    color: #FF0000;
+.form .cl33 a{
+     display: block; 
+     text-align: center;
+     font-size: 40px;
 }
- #section8 i{
-    color: #FF0000;
-    margin: auto;
+.form .cl33 a:hover{
+ color: #fff;
 }
+
 
 .block_last{
     height: 300px;
-    background-color: #BCBCBC;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 5px #A4A4A4;
     margin: 70px 0;
+}
+ #section8 .block_last h1{
+ padding-top: 50px;
+ font-size: 18px;
+}
+ #section8 .block_last h2{
+ padding-top: 20px;
+ font-size: 38px;
+ font-weight: 700;
+ color: #A2A2A2;
+}
+ #section8 .block_last p{
+ padding: 10px 40px;
+ font-weight: 500;
+ font-size: 20px;
+ color: #6F6F6F;
+ text-align: center;
 }
 
 
@@ -458,6 +553,20 @@ margin-bottom: 100px;
 }
 .strip4{
     margin: 15px 0;
+    color: #B4B4B4;
+    background-color: #B4B4B4;
+    height: 1px;
+    border: none;
+}
+.strip5{
+    width: 8%;
+    margin: auto;
+    color: #fff;
+    background-color: #fff;
+    height: 3px;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 /*черта вертикальная*/
@@ -467,7 +576,7 @@ margin-bottom: 100px;
     border-right-style: solid;
     border-color: #737373;
     height: 20px;
-    top: 0;
+    top: 0px;
    }
 
 
@@ -502,7 +611,7 @@ margin-bottom: 100px;
 
 /***************************************/
 /*блоки 3-4*/
-.block3, .block5{
+.block-price{
 margin: 50px auto auto auto;
 width: 200px;
 min-height: 400px;
@@ -510,26 +619,31 @@ background-color: #EEEEEE;
 box-shadow: 5px -2px 14px -8px #000000;
 }
 .radius {
-  width: 120px;
-  height: 60px;
-  border: 2px;
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
-  background: #7bc846;
-  margin: auto;
-}
-.block4{
-margin: 50px auto auto auto;
-width: 200px;
-min-height: 400px;
-background-color: #7bc846;
-box-shadow: 5px -2px 14px -8px #000000;
-}
-.radius2 {
-  width: 120px;
-  height: 60px;
-  border: 2px;
-  border-radius: 0 0 50% 50% / 0 0 100% 100%;
-  background: #EEEEEE;
-  margin: auto;
+    width: 120px;
+    height: 60px;
+    border: 2px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: #7bc846;
+    margin: auto;
+    color: #fff;
 }
 
+.green-block:hover .block-price{
+    background-color: #7bc846;
+    color: #fff;
+}
+.green-block:hover .radius{
+    background: #fff;
+    color: #7bc846;
+}
+.green-block:hover button{
+  background: #fff;
+  color: #7bc846;
+}
+.green-block:hover li{
+    color: #fff !important;
+}
+.green-block:hover .strip4{
+    color: #fff !important;
+    background-color: #fff !important;
+}
