@@ -15,6 +15,10 @@ a:hover{
 text-decoration: none;
 color: #7bc846;
 }
+a:focus{
+text-decoration: none;
+color: #7bc846;
+}
 .centered{
     text-align: center;
 }
@@ -32,6 +36,9 @@ footer{
     text-align: center;
     color: #fff;
 }
+footer a{
+    text-transform: uppercase;
+}
 .left{
     float: left;
 }
@@ -44,6 +51,11 @@ footer{
 .padding30{
     padding-top: 30px;
 }
+.padding90-left-right{
+    padding:0 90px;
+}
+
+
 button{
     background-color: #7bc846;
     color: #fff;
@@ -56,13 +68,19 @@ button{
     padding: 15px 30px;
     font-weight: bold;
 }
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 /**********************************************************************************************/
 
     /* цвет фона и рамки навигационного меню */
     .navbar-default {
-        background: rgba(255, 255, 255, 0.8);
-/*      height: 70px;*/
+        background: rgba(255, 255, 255, 1);
+        height: 70px;
         border: none;
+        padding:10px 20%; 
         text-transform: uppercase;
         font-weight: 400;
     }
@@ -70,13 +88,13 @@ button{
     .navbar-default .navbar-brand {
         color: #000;
         font-size: 26px;
-        padding-left: 5s0%; 
+
     }
     .navbar-default .navbar-brand i{
         font-size: 18px;
     }
     .navbar-right{
-     padding-right: 20%;
+
     }
     /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
     .navbar-default .navbar-brand:hover,
@@ -200,6 +218,9 @@ min-height:350px;
         font-size: 25px;
         padding-top: 20px;    
     }
+    #section2 h1:hover{
+        color: #7bc846;    
+    }
     #section2 p{
         font-size: 20px;
         color: #737373;
@@ -316,11 +337,11 @@ margin-bottom: 100px;
         color: #7bc846;
     }    
     #section5 button{
-        margin-top: 25px;
+        margin-top: 35px;
     }
 
 #section6 {
-    padding-top:50px;
+    padding:50px 0;
     min-height:200px;
     color: #fff;
     background-color: #96AAA8;
@@ -331,8 +352,9 @@ margin-bottom: 100px;
     background-attachment: fixed;
 }
     #section6 h1{
-        font-size: 60px;
+        font-size: 70px;
         color: #7bc846;
+        font-weight: 700;
     }
     #section6 h2{
         font-size: 22px;
@@ -358,11 +380,14 @@ margin-bottom: 100px;
         text-align: center; 
     }
     #section7 img{      
-        width: 450px;
+        width: 500px;
         margin: 5px;
-        padding: 20px;  
+        padding: 25px 0;  
+    } 
+/*    #section7 .col-md-6{      
+        padding: 0;  
     }
-
+*/
 #section8 {
     padding-top:50px;
     min-height:700px;
@@ -575,7 +600,7 @@ margin-bottom: 100px;
     border-left-style: solid;
     border-right-style: solid;
     border-color: #737373;
-    height: 20px;
+    height: 100px;
     top: 0px;
    }
 
