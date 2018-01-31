@@ -178,7 +178,8 @@ button:hover {
 /**********************************************************************************************/
 
 #section1{
-    height: 75vh;
+    height: 100vh;
+    background-size: cover;
     background-image: url(../img/1.jpg);
     color: #fff;
 }
