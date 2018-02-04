@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LINKS</title>
+	<style>
+	h1{
+		text-align: center;
+		font-size: 28px;
+		font-weight: 500;
+	}
+	span{
+		font-style: italic;
+	}
+	hr{
+		margin: 30px 0;
+	}
+		a{
+			color: green;
+			font-size: 22px;
+		}
+		a:hover{
+			color: red;
+		}
+		.one a{
+			display: inline-block;
+			border-right: solid 3px red;
+			text-align: center;
+			padding: 0 20px;
+		}
+		.two ul{
+				margin: 0;
+				padding: 0;
+		}
+		.two li{
+			display:inline-block;
+			padding: 0 20px;
+			border-right: 3px solid red;
+		}
+		.three ul{
+				margin: 0;
+				padding: 0;
+		}
+		.three li{
+			display:inline-block;
+			padding: 0 20px;
+			
+		}
+		.three li:after {
+    		content:url('red.png');
+    		padding-left: 25px;
+}
+		.four p{
+			width:200px;
+			float: left;
+			border-right: 3px solid red;
+			padding-left: 20px;
+		}
+		.clear{
+			clear: both;
+		}
+		.flex-container {
+	  		display: flex;
+	}
+
+			.flex-container>div {
+	  		margin: 0 10px;
+	  		padding:0 20px;
+	  		border-right: 3px solid red;
+	}
+	</style>
+</head>
+<body>
+	<h1>№1  с помощью <span>display: inline-block;</span></h1>
+	<div class="one">
+		<a href="https://www.onliner.by/" target="_blank">первая ссылка</a>
+		<a href="https://www.onliner.by/" target="_blank">вторая ссылка</a>
+		<a href="https://www.onliner.by/" target="_blank">третья ссылка</a>
+		<a href="https://www.onliner.by/" target="_blank">четвертая ссылка</a>
+		<a href="https://www.onliner.by/" target="_blank">пятая ссылка</a>
+	</div>
+	<hr>
+	<h1>№2 через <span>ul и border</span></h1>
+	<div class="two">
+		<ul>
+			<li><a href="https://www.onliner.by/" target="_blank">первая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">вторая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">третья ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">четвертая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">пятая ссылка</a></li>
+		</ul>		
+	</div>
+	<hr>
+	<h1>№3 через ul и <span>li:after{content:url('red.png');</span></h1>
+	<div class="three">
+		<ul>
+			<li><a href="https://www.onliner.by/" target="_blank">первая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">вторая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">третья ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">четвертая ссылка</a></li>
+			<li><a href="https://www.onliner.by/" target="_blank">пятая ссылка</a></li>
+		</ul>		
+	</div>
+	<hr>
+		<h1>№4 через <span>float</span></h1>
+	<div class="four">
+		<p>
+			<a href="https://www.onliner.by/" target="_blank">первая ссылка</a>
+		</p>
+		<p>
+			<a href="https://www.onliner.by/" target="_blank">вторая ссылка</a>
+		</p>
+		<p>
+			<a href="https://www.onliner.by/" target="_blank">третья ссылка</a>
+		</p>
+		<p>
+			<a href="https://www.onliner.by/" target="_blank">четвертая ссылка</a>
+		</p>
+		<p>
+			<a href="https://www.onliner.by/" target="_blank">пятая ссылка</a>
+		</p>
+	</div>
+	<div class="clear"></div>
+	<hr>
+	<h1>№5 с помощью <span>flex</span></h1>
+	<div class="flex-container">
+  <div><a href="https://www.onliner.by/" target="_blank">первая ссылка</a></div>
+  <div><a href="https://www.onliner.by/" target="_blank">вторая ссылка</a></div>
+  <div><a href="https://www.onliner.by/" target="_blank">третья ссылка</a></div>
+  <div><a href="https://www.onliner.by/" target="_blank">четвертая ссылка</a></div>
+  <div><a href="https://www.onliner.by/" target="_blank">пятая ссылка</a></div>    
+</div>
+
+
+</body>
+</html>
