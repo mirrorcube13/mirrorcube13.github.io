@@ -1,0 +1,53 @@
+*{
+	margin:0;
+}
+body{
+	overflow: hidden;
+}
+header, footer{
+	min-height: 50px;
+	background-color: lightblue;
+	color: blue;
+	text-align: center;
+}
+h1{	
+	margin: 0;
+	padding: 10px;
+	font-size: 22px;
+	font-weight: 500;
+}
+.centered{	
+text-align: center;
+}
+	.block1{
+		background-color: #E4EF83;
+		margin-top: -20px;
+		padding-top: 20px;
+		margin-bottom: -10000px;
+		padding-bottom: 10000px;
+	}
+
+	.block2{
+		background: url(ball.jpg) repeat-y right top;
+		background-color: #fff;
+		margin-bottom: -10000px;
+		padding-bottom: 10000px;
+	}
+	.block2 img{
+		float: left;
+		padding:  0 20px 20px 20px;
+	}
+	.block2 p{
+	text-indent: 20px;
+	}
+
+.over{
+		overflow: hidden;
+	}
+li{
+		text-align: justify;
+
+	}
+ul{
+		padding-left: calc(100% - 80%);
+	}
