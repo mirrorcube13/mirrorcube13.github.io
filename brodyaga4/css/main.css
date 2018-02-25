@@ -190,6 +190,7 @@ hr {
         font-size: 23px;
         text-align: center;
         line-height: 2;
+        letter-spacing: 2px;
         }
         #section2 h2{
         text-align: center;
@@ -213,12 +214,60 @@ hr {
  #section3 {
  	padding-top:50px; 	
  	color: #000;
-	background-color: #FFFFFF;
+	background-color: #fff;
 	min-height: 400px;
   	overflow: hidden;
-    margin-bottom: 50px;
  	}
-    
+.section3_block{
+    background-color: #F2F2F2;
+    margin: 15px 0;
+    padding: 15px;
+}
+.section3_block_text{
+margin:23% 0;
+padding: 0 45px; 
+}
+.section3_block_text h2{
+        font-size: 56px;
+        line-height: 1.07143;
+        font-weight: 600;
+        letter-spacing: -.005em;
+        font-family: 'PT Sans', sans-serif;
+        margin-bottom: 0.5em;
+}
+.section3_block_text p{
+font-size: 24px;
+}
+@media (min-width: 480px) and (max-width: 1399px) {
+.section3_block_text{
+margin:13% 0;
+padding: 0 45px; 
+}
+}
+@media screen and (max-width: 600px){
+.section3_block_text h2{
+        font-size: 40px;
+
+}
+}
+
+@media screen and (max-width: 480px) {
+.section3_block_text{
+margin:13% 0;
+padding: 0 10px; 
+}
+.section3_block_text h2{
+        font-size: 30px;
+
+}
+.section3_block_text p{
+font-size: 20px;
+text-indent: 10px;
+word-wrap: break-word;
+}
+    }
+
+
  #section4 {
     padding: 50px 0;	
  	color: #fff;
@@ -277,6 +326,7 @@ hr {
         margin-top: 10%;
         font-size: 35px;
         color: #fff;
+        letter-spacing: 2px;
         }
 @media screen and (max-width: 480px) {
     #section6{

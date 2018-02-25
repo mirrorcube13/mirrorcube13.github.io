@@ -335,6 +335,16 @@ hr.long {
         #section4 .bez li{
         list-style-type: none;
         }
+        #section4 img{
+         -moz-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        }
+        #section4 img:hover{
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -o-transform: scale(2);
+        }
 
 
 @media screen and (max-width: 480px) {
