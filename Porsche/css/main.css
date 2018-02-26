@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+ 
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+
+	/*margin-top: 70px;*/
+}
+
+h1, h2, h3, h4, h5,h6{
+	font-family: "raleway";
+	font-weight: 300;
+	color: #333;
+}
+
+p{
+
+}
+
+.centered{
+	text-align: center;
+}
+
+a{
+	/*color: #f85c37;*/
+}
+/*a i{
+	color: #00b8ff;
+}
+a i:hover{
+	color: #2400ff;
+}*/
+
+
+a:hover, a:focus{
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+
+hr{
+	display: block;
+	height: 1px;
+	border: 0px;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+section{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+/*навбар*/
+.navbar{
+	font-weight: 800px;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navbar-inverse{
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+.navbar-inverse .navbar-brand {
+	color: #999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+.navbar-inverse .nav > li>a:hover,
+.navbar-inverse .nav>li>a:focus:hover {
+    color: #f2fb04;
+}
+.navbar-inverse .nav > li>p/*:hover,
+.navbar-inverse .nav>li>p:focus:hover*/ {
+    color: red;
+}
+
+
+
+.car >a{
+	color: #000000;
+	font-size: 30px;
+}
+
+.car >a:hover,
+.car >a:focus:hover {
+    color: #fb0101;
+}
+
+
+.logotip{
+	padding-top: 35px;
+}
+
+.logotip h4{
+	font-size: 25px;
+}
+.logotip hr{
+	background-color: #000000;
+}
+
+#dg{
+	background: #e0e0e0; 
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#dg h4{
+	color: #000000;
+	font-size: 40px;
+}
+
+.tilt{
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+	     -o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+}
+
+.tilt:hover {
+	-webkit-transform: rotate(-10deg);
+	   -moz-transform: rotate(-10deg);
+	     -o-transform: rotate(-10deg);
+		-ms-transform: rotate(-10deg);
+			transform: rotate(-10deg);
+}
+
+#lg{
+	background: #e4e4e4;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#lg h4 {
+ font-size: 35px;
+ color: #000000;
+}
+
+/*карта*/
+#map{
+	text-align:center;
+	margin-bottom: -10px;
+}
+
+#map h4{
+	font-size: 35px;
+ 	color: #000000;
+}
+
+/*текст для второстепенных страниц*/
+.auto h1{
+	color: #000000;
+}
+.auto h2{
+	color: #000000;
+}
+.auto th,td{
+color: #000000;
+}
+
+/*футер*/
+footer{
+	background: #2d2d2d;
+	padding-top: 30px;
+	padding-bottom: 20px;
+} 
+footer i{
+color: #ffffff;
+/*color: #bdbdbd;*/
+font-size: 30px;
+padding: 20px;
+}
+
+footer i:hover{
+color: #f2fb04;
+}
+
+footer p{
+color: #ffffff;
+font-size: 13px;
+}
+
+footer h3{
+color: #ffffff;
+}
+
+footer ul{
+color: #ffffff;
+}
+
+
+
+
+/*паралакс*/
+.parallax {
+    /* The image used */
+    background-image: url("../img/porsche-911.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+    position: relative;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*текст для паралакса*/
+.parallax h2{
+	position: absolute;
+	top: 350px;
+	left: 70%;
+}
+
+.parallax h2 span {
+	color			: white;
+	font			: bold 24px/45px Helvetica, Sans-Serif;
+	letter-spacing		: -1px;
+	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+	background		: rgba(0, 0, 0, 0.7);
+	padding			: 10px;
+}
+
+/*карусель*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  max-height: 100%;
+  width: 100%; 
+  margin: auto;
+}
+.carousel-caption h2{
+	color: #ffffff;
+}
+
+/*блоки*/
+.img-pizda {
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.block-40 {
+height: 40%;
+}
+
+.block-60 {
+height: 60%;
+}
+
+/*блок для галереии 360*/
+.block-360{
+
+	max-width: 40%;
+	text-align: center; 
+}
+/*кнопка*/
+.btn {
+    margin-left: 15px;
+    padding: 6px 22px 8px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffff;
+    background: #234b0f;
+    border-bottom: 2px solid #1a9c7f;
+}
+
+.btn-custom:hover {
+    background-color: #e74c3c;
+    color: #fcf8e3;
+    font-weight: bold;
+    border-bottom: 2px solid #e74c3c;
+    box-shadow: #d9534f -1px 1px, #a94442 -2px 2px, #a94442 -3px 3px, #a94442 -4px 4px, #a94442 -5px 5px, #a94442 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+
+.engine{
+	background-image: url("../img/engine.jpg");
+	    /* Set a specific height */
+    height: 400px; 
+    position: relative;
+}
+
+.height50{
+	margin-top: 20%;
+}
