@@ -14,18 +14,19 @@
 		var age = prompt("Введите возраст");
 		var gender = confirm("Ваш пол - мужской?");
 
-age=parseInt(age);
+		age=parseInt(age);
 
 
 		var age_day = age* 365;
 		var age_5year= age + 5;
-		var pension = age >= 60;
+		var pension = age;
 
 
+		var t=(pension >= 60)?'да':'нет';
+		var f=(gender==true)?'мужской':'женский';
 
-gender? "да":"нет", pension ? "да" : "нет";
 
-		alert("Ваше ФИО: " + surname + " "+ name + " "+ patronymic+"\n" +"Ваш возраст в годах: " + age + "\n" + "Ваш возраст в днях: "+ age_day + "\n" + "Через 5 лет вам будет: "+ age_5year + "\n" +"Ваш пол: " + " "+ gender +"\n" + "Вы на пенсии: "+ " " + pension + "\n");
+		alert("Ваше ФИО: " + surname + " "+ name + " "+ patronymic+"\n" +"Ваш возраст в годах: " + age + "\n" + "Ваш возраст в днях: "+ age_day + "\n" + "Через 5 лет вам будет: "+ age_5year + "\n" +"Ваш пол: " + " "+ f +"\n" + "Вы на пенсии: "+ " " + t + "\n");
 	</script>
 	
 </body>
