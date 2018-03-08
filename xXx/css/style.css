@@ -3,6 +3,38 @@
 	margin: 0;
 	padding: 0;
 }
+.padding-0{
+	padding-right: 0;
+	padding-left: 0;
+}
+/****карусель****/
+.carousel{
+	height: 100vh;
+}
+.carousel-inner img {
+  height: auto;
+  width: 100%;
+}
+.carousel.fade{
+	opacity: 1;
+}
+.carousel.fade .item{
+	display: block;
+	position: absolute;	
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 2s;
+}
+.carousel.fade .item.active{
+	position: relative;
+	opacity: 1;
+}
+/********/
+
+
+
 
 h1{
 	font-style: normal;
@@ -29,6 +61,8 @@ color: #b38c73;
 .centered{
 	text-align: center;
 }
+
+/****Навбар****/
 .navbar{
 	margin: 0;
 	background: transparent;
@@ -42,33 +76,76 @@ color: #b38c73;
 }
 .navbar-default .navbar-nav > li > a{
 color: #fff;
-font-size: 20px;
+font-size: 16px;
 }
+.navbar-default .navbar-nav > li > a:hover{
+color: #fff;
+border: solid #C1C1C1 1px;
+font-size: 17px;
+}
+
+.navbar-default .navbar-nav > li > a:focus{
+color: #fff;
+}
+
+/********/
+
 .section1{
 	background: url(../img/meat4.jpg);
-	height: 100vh;
+	min-height: 100px;
 }
 .section2{
-	height:700px;
+	padding: 70px; 
+	min-height:500px;
 	text-align: center; 
+	background: #AEE3CE;
 }
+	.section2 .col-md-4{
+	padding: 0;
+	}
+	.section2 h1{
+	padding: 15px;
+	}
+	.section2 h2{
+	padding: 10px;
+	}
+	.section2 p{
+	padding: 25px;
+	font-size: 20px;
+	}
+
 .section3{
-	height:700px;
-	text-align: center; 
+	padding: 70px;
+	min-height:500px;
+	text-align: center;
+	background: #EACE82; 
 }
+
+
+
+
 .section4{
+	padding: 70px;
 	min-height:300px;
 	text-align: center;
 
 }
 .section5{
-	height:700px;
-	text-align: center; 
+	padding: 70px; 
+	min-height:500px;
+	text-align: center;
+	background: #F2B6D1; 
 }
 .section6{
-	height:900px;
+	min-height:900px;
 	text-align: center;
 	background: url(../img/chef_3.jpg); 
+}
+
+
+.section7{
+	min-height:500px;
+	text-align: center;
 }
 .section7 .col-md-3{
 padding: 0;
@@ -85,24 +162,40 @@ footer{
 .footer1{
 	height: 80%;
 	padding: 4em 0;
-	background-color: #333333;
+	background-color: #232323;
 
 }
 .footer1 li{
  display: inline-block;
  font-size: 20px; 
- margin: 20px;
+ margin: 10px;
+}
+.footer1 li:after {
+    		content:"/";
+    		padding-left: 15px;
+    		color: #D1D1D1;
+}
+.footer1 li:last-child:after {
+    		content:none;
 }
 
 .footer1 a{
  color: #fff;
+ text-decoration: none;
 
+}
+.footer1 a:hover{
+color: #fff;
+border: solid #C1C1C1 1px;
+padding: 10px;
 }
 
 .footer2{
 	height: 20%;
 	padding: 1em 0;
-	background-color: #1b1b1b;
+	background-color: #1e1e1e;
+	color: #949494;
+
 }
 
 
