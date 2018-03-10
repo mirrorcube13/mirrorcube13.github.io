@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacts</title>
+    <title>Reservation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <!-- иконки -->
@@ -14,7 +14,7 @@
   </head>
   <body>
 
-<div class="our-contacts-main">  
+<div class="reservation-main">  
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,47 +42,80 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="our-contacts-main-text">
-      <h1>Our contacts</h1>
+    <div class="reservation-main-text">
+      <h1>Бронирование</h1>
     </div>
 </div>
-<div class="our-contacts-block">
-  <div class="container">
 
-    <div class="row centered" >
-      <h2 class="gold-text">Вы будете возвращаться снова и снова</h2>
-      <h1 class="main-text">Лучше один раз посетить наше место</h1>
-    </div>
-    <hr>
+
+<div class="container">
+  <div class="reservation-block">
     <div class="row">
-        <div class="col-md-6">
-          <h3>Вы можете найти нас здесь.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi molestiae ipsum deserunt eligendi sit, aut odio repudiandae quis a, recusandae provident adipisci numquam molestias officiis.</p>
-          <p><i class="fas fa-phone"></i> +375 33 000-00-00</p>
-          <p><i class="fas fa-map-marker-alt"></i> 121 King Street, Melbourne Victoria 3000 Australia</p>
-          <p><i class="far fa-envelope"></i> sad777@gmail.com</p>
-          <div class="icon"><a href=""><i class="fab fa-instagram"></i></a></div>
-          <div class="icon"><a href=""><i class="fab fa-vk"></i></a></div>
-          <div class="icon"><a href=""><i class="fab fa-facebook-f"></i></a></div>
-        </div>
-        <div class="col-md-6">
-<h3>Для ваших отзывов.</h3>
-<form onsubmit="alert('Отправлено');return false">
-  <input type="text" id="fname" name="firstname" required  placeholder="Your name..">
-  <input type="email" id="femail" name="email" placeholder="Your email..">
-  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  <input type="submit" value="Submit" class="button"> 
-</form>
-        </div>
+      <div class="col-md-6 col-md-offset-6">
+        <h2 class="gold-text centered">Заполните эту форму</h2>
+        <h1 class="main-text centered">Забронировать столик</h1>
+        <form onsubmit="alert('Отправлено');return false">
+          <input type="date" id="fdate" required>
+          <input type="time" id="ftime" required>
+          <input type="text" id="form-name" name="firstname" required placeholder="Your name..">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit" class="button"> 
+        </form>
+      </div>
     </div>
   </div>
 </div>
 
 
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter">
+          <h2>Наслаждайтесь приятным времяпрепровождением с друзьями и партнерами.</h2>
+          <h1>Расслабляющая атмосфера</h1>
+        </div>
+        <video autoplay loop class="fillWidth">
+            <source src="video/film.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="PATH_TO_JPEG" alt="">
+        </div>
+    </div>
+</div>
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15336.568641233278!2d8.526595346622432!3d47.19411721993906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1520602624694" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+<div class="reservation-halls">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6">
+
+  <img src="img/reservation/hall1.jpg" class="img-responsive">
+  <img src="img/reservation/hall3.jpg" class="img-responsive">
+
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+ 
+  <img src="img/reservation/hall2.jpg" class="img-responsive">
+  <img src="img/reservation/hall4.jpg" class="img-responsive">
+
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6 centered">
+        <h2 class="gold-text">Найдите идеальный стол для любого мероприятия или встречи.</h2>
+<h1 class="main-text">Великолепные залы</h1>
+<p class="low-text">Ресторан «***» – это идеальное место для проведения банкетов и торжеств. Свадьба, день рождения, юбилей, корпоратив – любой праздник пройдет на высшем уровне! Выбирая нас, вы получаете:</p>
+<ul>
+  
+    <li>уютный, красивый зал;</li>
+    <li>готовые банкетные предложения;</li>
+    <li>вкусные блюда европейской кухни;</li>
+    <li>приятные цены;</li>
+    <li>высококлассный сервис и помощь в организации.</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -94,7 +127,6 @@
 
 <footer>
   <div class="footer1"><img src="img/logo2.png">
-
           <ul>
             <li><a href="index.html">Ресторан</a></li>            
             <li><a href="menu.html">Меню</a></li>
@@ -102,9 +134,6 @@
             <li><a href="about.html">О нас</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-
-
-
   </div>
   <div class="footer2"><p>&copy; 2018.All Rights Reserved.</p></div>
 </footer>
