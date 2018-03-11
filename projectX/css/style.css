@@ -482,7 +482,56 @@ text-align: center;
 }
 .about-us-block{
 min-height: 500px;
+margin: 70px 0;
+}
+.about-us-block .row{
 margin: 50px 0;
+}
+.about-us-food{
+min-height: 500px;
+padding: 50px;
+}
+.about-us-interior{
+min-height: 500px;
+padding: 50px;
+}
+.about-us-last-block{
+min-height: 200px;
+padding: 20px;
+background: #b38c73;
+}
+.about-us-last-block{
+min-height: 200px;
+padding: 20px;
+background: #b38c73;
+}
+.about-us-last-block h2{
+	font-family: 'Caveat', cursive;
+	color: #fff;
+	font-size: 34px;
+}
+.about-us-last-block h1{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.about-us-last-block .button{
+	border: solid #232323 1px;
+	padding: 15px 25px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	background: #232323;
+	transition: 0.5s;
+	
+}
+.about-us-last-block .button:hover{
+	background: #b38c73;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+	border: solid #fff 1px;
 }
 
 /****************************************/
