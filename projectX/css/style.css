@@ -177,8 +177,6 @@ color: #fff;
     from { width: 0; }
 }
 /********/
-
-
 .restaurant-main-info{
 	padding: 70px; 
 	min-height:500px;
@@ -269,19 +267,36 @@ padding: 30px;
 	padding: 10px 0;
 	margin: 0;
 }
-.restaurant-main-list-of-menu p:after {  content:'..................................................';
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
+
+.restaurant-main-list-of-menu p:after{
+  	content:'. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ';
+  	display: block;
+  	white-space: nowrap;
+  	overflow: hidden;
 }
-.restaurant-main-list-of-menu p span:first-of-type {
-  float:left;
-  margin-right: 10px;
+.restaurant-main-list-of-menu p span:first-of-type{
+  	float:left;
+	margin-right: 10px;
 }
-.restaurant-main-list-of-menu p span:last-of-type {
-  float:right;
-  margin-left: 10px;
+.restaurant-main-list-of-menu p span:nth-child(2){
+	float:right;
+	margin-left: 10px;
 }
+.restaurant-main-list-of-menu p span:last-of-type:after{
+	content: 'р.';
+	float:right;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -646,8 +661,9 @@ text-align: center;
 .reservation-block{
 min-height: 700px;
 background: url(../img/povar1.jpg);
-	background-position: left;
-    background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+background-repeat: no-repeat;
 }
 .reservation-info{
 	min-height: 400px;
@@ -746,7 +762,6 @@ font-size: 18px;
 padding: 0 1px;
 	font-size: 28px;
 	font-weight: 700;
-
 }
 .low-text{
 
@@ -757,8 +772,7 @@ padding: 0 1px;
 .arrow{
 	display: none;
 }
-
-	.restaurant-main-info h1,.restaurant-main-info p{
+.restaurant-main-info h1,.restaurant-main-info p{
 	padding: 0px;
 	}
 .restaurant-main-info p{
@@ -770,11 +784,9 @@ padding: 0 1px;
 	font-size: 14px;
 	font-weight: 700;
 }
-
 .container{
 	width: 100%;
 }
-
 .restaurant-main-block{
 	padding: 0px; 
 }
@@ -787,9 +799,30 @@ padding: 0 1px;
 	transition: 0.5s;
 	
 }
+.low-text{
+	text-align: justify;
+	text-indent: 20px;
+}
+.reservation-block{
+	background-image: none;
+	background-color: #f2f0ee; 
+	min-height: 550px;
+}
+.restaurant-main-list-of-menu{
+		background-image: none;
+	background-color: #f2f0ee; 
+	min-height: 550px;
+}
 
 
-
-
+.reservation-info h1{
+	font-size: 30px;
+}
+.reservation-info h2{
+	font-size: 20px;
+}
+.reservation-halls{
+	padding: 0;
+}
 
 }
