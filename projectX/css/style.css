@@ -754,7 +754,9 @@ padding: 0 1px;
 	padding: 0;
 	margin: 0; 	
 }
-
+.arrow{
+	display: none;
+}
 
 	.restaurant-main-info h1,.restaurant-main-info p{
 	padding: 0px;
