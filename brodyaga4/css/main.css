@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Questrial|Open+Sans|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Open+Sans');
 
 body {
     position: relative; 
@@ -12,7 +12,9 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-family: 'Lato', sans-serif;
 }
-
+a:hover:focus{
+    text-decoration: none;
+}
 footer{
 	
 	background-color: #19232E;
@@ -235,6 +237,11 @@ padding: 0 45px;
         font-family: 'PT Sans', sans-serif;
         margin-bottom: 0.5em;
 }
+
+.section3_block_text h2 a{
+text-decoration: none;
+}
+
 .section3_block_text p{
 font-size: 24px;
 }
@@ -413,7 +420,6 @@ word-wrap: break-word;
     display: inline-block;
     color: white;
     cursor: pointer;
-    font-weight: 300;
     letter-spacing: 0.2em;
     padding: 1em 2em 1.1em;
     position: relative;
