@@ -1,0 +1,411 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Dancing Script;
+    src: url(../fonts/Dancing_Script/DancingScript-Regular.ttf);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+p{
+	font-family: 'Lato', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+.padding-0{
+	padding: 0;
+}
+.centered{
+	text-align: center;
+}
+.btn{
+	margin-top: 50px;
+	width: 150px;
+	background-color: #4272DE;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 50px;
+    transition: 0.5s;
+}
+.btn:focus, .btn:hover{
+	background-color: #10368D;
+	color: #fff;
+    transition: 0.5s;
+}
+/**********************************************************************************************/
+
+    /* цвет фона и рамки навигационного меню */
+    .navbar-default {
+        /*background: rgba(40, 40, 40, 0.8);*/
+        background: transparent;
+        border: none;
+    }
+    .navbar-right{
+        padding-right: 20px; 
+    }
+    /* цвет текста, содержащий название сайта или бренда */
+    .navbar-default .navbar-brand {
+        color: #fff;
+        padding: 20px;
+    }
+    /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #4272DE;
+    }
+    /* Цвет пунктов навигационного меню */
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #4272DE;
+    }
+    /* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #4272DE;
+        background: rgba(40, 40, 40, 0.8);
+    }
+
+    /* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+/*    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background-color: #D5D5D5;
+    }*/
+
+    /* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
+/*    .navbar-default .navbar-nav > .dropdown > a .caret {
+        border-top-color: #777;
+        border-bottom-color: #777;
+    }*/
+    /* Цвет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+/*    .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+    .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+        border-top-color: #333;
+        border-bottom-color: #333;*/
+    }
+    /* Цвет стрелочки (треугольничка), открывшегося пункта меню */
+/*    .navbar-default .navbar-nav > .open > a .caret, 
+    .navbar-default .navbar-nav > .open > a:hover .caret, 
+    .navbar-default .navbar-nav > .open > a:focus .caret {
+        border-top-color: #555;
+        border-bottom-color: #555;
+    }*/
+
+    /* CSS стили для мобильных устройств */
+    /* Цвет рамки у кнопки, которая открывает меню */
+    .navbar-default .navbar-toggle {
+        border-color: #DDD;
+    }
+    /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #DDD;
+    }
+    /* Цвет полосочек в кнопочке, которая открывает меню */
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #CCC;
+    }
+     
+    @media (max-width: 767px) {
+    /* Цвет пунктов меню в раскрывающихся списках */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #777;
+        }
+    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #333;
+            background-color: transparent;
+        }
+    }
+
+/**********************************************************************************************/
+
+.main-block{
+	width: 100%;
+	height: 100vh;
+	background-color: #C9C9C9;
+    background-image: url(../img/canoeist.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	position: relative;
+	color: #fff;
+}
+.main-block__text{
+    position: absolute;
+    top: 40%;
+    width: 60%;
+	left: 20%;  
+}
+.main-block__text h1{
+	font-family: 'Dancing Script', serif;
+	font-size: 80px;
+}
+
+.about-us{
+	width: 100%;
+	min-height: 700px;
+	background-color: #c9c9c9;
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	position: relative;
+}
+
+.about-us__text{
+	position: absolute;
+    top: 25%;
+    width: 60%;
+	left: 20%;
+}
+        .about-us__text p{
+        font-size: 23px;
+        line-height: 2;
+        letter-spacing: 2px;
+        }
+        .about-us__text h2{
+        font-size: 35px;
+        }
+
+
+.program{
+	min-height: 400px;
+	background: #fff;
+}
+
+.program__text{
+	padding: 13em 0;
+}
+
+.program__img{
+	padding: 0;
+}
+
+
+    .program h2{
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 600;
+            letter-spacing: -.005em;
+            font-family: 'PT Sans', sans-serif;
+            margin-bottom: 0.5em; 
+    }
+    .program a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: #4a76a8;
+    }
+    .program a:focus,a:hover{
+    color: #11365F;
+    }
+    .program p{
+    font-size: 24px;
+    padding:0 80px;
+    }
+
+
+.text-50-50 {
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
+    min-height:400px;
+
+    padding:0;
+    margin:0; 
+}
+
+
+
+.info{
+	width: 100%;
+	min-height: 700px;
+	background-color: #c9c9c9;
+    background-image: url(../img/4.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	position: relative;
+}
+.info__text{
+	position: absolute;
+    top: 30%;
+    width: 70%;
+	left: 15%;
+}
+.info__text p{
+	        text-align: center;
+        margin-top: 10%;
+        font-size: 35px;
+        color: #fff;
+        letter-spacing: 2px;
+}
+
+
+
+ .gallery, .video{	
+/* 	color: #fff;
+ 	background-color: #4a76a8;  */ 
+    color: #262626;
+    background-color: #fff;       
+ 	min-height: 100px;
+  	overflow: hidden;
+ 	}
+        .gallery .thumb img {
+        -webkit-filter: grayscale(0);
+        filter: none;
+       /* border-radius: 5px;*/
+        background-color: #fff;
+/*        border: 1px solid #ddd;
+        padding: 5px;*/
+        }
+        .gallery .thumb img:hover {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        }
+        .gallery .thumb {
+        padding: 0;
+        }
+		.video iframe{
+		border: none;
+		width: 100%;
+		height: 500px; 
+		}
+
+/*карта*/
+.map {
+    margin-top: -5px;  
+    color: #fff;
+    background-color: #414141;
+    min-height: 400px;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+    }
+
+.map h1{  
+margin: 15px 0;
+    }
+
+footer{
+	min-height: 100px;
+	background: #414141;
+    color: #fff;
+    padding-top: 50px;
+}
+footer ul{
+list-style-type: none;
+font-size: 16px;
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: #4185B5;
+}
+footer p{
+    font-size: 16px;
+}
+.footer-block{
+text-align: center;
+}
+
+.top-footer{ 
+    padding-bottom: 30px;
+    min-height: 50px;
+    overflow: auto;
+    bottom: 0; }
+.bottom-footer{ 
+   background-color: #2F2F2F;
+    min-height: 50px;
+    overflow: auto;
+    bottom: 0; }
+
+.bottom-footer p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.icon{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 5px; 
+}
+.icon a{
+    color: #fff;
+}
+.icon a:hover{
+    color: #fff;
+}
+.icon:hover{
+    background: #232323;
+}
+
+/*стрелка на фоне*/
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+
+.arrow a {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+}
+
+hr {
+    max-width: 80px;
+    border-width: 3px;
+    opacity: 0.4;
+    margin: 15px auto;
+    border-radius: 50px;
+}
