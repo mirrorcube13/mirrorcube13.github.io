@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VALID_FORM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form>
+		
+		Разработчики:<input type="text"><br>
+		Название сайта:<input type="text"><br>
+		URL сайта:<input type="text"><br>
+		Дата запуска сайта:<input type="datetime"><br>
+		Посетителей в сутки:<input type="number"><br>
+		E-mail для связи:<input type="email" name=""><br>
+		Рубрика каталога:<select>
+			<option value="">здоровье</option>
+			<option value="">домашний уют</option>
+			<option value="">бытовая техника</option>
+		</select><br>
+
+		Размещение:<input type="radio" name="answer">бесплатное
+		<input type="radio" name="answer">платное
+		<input type="radio" name="answer">VIP<br>
+		Разрешить отзывы:<input type="checkbox" name=""><br>
+		Описание сайта:<br><textarea name="myText"></textarea><br>
+		<input type="submit" value="Опубликовать" onClick="validate(this.form)">
+
+	</form>
+	<script src="js/main.js"></script>
+</body>
+</html>
