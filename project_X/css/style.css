@@ -43,7 +43,7 @@ i{
 
 #section3{
 	padding: 70px 0;
-	background: #D8D8D8;
+	background: #F0F0F0;
 	min-height: 700px;
 -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
@@ -67,7 +67,20 @@ footer{
 	text-align: center;
 	padding-top: 10px;
 }
-
+footer a{
+	color: #fff;
+	font-size: 20px;
+}
+footer a:hover{
+	color: #38C355;
+	font-size: 20px;
+}
+footer i{
+	color: #fff;
+}
+footer p{
+	margin: 0;
+}
 p.icon {
   overflow: hidden;
   position: relative;
