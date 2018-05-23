@@ -29,24 +29,56 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Добавить отель</a></li>
       </ul>
-
-
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Зарегистрироваться</a></li>
+        <li><a href="#">Войти в аккаунт</a></li>
       </ul>
+		
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <div id="section1">
-	<h1>Бронирование отелей со скидками до 60%</h1>
-	<h3>Забронируйте номер по выгодной цене!</h3>
+	<div class="container-fluid">
+		<div class="col-md-4">			
+			<form onsubmit="alert('submit');return false">			
+				<h2><i class="fas fa-search"></i> Поиск отелей</h2>
+				<hr>
+				<label>Город, отель, место или адрес</label><input type="text" size="30" value="Например, Токио" onfocus="if (this.value == ' Например, Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Например, Токио';}">
+				<hr>
+				<div class="row">
+					<div class="col-md-6">Заезд<br><input id="date" type="date"></div>
+					<div class="col-md-6">Выезд<br><input id="date" type="date"></div>
+				</div>
+				<hr>
+				<label>Номера</label>
+				    <select name="" id="" class="">
+		                <option value="1-1">1 взрослый</option>
+		                <option value="2-1" selected="selected">2 взрослых в 1 номере</option>
+		                <option value="3-1">3 взрослых в 1 номере</option>
+		                <option value="4-1">4 взрослых в 1 номере</option>
+		                <option value="2-2">2 взрослых в 2 номерах</option>
+		                <option value="0">Другие варианты...</option>
+	        		</select>
+			 	<hr>
+			 	<input type="submit" value="Искать" onclick="">
+			</form>
+		</div>
+		<div class="col-md-8">
+			<h1>Бронирование отелей со скидками до 60%</h1>
+			<h3>Забронируйте номер по выгодной цене!</h3>
+		</div>
+	</div>
+
+
+	  <div id="arrow" class="arrow">
+	    <a href="#about-us">↓</a>
+	  </div>
 </div>
 
 <div id="section2">

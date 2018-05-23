@@ -24,7 +24,7 @@ i{
 	height: 100vh;
 	width: 100%;
 	text-align: center;
-	padding-top: 400px;
+	padding-top: 300px;
 	color: #fff;
 	-webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
 	clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
@@ -106,4 +106,37 @@ p.icon:before {
 p.icon:after {
   left: 30px;
   margin-right: -50%;
+}
+
+
+/*стрелка на фоне*/
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+
+.arrow a {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+}
+form{
+	padding: 15px;
+	width: 300px;
+	min-height: 200px;
+	border-radius: 10px;
+    background: linear-gradient(rgba(246,140,116,0.8), rgba(253,200,136,0.8));
+	color: #000;
+	margin: auto;
 }
