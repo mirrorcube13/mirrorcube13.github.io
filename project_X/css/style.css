@@ -48,6 +48,14 @@ i{
 -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
+
+#section3 img:hover {
+  opacity:0.6;
+  -moz-opacity:0.6;
+  filter: alpha(opacity=60) black;
+  -khtml-opacity: 0.6;
+}
+
 #section4{
 	padding: 50px 0;
 	background: #fff;
@@ -130,6 +138,7 @@ p.icon:after {
     vertical-align: top;
     position: absolute;
     bottom: 0;
+    left:49%
 }
 form{
 	padding: 15px;
