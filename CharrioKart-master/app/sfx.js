@@ -45,18 +45,18 @@ function setSoundVolume(volume) {
     // 2 = No sound at all, mute SFX and stop music object if it was playing
 
     if (volume == 0) {
-        document.getElementById("volume_1").innerText = "SOUND: all";
-        document.getElementById("volume_2").innerText = "SOUND: all";
+        document.getElementById("volume_1").innerText = "ЗВУК: вкл";
+        document.getElementById("volume_2").innerText = "ЗВУК: вкл";
         Howler.mute(false);
         if (!music.playing()) music.play();
     } else if (volume == 1) {
-        document.getElementById("volume_1").innerText = "SOUND: no music";
-        document.getElementById("volume_2").innerText = "SOUND: no music";
+        document.getElementById("volume_1").innerText = "ЗВУК: без музыки";
+        document.getElementById("volume_2").innerText = "ЗВУК: без музыки";
         Howler.mute(false);
         if (music.playing()) music.stop();
     } else if (volume == 2) {
-        document.getElementById("volume_1").innerText = "SOUND: muted";
-        document.getElementById("volume_2").innerText = "SOUND: muted";
+        document.getElementById("volume_1").innerText = "ЗВУК: выкл";
+        document.getElementById("volume_2").innerText = "ЗВУК: выкл";
         Howler.mute(true);
         if (music.playing()) music.stop();
     } else {

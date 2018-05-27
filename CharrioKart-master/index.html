@@ -1,7 +1,7 @@
 ﻿<html>
 
 <head>
-    <title>Super Charrio Kart</title>
+    <title>Super Devil's Kart</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="64x64 32x32 24x24 16x16">
 
@@ -22,6 +22,7 @@
     <meta name="twitter:description" content="Fire up your engine and race around Tyria!">
     <meta name="twitter:image" content="http://charrio.thatshaman.com/graphics/cards/large.jpg">
 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 
@@ -37,20 +38,18 @@
         </div>
 
         <div id="menu_about" class="popup">
-            <h3>Super Charrio Kart<br />
-                2017 <a href="http://www.thatshaman.com" target="_blank">that_shaman</a>
+            <h3>Super Devil's Kart<br/>
+                2018
             </h3>
             <p>
-                "Pixelland" Kevin MacLeod (<a href="http://www.incompetech.com" target="_blank">incompetech.com</a>) Licensed
-                under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons: By Attribution 3.0</a>
-            </p>
-            <p>
-                Build with <a href="http://www.threejs.org" target="_blank">three.js </a>&amp; <a href="https://www.howlerjs.com/"
-                    target="_blank">howler.js</a>
+                Developed by:<br>
+                Буенкова Татьяна<br>
+                Красовский Евгений<br>
+                Хлименков Артём
             </p>
             <img src="graphics/icons/cat.png" onclick="javascript:meow()" />
             <div class="menuButton" onclick="showMenu('main')">
-                &lt;-BACK
+                &lt;-НАЗАД
             </div>
         </div>
 
@@ -58,58 +57,58 @@
             <h2>SUPER CHARRIO KART</h2>
             <div class="menuButton" onclick="javascript:showMenu('racer')">
                 <img src="graphics/icons/kart.png" />
-                SELECT YOUR KART
+                ВЫБЕРИТЕ КАРТ
             </div>
             <div class="menuButton" onclick="javascript:showMenu('about')">
                 <img src="graphics/icons/about.png" />
-                ABOUT
+                ОБ ИГРЕ
             </div>
             <div class="menuButton" onclick="javascript:showMenu('settings')">
                 <img src="graphics/icons/settings.png" />
-                SETTINGS
+                НАСТРОЙКИ
             </div>
         </div>
 
         <div id="menu_settings" class="popup">
-            <h2>SETTINGS</h2>
+            <h2>НАСТРОЙКИ</h2>
             <div class="menuButton" onclick="javascript:toggleVolume()">
                 <img src="graphics/icons/sound.png" />
-                <span id="volume_1">SOUNDS (all)</span>
+                <span id="volume_1">ЗВУКИ (all)</span>
             </div>
             <div class="menuButton" onclick="javascript:toggleFullscreen()">
                 <img src="graphics/icons/fullscreen.png" />
-                TOGGLE FULLSCREEN
+                НА ВЕСЬ ЭКРАН
             </div>
             <div class="menuButton" onclick="javascript:showMenu('main')">
-                &lt;- BACK
+                &lt;- НАЗАД
             </div>
         </div>
 
         <div id="menu_racer" class="popup">
-            <h2>SELECT YOUR KART</h2>
+            <h2>ВЫБЕРИТЕ КАРТ</h2>
             <div class="menuButton secret" onclick="javascript:setRacer('taimi')" style="display: none; color: #ffd800">
                 <img src="graphics/icons/taimi.png" />
                 TAIMI
             </div>
             <div class="menuButton" onclick="javascript:setRacer('kartA')">
                 <img src="graphics/icons/kartA.png" />
-                EASY:&nbsp;&nbsp; YESTERMOBILE MARK 7
+                ЛЕГКО:&nbsp;&nbsp; Mark I
             </div>
             <div class="menuButton" onclick="javascript:setRacer('kartB')">
                 <img src="graphics/icons/kartB.png" />
-                MEDIUM: CENTURION 2B-1G
+                СРЕДНИЙ: Mark II
             </div>
             <div class="menuButton" onclick="javascript:setRacer('kartC')">
                 <img src="graphics/icons/kartC.png" />
-                HARD:&nbsp;&nbsp; SALT MACHINE 2000
+                СЛОЖНЫЙ:&nbsp;&nbsp; Mark III
             </div>
             <div class="menuButton" onclick="javascript:showMenu('main')">
-                &lt;- BACK
+                &lt;- НАЗАД
             </div>
         </div>
 
         <div id="menu_track" class="popup">
-            <h2>SELECT A LOCATION</h2>
+            <h2>ВЫБЕРИТЕ ТРАССУ</h2>
             <div class="menuButton secret" onclick="loadMap('inquest')">
                 <img src="graphics/icons/trackMaguuma.png" />
                 Inquest Base
@@ -135,7 +134,7 @@
                 <img src="graphics/icons/trackMists.png" />
                 The Mists
             </div>
-            <div class="menuButton" onclick="showMenu('racer')">&lt;- BACK</div>
+            <div class="menuButton" onclick="showMenu('racer')">&lt;- НАЗАД</div>
 
         </div>
     </div>
@@ -149,21 +148,21 @@
 
         <div id="gameMenu">
             <div class="gameMenuPopup">
-                <h2>PAUSED</h2>
+                <h2>ПАУЗА</h2>
                 <div class="menuButton" onclick="javascript:unpause()" id="resume">
                     <img src="graphics/icons/kart.png" />
-                    RESUME RACING
+                    ПРОДОЛЖИТЬ ГОНКУ
                 </div>
                 <div class="menuButton" onclick="javascript:toggleVolume()">
                     <img src="graphics/icons/sound.png" />
-                    <span id="volume_2">SOUNDS (all)</span>
+                    <span id="volume_2">ЗВУКИ (all)</span>
                 </div>
                 <div class="menuButton" onclick="javascript:toggleFullscreen()">
                     <img src="graphics/icons/fullscreen.png" />
-                    TOGGLE FULLSCREEN
+                    НА ВЕСЬ ЭКРАН
                 </div>
                 <div class="menuButton" onclick="javascript:unloadTrack()">
-                    &lt;- BACK
+                    &lt;- НАЗАД
                 </div>
             </div>
         </div>
