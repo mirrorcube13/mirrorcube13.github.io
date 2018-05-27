@@ -1,0 +1,181 @@
+﻿<html>
+
+<head>
+    <title>Super Devil's Kart</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="64x64 32x32 24x24 16x16">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="canonical">
+
+    <meta name="description" content="Super Devil's Kart">
+    
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="script/howler.min.js"></script>
+    <script src="script/three.min.js"></script>
+</head>
+
+<body>
+
+    <div id="mainMenu">
+        <div id="menu_title" class="popup">
+            <img src="graphics/splash.jpg" onclick="javascript:showMenu('main')" />
+        </div>
+
+        <div id="menu_about" class="popup">
+            <h3>Super Devil's Kart</h3>
+               <h3> 2018</h3>
+            
+            <p>Developed by:</p>
+            <p>Буенкова Татьяна</p>
+            <p>Красовский Евгений</p>
+            <p>Хлименков Артём</p>  
+            <img src="graphics/icons/cat.png" onclick="javascript:meow()" />
+            <div class="menuButton" onclick="showMenu('main')">
+                &lt;-НАЗАД
+            </div>
+        </div>
+
+        <div id="menu_main" class="popup">
+            <h3>Super Devil's Kart</h3><br>
+            <div class="menuButton" onclick="javascript:showMenu('racer')">
+                <img src="graphics/icons/kart.png" />
+                ВЫБЕРИТЕ КАРТ
+            </div><br>
+            <div class="menuButton" onclick="javascript:showMenu('about')">
+                <img src="graphics/icons/about.png" />
+                ОБ ИГРЕ
+            </div><br>
+            <div class="menuButton" onclick="javascript:showMenu('settings')">
+                <img src="graphics/icons/settings.png" />
+                НАСТРОЙКИ
+            </div>
+        </div>
+
+        <div id="menu_settings" class="popup">
+            <h2>НАСТРОЙКИ</h2>
+            <div class="menuButton" onclick="javascript:toggleVolume()">
+                <img src="graphics/icons/sound.png" />
+                <span id="volume_1">ЗВУКИ (all)</span>
+            </div><br>
+            <div class="menuButton" onclick="javascript:toggleFullscreen()">
+                <img src="graphics/icons/fullscreen.png" />
+                НА ВЕСЬ ЭКРАН
+            </div><br>
+            <div class="menuButton" onclick="javascript:showMenu('main')">
+                &lt;- НАЗАД
+            </div>
+        </div>
+
+        <div id="menu_racer" class="popup">
+            <h2>ВЫБЕРИТЕ КАРТ</h2>
+            <div class="menuButton secret" onclick="javascript:setRacer('taimi')" style="display: none; color: #ffd800">
+                <img src="graphics/icons/taimi.png" />
+                TAIMI
+            </div><br>
+            <div class="menuButton" onclick="javascript:setRacer('kartA')">
+                <img src="graphics/icons/kartA.png" />
+                ЛЕГКИЙ: Mark I
+            </div><br>
+            <div class="menuButton" onclick="javascript:setRacer('kartB')">
+                <img src="graphics/icons/kartB.png" />
+                СРЕДНИЙ: Mark II
+            </div><br>
+            <div class="menuButton" onclick="javascript:setRacer('kartC')">
+                <img src="graphics/icons/kartC.png" />
+                СЛОЖНЫЙ: Mark III
+            </div><br>
+            <div class="menuButton" onclick="javascript:showMenu('main')">
+                &lt;- НАЗАД
+            </div>
+        </div>
+
+        <div id="menu_track" class="popup">
+            <h2>ВЫБЕРИТЕ ТРАССУ</h2>
+            <div class="menuButton secret" onclick="loadMap('inquest')">
+                <img src="graphics/icons/trackMaguuma.png" />
+                БУДУЩЕЕ
+            </div><br>
+            <div class="menuButton" onclick="loadMap('ascalon')">
+                <img src="graphics/icons/trackAscalon.png" />
+                СРЕДНЕВЕКОВЬЕ
+            </div><br>
+            <div class="menuButton" onclick="loadMap('kryta')">
+                <img src="graphics/icons/trackKryta.png" />
+                ЛЕТО
+            </div><br>
+            <div class="menuButton" onclick="loadMap('shiverpeak')">
+                <img src="graphics/icons/trackShiverpeaks.png" />
+                ЗИМА
+            </div><br>
+            <div class="menuButton" onclick="loadMap('southsun')">
+                <img src="graphics/icons/trackSouthsun.png" />
+                ПЛЯЖ
+            </div><br>
+            <div class="menuButton" onclick="loadMap('mists')">
+                <img src="graphics/icons/trackMists.png" />
+                НОЧЬ
+            </div><br>
+            <div class="menuButton" onclick="showMenu('racer')">&lt;- НАЗАД</div>
+
+        </div>
+    </div>
+
+    <div id="UI">
+        <div id="pauseButton" onclick="javascript:pause()">
+            <img src="graphics/pause.png" />
+        </div>
+        <div id="timerTop"><span id="timeCurrent">0.00</span></div>
+        <div id="timerBottom">LAP: <span id="currentLap">0000</span> LAST: <span id="timeLast">00.00</span> BEST: <span id="timeBest">00.00</span></div>
+
+        <div id="gameMenu">
+            <div class="gameMenuPopup">
+                <h2>ПАУЗА</h2>
+                <div class="menuButton" onclick="javascript:unpause()" id="resume">
+                    <img src="graphics/icons/kart.png" />
+                    ПРОДОЛЖИТЬ ГОНКУ
+                </div><br>
+                <div class="menuButton" onclick="javascript:toggleVolume()">
+                    <img src="graphics/icons/sound.png" />
+                    <span id="volume_2">ЗВУКИ (all)</span>
+                </div><br>
+                <div class="menuButton" onclick="javascript:toggleFullscreen()">
+                    <img src="graphics/icons/fullscreen.png" />
+                    НА ВЕСЬ ЭКРАН
+                </div><br>
+                <div class="menuButton" onclick="javascript:unloadTrack()">
+                    &lt;- НАЗАД
+                </div>
+            </div>
+        </div>
+        <div id="touch">
+            <div id="left" class="touchButton">
+                <img src="graphics/left.png" />
+            </div>
+            <div id="right" class="touchButton">
+                <img src="graphics/right.png" />
+            </div>
+            <div id="aButton" class="touchButton">
+                <img src="graphics/aButton.png" />
+            </div>
+            <div id="bButton" class="touchButton">
+                <img src="graphics/bButton.png" />
+            </div>
+
+        </div>
+        <div id="loading">[LOADING]</div>
+    </div>
+
+    <!-- required includes -->
+    <script src="app/input.js"></script>
+    <script src="app/sfx.js"></script>
+    <script src="app/racers.js"></script>
+    <script src="app/track.js"></script>
+    <script src="app/main.js"></script>
+
+</body>
+
+</html>
