@@ -13,6 +13,12 @@ i{
 .centered{
 	text-align:center; 
 }
+/*.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}*/
 #section1{
 	background: url(../img/1.png) no-repeat;
     background-position: center;
@@ -22,6 +28,7 @@ i{
     -o-background-size: cover;
 	position: relative;
 	height: 100vh;
+/*	height: calc(100vh - 50px);*/
 	width: 100%;
 	text-align: center;
 	padding-top: 10%;
@@ -65,7 +72,20 @@ clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 #section4 p{
 	font-size: 20px;
 }
+#section5{
+	padding: 50px 0;
+	background: #F0F0F0;
+	min-height: 300px;
+	text-align: center;
+}
 
+#registration{
+	background: #fff;
+	min-height: 300px;
+}
+#registration input{
+	width: 50%;
+}
 
 
 footer{
@@ -140,12 +160,12 @@ p.icon:after {
     bottom: 0;
     left:49%
 }
-form{
+#section1 form{
 	padding: 15px;
 	width: 300px;
 	min-height: 200px;
 	border-radius: 10px;
-    background: linear-gradient(rgba(246,140,116,0.8), rgba(253,200,136,0.8));
+    background: linear-gradient(rgba(25,140,50,0.8), rgba(120,235,180,0.8));
 	color: #000;
 	margin: auto;
 }

@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="index.html">Brand</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,8 +34,8 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Зарегистрироваться</a></li>
-        <li><a href="#">Войти в аккаунт</a></li>
+        <li><a href="registration.html">Зарегистрироваться</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Войти в аккаунт</a></li>
       </ul>
 		
 
@@ -46,7 +46,7 @@
 <div id="section1">
 	<div class="container-fluid">
 		<div class="col-md-4">			
-			<form onsubmit="alert('submit');return false">			
+			<form id="main-form" onsubmit="alert('submit');return false" >			
 				<h2><i class="fas fa-search"></i> Поиск отелей</h2>
 				<hr>
 				<label>Город, отель, место или адрес</label><input type="text" size="30" value="Например, Токио" onfocus="if (this.value == ' Например, Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Например, Токио';}">
@@ -77,7 +77,7 @@
 
 
 	  <div id="arrow" class="arrow">
-	    <a href="#about-us">↓</a>
+	    <a href="#section2">↓</a>
 	  </div>
 </div>
 
@@ -129,7 +129,15 @@
 		</div>
 	</div>
 </div>
-
+<div id="section5">
+	<div class="container">
+		<div class="row">
+			<h2>Some text</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur velit laboriosam accusantium voluptas perspiciatis quasi qui natus expedita cum, reprehenderit in excepturi, incidunt fugit nisi voluptates voluptatibus temporibus totam obcaecati!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur velit laboriosam accusantium voluptas perspiciatis quasi qui natus expedita cum, reprehenderit in excepturi, incidunt fugit nisi voluptates voluptatibus temporibus totam obcaecati!</p>
+		</div>
+	</div>
+</div>
 
 <footer>
 	<a href=""><i class="fab fa-vk"></i> Вконтакте</a>
@@ -139,7 +147,48 @@
 	<p>2018</p>
 </footer>
 
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Вход</h4>
+      </div>
+      <div class="modal-body">
+        
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
 
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Забыли пароль?</button>
+        <button type="button" class="btn btn-primary">Войти</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
