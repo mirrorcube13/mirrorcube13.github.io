@@ -1,44 +1,51 @@
-﻿<html>
-
+﻿<!DOCTYPE html>
+<html>
 <head>
     <title>Super Devil's Kart</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="64x64 32x32 24x24 16x16">
 
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="canonical">
 
-    <meta name="description" content="Super Devil's Kart">
+    <meta name="description" content="Super Devil's Kart | Играть онлайн бесплатно, олдскул игра. Игра гонки">
+
+    <meta name="keywords" content="Игра гонка Super Devil's Kart, Играть онлайн бесплатно, Играть в гонки онлайн">
+
+    <meta property="og:title" content="Super Devil's Kart" />
+    <meta property="og:type" content="website" />
     
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> <!-- Подключение шрифта 1 -->
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> <!-- Подключение шрифта 2 -->
     <link href="style.css" rel="stylesheet" />
 
-    <script src="script/howler.min.js"></script>
-    <script src="script/three.min.js"></script>
+    <script src="script/howler.min.js"></script> <!-- howler.js – современная Javascript библиотека для воспроизведения аудио -->
+    <script src="script/three.min.js"></script> <!-- Three.js — легковесная кроссбраузерная библиотека JavaScript, используемая для создания и отображения анимированной компьютерной 3D графики при разработке веб-приложений. Three.js скрипты могут использоваться совместно с элементом HTML5 CANVAS, SVG или WebGL. -->
 </head>
 
 <body>
-
+    <!-- Общее меню, объеденяет все остальные меню, из js обращаться по id="mainMenu" -->
     <div id="mainMenu">
-        <div id="menu_title" class="popup">
+        <div id="menu_title" class="popup"> <!-- Главный начальный экран при входе в игру -->
             <img src="graphics/splash.jpg" onclick="javascript:showMenu('main')" />
         </div>
 
+        <!-- Экран, показывающий информации об игре -->
         <div id="menu_about" class="popup">
-            <h3>Super Devil's Kart</h3>
-               <h3> 2018</h3>
-            
-            <p>Developed by:</p>
-            <p>Буенкова Татьяна</p>
-            <p>Красовский Евгений</p>
-            <p>Хлименков Артём</p>  
-            <img src="graphics/icons/cat.png" onclick="javascript:meow()" />
+            <h3>Super Devil's Kart &copy;</h3>
+            <h5>Все права защищены. 2018</h5>
+            <p>Игру разработали:</p><br>
+            <a href="https://vk.com/solarginger" target="_blank">Буенкова Татьяна</a>
+            <a href="https://vk.com/id50691722" target="_blank">Красовский Евгений</a>
+            <a href="https://vk.com/tyomkakhlimenkoff" target="_blank">Хлименков Артём</a><br>
+            <img src="graphics/icons/cat.png" onclick="javascript:meow()" style="cursor: pointer"/><br> <!-- Спрятана пасхалка, надо нажать на кота, чтобы активировался робот :) -->
             <div class="menuButton" onclick="showMenu('main')">
                 &lt;-НАЗАД
             </div>
         </div>
 
+        <!-- Экран, показывающий главное меню -->
         <div id="menu_main" class="popup">
             <h3>Super Devil's Kart</h3><br>
             <div class="menuButton" onclick="javascript:showMenu('racer')">
@@ -74,7 +81,7 @@
             <h2>ВЫБЕРИТЕ КАРТ</h2>
             <div class="menuButton secret" onclick="javascript:setRacer('taimi')" style="display: none; color: #ffd800">
                 <img src="graphics/icons/taimi.png" />
-                TAIMI
+                РОБОТ (пасхалка)
             </div><br>
             <div class="menuButton" onclick="javascript:setRacer('kartA')">
                 <img src="graphics/icons/kartA.png" />
@@ -129,7 +136,7 @@
             <img src="graphics/pause.png" />
         </div>
         <div id="timerTop"><span id="timeCurrent">0.00</span></div>
-        <div id="timerBottom">LAP: <span id="currentLap">0000</span> LAST: <span id="timeLast">00.00</span> BEST: <span id="timeBest">00.00</span></div>
+        <div id="timerBottom">КРУГ: <span id="currentLap">0000</span> ПОСЛЕДНИЙ: <span id="timeLast">00.00</span> ЛУЧШИЙ: <span id="timeBest">00.00</span></div>
 
         <div id="gameMenu">
             <div class="gameMenuPopup">
@@ -166,7 +173,7 @@
             </div>
 
         </div>
-        <div id="loading">[LOADING]</div>
+        <div id="loading">[Загрузка...]</div>
     </div>
 
     <!-- required includes -->
@@ -177,5 +184,4 @@
     <script src="app/main.js"></script>
 
 </body>
-
 </html>
