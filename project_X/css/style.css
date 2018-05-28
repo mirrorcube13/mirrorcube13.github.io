@@ -37,18 +37,18 @@ i{
 	clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
 }
 	
-#section2{
+#about-us{
 	padding: 50px 0;
 	background: #fff;
 	min-height: 400px;
 	text-align: center;
 }
-#section2 p{
+#about-us p{
 	font-size: 16px;
 }
 
 
-#section3{
+#popular-cities{
 	padding: 70px 0;
 	background: #F0F0F0;
 	min-height: 700px;
@@ -56,7 +56,7 @@ i{
 clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 
-#section3 img:hover {
+#popular-cities img:hover {
   opacity:0.6;
   -moz-opacity:0.6;
   filter: alpha(opacity=60) black;
@@ -78,7 +78,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 	min-height: 300px;
 	text-align: center;
 }
-
+/******/
 #registration{
 	background: #fff;
 	min-height: 300px;
@@ -86,7 +86,25 @@ clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 #registration input{
 	width: 50%;
 }
+/******/
+#searchresults{
+	position: relative;
+	padding: 50px 0;
+	background: #fff;
+	min-height: 900px;
+}
+#search_info{
+	margin-top: 50px;
+	padding: 10px 0;
+	min-height: 100px;
 
+}
+#hotel{
+	border: 1px solid black;
+	min-height: 200px;
+	text-align: center;
+	margin: 20px 0;
+}
 
 footer{
 	min-height: 50px;
@@ -160,7 +178,8 @@ p.icon:after {
     bottom: 0;
     left:49%
 }
-#section1 form{
+
+#main-form form{
 	padding: 15px;
 	width: 300px;
 	min-height: 200px;
@@ -168,4 +187,11 @@ p.icon:after {
     background: linear-gradient(rgba(25,140,50,0.8), rgba(120,235,180,0.8));
 	color: #000;
 	margin: auto;
+}
+#filter form {
+	margin-top: 20px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	border: 1px solid #000;
+	padding: 50px;
 }
