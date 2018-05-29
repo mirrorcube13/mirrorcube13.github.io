@@ -1,17 +1,17 @@
-﻿// Load sound effects to object
+﻿// Создаём хеш, который хранит звуковые значения (ключи - названия звуков/ значения - объекты, хранящие непосредственно свои звуки в хеше, доступному по ключу src)
 var sfx = {
-    "lap": new Howl({ src: ['sounds/lap.mp3'] }),
-    "bump": new Howl({ src: ['sounds/bump.mp3'] }),
-    "click": new Howl({ src: ['sounds/click.mp3'] }),
-    "woosh": new Howl({ src: ['sounds/woosh.mp3'] }),
-    "skidd": new Howl({ src: ['sounds/skidd.mp3'], loop: true }),
-    "engine": new Howl({ src: ['sounds/engine.mp3'], loop: true, rate: 1 })
+    "lap": new Howl({ src: ['sounds/lap.mp3'] }), // Звук прохода круга
+    "bump": new Howl({ src: ['sounds/bump.mp3'] }), // Звук удара карта
+    "click": new Howl({ src: ['sounds/click.mp3'] }), // Звук щелчка выбора
+    "woosh": new Howl({ src: ['sounds/woosh.mp3'] }), // Звук проезда по ускорителям
+    "skidd": new Howl({ src: ['sounds/skidd.mp3'], loop: true }), // Звук заноса, loop означает, что звук зациклен
+    "engine": new Howl({ src: ['sounds/engine.mp3'], loop: true, rate: 1 }) // Звук работы двигателя, loop означает, что звук зациклен, rate - скорость воспроизведения 
 }
 
-// Load music in a seperate object (in case we want to write an option to only mute SFX later)
+// Добавляем музыку в отдельный объект, чтобы можно было (в случае, если мы хотим написать позже опцию только для отключения SFX)
 var music = new Howl({ src: ['music/Pixelland.mp3'], loop: true });
 
-var volume = 0;
+var volume = 0; //Начальное значение звука
 
 // try catch is needed because safari on iOS acts like a random piece of #$@%@
 try {

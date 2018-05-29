@@ -1,4 +1,5 @@
-﻿var input = {
+﻿// Объявляем хеш, хранящий ключи (действия) и начальные значения ключей
+var input = { 
     left: false,
     right: false,
     up: false,
@@ -8,38 +9,40 @@
     start: false
 };
 
-// Arrow keys configuration
+// Объявляем хеш настройки клавиш со стрелками, значения ключей виртуальные коды клавиш в 10-ричной системе, на стандартной 101-клавишной клавиатуре
 var keyCodes = {
     left: 37,
     right: 39,
     up: 38,
     down: 40,
-    A: 90,
-    B: 88,
-    start: 27
+    A: 90, // Клавиша Z (для геймпада)
+    B: 88, // Клавиша X (для геймпада)
+    start: 27 // клавиша ESC
 };
 
-// WASD configuration
+// Объявляем хэш настроек конфигурации клавиш WASD, значения ключей виртуальные коды клавиш в 10-ричной системе, на стандартной 101-клавишной клавиатуре
 var keyCodesAlt = {
     left: 65,
     right: 68,
     up: 87,
     down: 83,
-    A: 81,
-    B: 69,
+    A: 81, // Клавиша Q (для геймпада)
+    B: 69, // Клавиша E (для геймпада)
     start: 13
 };
 
-var touchpad = undefined;
+// Объявление использования устройств взаимодействия
+var touchpad = undefined; 
 var gamepadInterval = undefined;
 var gamepad = undefined;
 var usegamepad = false;
 
-// Press button do stuff
+// Задаём клавишам события, чтобы по нажатю на них происходили действия по движнию
 document.onkeydown = function (event) {
 
     usegamepad = false;
 
+    // Если событие произошло на объявленных выше клавишах, ставим нашему основному обработчику кнопки (объявлен в хеше input) флаг - true (действие будет выполнено) и предотвращаем действие по умолчанию
     if (event.which == keyCodes.left || event.which == keyCodesAlt.left) {
         input.left = true;
         event.preventDefault();
@@ -66,7 +69,7 @@ document.onkeydown = function (event) {
     }
 
     if (event.which == keyCodes.B || event.which == keyCodesAlt.B) {
-        input.down = true;
+        input.B = true;
         event.preventDefault();
     }
 
@@ -76,12 +79,13 @@ document.onkeydown = function (event) {
     }
 };
 
-// Release button do less stuff
+// Задаём клавишам события, чтобы по отпусканию кнопок на них происходили действия отмене движения
 document.onkeyup = function (event) {
 
     usegamepad = false;
 
-    if (event.which == keyCodes.left || event.which == keyCodesAlt.left) {
+    // Если событие произошло на объявленных выше клавишах, ставим нашему основному обработчику кнопки (объявлен в хеше input) флаг - false (действие прекратит выполнение) и предотвращаем действие по умолчанию
+    if (event.which == keyCodes.left || event.which == keyCodesAlt.left) { 
         input.left = false;
         event.preventDefault();
     }
@@ -117,21 +121,21 @@ document.onkeyup = function (event) {
     }
 };
 
-
+// Функция по работе с геймпадом (необязательна)
 function updateGamePad() {
 
     gamepad = navigator.getGamepads()[0];
 
     if (gamepad !== undefined) {
 
-        // Toggle between gamepad and keyboard (otherwise buttons will get stuck)
+        // Переключение между геймпадом и клавиатурой, чтобы кнопки не застряли / свойство gamepad.axes - встроенное свойство интерфейса GamePad
         if (gamepad.axes[0] > 0.5 || (gamepad.axes[0] < -0.5) || gamepad.axes[1] < -0.5 || gamepad.axes[1] > 0.5 || gamepad.buttons[0].pressed || gamepad.buttons[1].pressed) {
             usegamepad = true;
         }
 
         if (usegamepad) {
 
-            // reset button state
+            // Сбрасываем состояние кнопок
             input.left = false;
             input.up = false;
             input.down = false;
@@ -169,7 +173,7 @@ function updateGamePad() {
     }
 }
 
-// Connect to gamepad on Chrome, Edge or Firefox
+// Подключаемся к геймпаду на основных браузерах
 document.addEventListener("DOMContentLoaded", function () {
     if ("getGamepads" in navigator) {
         window.addEventListener("gamepadconnected", function (e) {
@@ -181,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
             window.clearInterval(gamepadInterval);
         });
 
-        // chrome/edge make sure the gamepad (re)connects when the page is already loaded
+        // Убеждаемся, что геймпад подключен в основных браузерах
         if (navigator.getGamepads()[0] && gamepad === undefined) {
             window.clearInterval(gamepadInterval);
             window.dispatchEvent(new Event('gamepadconnected'));

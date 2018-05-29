@@ -56,11 +56,11 @@ canvas {
 
 .popup {
     position: absolute;
-    min-width: 80vmin;
-    min-height: 50vmin;
+    min-width: 80vmin; /* то же самое, что и 1vw или 1vh. Только выбирается то, которое меньше. */
+    min-height: 50vmin; /* то же самое, что и 1vw или 1vh. Только выбирается то, которое меньше. */
     background-color: #000000;
     display: none;
-    font-size: 3vmin;/*было 5 название настроек*/
+    font-size: 3vmin; /*было 5 название настроек*/
     color: #ffffff;
     background-clip: padding-box;
     border-color: transparent;
@@ -215,8 +215,6 @@ canvas {
     color: #fae053;
 }
 
-
-
 #touch {
     position: absolute;
     width: 100%;
@@ -263,7 +261,6 @@ canvas {
     bottom: 15vmin;
     right: 27vmin;
 }
-
 
 #gameMenu {
     position: absolute;
