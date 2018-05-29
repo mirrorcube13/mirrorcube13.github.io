@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project_X</title>
+    <title>Поиск</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="searchresults.html">страница с фильтром</a></li>
-        <li><a href="#">Добавить отель</a></li>
+        <li><a href="registration-hotel.html">Добавить отель</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -46,12 +46,14 @@
 	<div class="container">
 		<div class="row">
 			<h1>Токио(город который выбрали)</h1>
+			<p>some text...</p>
+			<hr>
 		</div>
 	</div>
 
 </div>
-<hr>
-<div id="searchresults">
+
+<div id="search_results">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -67,12 +69,17 @@
 						<div class="col-md-6">Выезд<br><input id="date" type="date"></div>
 					</div>
 					<hr>
-					    <select name="" id="adult" class="">
+		    <select name="" id="adult" class="">
 			                <option value="1" selected="selected">1 взрослый</option>
 			                <option value="2" >2 взрослых</option>
 			                <option value="3">3 взрослых</option>
 			                <option value="4">4 взрослых</option>
-			                <option value="5">2 взрослых</option>
+			                <option value="5">5 взрослых</option>
+			                <option value="6">6 взрослых</option>
+			                <option value="7">7 взрослых</option>
+			                <option value="8">8 взрослых</option>
+			                <option value="9">9 взрослых</option>
+			                <option value="10">10 взрослых</option>
 		        		</select>
 		        		<select name="" id="child" class="">
 			                <option value="0" selected="selected">Без детей</option>
@@ -88,6 +95,11 @@
 			                <option value="3">3 номера</option>
 			                <option value="4">4 номера</option>
 			                <option value="5">5 номеров</option>
+			                <option value="6">6 номера</option>
+			                <option value="7">7 номера</option>
+			                <option value="8">8 номера</option>
+			                <option value="9">9 номеров</option>
+			                <option value="10">10 номеров</option>
 		        		</select>
 				 	<hr>
 				 	<input type="submit" value="Искать" onclick="">
@@ -96,19 +108,25 @@
 
 <div id="filter">
 	<form>			
-   <p>Количество звезд</p>
+   <h4>Количество звезд</h4>
    <p><input type="checkbox" name="star1" value="1"> 1 звезда</p>
    <p><input type="checkbox" name="star2" value="2"> 2 звезды</p>
    <p><input type="checkbox" name="star3" value="3"> 3 звезды</p>
    <p><input type="checkbox" name="star4" value="4"> 4 звезды</p>
    <p><input type="checkbox" name="star5" value="5"> 5 звезд</p>
    <hr>				
-	<p>Популярные фильтры 	</p>
-   <p><input type="checkbox" name="a" value="1"> Wi-fi</p>
-   <p><input type="checkbox" name="a" value="2"> Парковка</p>
-   <p><input type="checkbox" name="a" value="3"> Бассейн</p>
-   <p><input type="checkbox" name="a" value="4"> Ресторан</p>
-   <hr>			
+   <h4>Удобства</h4>
+   <p><input type="checkbox" name="a" value="1"> Бесплатный Wi-fi</p>
+   <p><input type="checkbox" name="a" value="2"> Трансфер от/до аэропорта</p>
+   <p><input type="checkbox" name="a" value="3"> Парковка</p>
+   <p><input type="checkbox" name="a" value="4"> Бассейн</p>
+   <p><input type="checkbox" name="a" value="5"> Фитнес-центр</p>
+   <hr>
+   <h4>Удобства в номере</h4>
+   <p><input type="checkbox" name="a" value="1"> Балкон</p>
+   <p><input type="checkbox" name="a" value="2"> Кондиционер</p>
+   <p><input type="checkbox" name="a" value="3"> Кофемашина</p>
+   <p><input type="checkbox" name="a" value="4"> Ванна</p>			
 	</form>
 </div>
 
@@ -151,13 +169,7 @@
 
 
 
-<footer>
-	<a href=""><i class="fab fa-vk"></i> Вконтакте</a>
-	<a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
-	<a href=""><i class="fab fa-instagram"></i> Instagram</a>
-	<hr>
-	<p>2018</p>
-</footer>
+<footer><p>Krasovskii © Copyright 2018</p></footer>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="login">
   <div class="modal-dialog" role="document">

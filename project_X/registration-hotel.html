@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Регистрация Отеля</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-default "><!-- navbar-fixed-top -->
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Главная</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="searchresults.html">страница с фильтром</a></li>
+        <li><a href="registration-hotel.html">Добавить отель</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.html">Зарегистрироваться</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Войти в аккаунт</a></li>
+      </ul>
+		
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div id="registration">
+	<div class="container">
+		<div class="row">
+			<div class="page-header">
+			  <h1 class="centered">Добавить отель</h1>
+			</div>
+      <h3>jack, добро пожаловать! </h3>
+      <p>Для начала укажите адрес, тип и название вашего объекта, а также контактные данные</p>
+
+			<form class="form-horizontal">
+			  <div class="form-group">
+          <h3>Что вы хотите зарегистрировать?</h3>
+			  </div>
+        <div class="form-group">
+          <p>Какой из этих типов размещения соответствует вашему объекту?</p>
+          <div class="col-sm-10">
+              <select class="form-control">
+                <option>Апартаменты</option>
+                <option>Отель</option>
+                <option>Гостевой дом</option>
+                <option>Хостел</option>
+                <option>Вилла</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Как называется ваш объект?</p>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputStars" placeholder="Имя">
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Количество звезд?</p>
+          <div class="col-sm-10">
+              <select class="form-control">
+                <option value="0">Не применяется</option>
+                <option value="1">1&nbsp;✯</option>
+                <option value="2">2&nbsp;✯✯</option>
+                <option value="3">3&nbsp;✯✯✯</option>
+                <option value="4">4&nbsp;✯✯✯✯</option>
+                <option value="5">5&nbsp;✯✯✯✯✯</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Контактное лицо</p>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Имя">
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Номер телефона</p>
+          <div class="col-sm-10">
+            <input type="phone" class="form-control" id="inputPhone" placeholder="8 029 000-00-00">
+          </div>
+        </div>
+        <div class="form-group">
+          <h4>Где находится ваш объект? </h4>
+          <p>Улица и номер дома</p>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputStreet" placeholder="Например, Красная площадь, дом 1">
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Страна/территория</p>
+          <div class="col-sm-10">
+              <select class="form-control">
+                  <option value="xa">Абхазия</option>
+                  <option value="au">Австралия</option>
+                  <option value="at">Австрия</option>
+                  <option value="az">Азербайджан</option>
+                  <option value="al">Албания</option>
+                  <option value="dz">Алжир</option>
+                  <option value="vi">Американские Виргинские острова</option>
+                  <option value="as">Американское Самоа</option>
+                  <option value="ai">Ангилья</option>
+                  <option value="ao">Ангола</option>
+                  <option value="ad">Андорра</option>
+                  <option value="aq">Антарктида</option>
+                  <option value="ag">Антигуа и Барбуда</option>
+                  <option value="ar">Аргентина</option>
+                  <option value="am">Армения</option>
+                  <option value="aw">Аруба</option>
+                  <option value="af">Афганистан</option>
+                  <option value="bs">Багамcкие острова</option>
+                  <option value="bd">Бангладеш</option>
+                  <option value="bb">Барбадос</option>
+                  <option value="bh">Бахрейн</option>
+                  <option value="by" selected="selected">Беларусь</option>
+                  <option value="bz">Белиз</option>
+                  <option value="be">Бельгия</option>
+                  <option value="bj">Бенин</option>
+                  <option value="bm">Бермудские острова</option>
+                  <option value="bg">Болгария</option>
+                  <option value="bo">Боливия</option>
+                  <option value="bq">Бонэйр, Синт-Эстатиус и Саба</option>
+                  <option value="ba">Босния и Герцеговина</option>
+                  <option value="bw">Ботсвана</option>
+                  <option value="br">Бразилия</option>
+                  <option value="io">Британская Территория в Индийском океане</option>
+                  <option value="vg">Британские Виргинские острова</option>
+                  <option value="bn">Бруней</option>
+                  <option value="bf">Буркина-Фасо</option>
+                  <option value="bi">Бурунди</option>
+                  <option value="bt">Бутан</option>
+                  <option value="vu">Вануату</option>
+                  <option value="va">Ватикан</option>
+                  <option value="gb">Великобритания</option>
+                  <option value="hu">Венгрия</option>
+                  <option value="ve">Венесуэла</option>
+                  <option value="um">Внешние малые острова США</option>
+                  <option value="tl">Восточный Тимор</option>
+                  <option value="vn">Вьетнам</option>
+                  <option value="ga">Габон</option>
+                  <option value="ht">Гаити</option>
+                  <option value="gy">Гайана</option>
+                  <option value="gm">Гамбия</option>
+                  <option value="gh">Гана</option>
+                  <option value="gp">Гваделупа</option>
+                  <option value="gt">Гватемала</option>
+                  <option value="gn">Гвинея</option>
+                  <option value="gw">Гвинея-Бисау</option>
+                  <option value="de">Германия</option>
+                  <option value="gi">Гибралтар</option>
+                  <option value="hn">Гондурас</option>
+                  <option value="hk">Гонконг</option>
+                  <option value="gd">Гренада</option>
+                  <option value="gl">Гренландия</option>
+                  <option value="gr">Греция</option>
+                  <option value="ge">Грузия</option>
+                  <option value="gu">Гуам</option>
+                  <option value="dk">Дания</option>
+                  <option value="cd">Демократическая Республика Конго</option>
+                  <option value="dj">Джибути</option>
+                  <option value="dm">Доминика</option>
+                  <option value="do">Доминиканская Республика</option>
+                  <option value="eg">Египет</option>
+                  <option value="zm">Замбия</option>
+                  <option value="zw">Зимбабве</option>
+                  <option value="il">Израиль</option>
+                  <option value="in">Индия</option>
+                  <option value="id">Индонезия</option>
+                  <option value="jo">Иордания</option>
+                  <option value="iq">Ирак</option>
+                  <option value="ie">Ирландия</option>
+                  <option value="is">Исландия</option>
+                  <option value="es">Испания</option>
+                  <option value="it">Италия</option>
+                  <option value="ye">Йемен</option>
+                  <option value="cv">Кабо-Верде</option>
+                  <option value="kz">Казахстан</option>
+                  <option value="ky">Каймановы острова</option>
+                  <option value="kh">Камбоджа</option>
+                  <option value="cm">Камерун</option>
+                  <option value="ca">Канада</option>
+                  <option value="qa">Катар</option>
+                  <option value="ke">Кения</option>
+                  <option value="cy">Кипр</option>
+                  <option value="kg">Киргизия</option>
+                  <option value="ki">Кирибати</option>
+                  <option value="cn">Китай</option>
+                  <option value="cc">Кокосовые острова (острова Килинг)</option>
+                  <option value="co">Колумбия</option>
+                  <option value="km">Коморские острова</option>
+                  <option value="cg">Конго</option>
+                  <option value="xk">Косово</option>
+                  <option value="cr">Коста-Рика</option>
+                  <option value="ci">Кот-д'Ивуар</option>
+                  <option value="xc">Крым</option>
+                  <option value="cu">Куба</option>
+                  <option value="kw">Кувейт</option>
+                  <option value="cw">Кюрасао</option>
+                  <option value="la">Лаос</option>
+                  <option value="lv">Латвия</option>
+                  <option value="ls">Лесото</option>
+                  <option value="lr">Либерия</option>
+                  <option value="lb">Ливан</option>
+                  <option value="ly">Ливия</option>
+                  <option value="lt">Литва</option>
+                  <option value="li">Лихтенштейн</option>
+                  <option value="lu">Люксембург</option>
+                  <option value="mu">Маврикий</option>
+                  <option value="mr">Мавритания</option>
+                  <option value="mg">Мадагаскар</option>
+                  <option value="yt">Майотта</option>
+                  <option value="mo">Макао</option>
+                  <option value="mk">Македония</option>
+                  <option value="mw">Малави</option>
+                  <option value="my">Малайзия</option>
+                  <option value="ml">Мали</option>
+                  <option value="mv">Мальдивы</option>
+                  <option value="mt">Мальта</option>
+                  <option value="ma">Марокко</option>
+                  <option value="mq">Мартиника</option>
+                  <option value="mh">Маршалловы острова</option>
+                  <option value="mx">Мексика</option>
+                  <option value="fm">Микронезия</option>
+                  <option value="mz">Мозамбик</option>
+                  <option value="md">Молдова</option>
+                  <option value="mc">Монако</option>
+                  <option value="mn">Монголия</option>
+                  <option value="ms">Монтсеррат</option>
+                  <option value="mm">Мьянма</option>
+                  <option value="na">Намибия</option>
+                  <option value="nr">Науру</option>
+                  <option value="np">Непал</option>
+                  <option value="ne">Нигер</option>
+                  <option value="ng">Нигерия</option>
+                  <option value="nl">Нидерланды</option>
+                  <option value="ni">Никарагуа</option>
+                  <option value="nu">Ниуэ</option>
+                  <option value="nz">Новая Зеландия</option>
+                  <option value="nc">Новая Каледония</option>
+                  <option value="no">Норвегия</option>
+                  <option value="ae">ОАЭ</option>
+                  <option value="tz">Объединенная Республика Танзания</option>
+                  <option value="om">Оман</option>
+                  <option value="ck">Острова Кука</option>
+                  <option value="pk">Пакистан</option>
+                  <option value="pw">Палау</option>
+                  <option value="ps">Палестинская Территория</option>
+                  <option value="pa">Панама</option>
+                  <option value="pg">Папуа-Новая Гвинея</option>
+                  <option value="py">Парагвай</option>
+                  <option value="pe">Перу</option>
+                  <option value="pl">Польша</option>
+                  <option value="pt">Португалия</option>
+                  <option value="pr">Пуэрто-Рико</option>
+                  <option value="re">Реюньон</option>
+                  <option value="ru">Россия</option>
+                  <option value="rw">Руанда</option>
+                  <option value="ro">Румыния</option>
+                  <option value="us">США</option>
+                  <option value="sv">Сальвадор</option>
+                  <option value="ws">Самоа</option>
+                  <option value="sm">Сан-Марино</option>
+                  <option value="st">Сан-Томе и Принсипи</option>
+                  <option value="sa">Саудовская Аравия</option>
+                  <option value="sz">Свазиленд</option>
+                  <option value="mp">Северные Марианские острова</option>
+                  <option value="sc">Сейшельские острова</option>
+                  <option value="bl">Сен-Бартелеми</option>
+                  <option value="mf">Сен-Мартен</option>
+                  <option value="pm">Сен-Пьер и Микелон</option>
+                  <option value="sn">Сенегал</option>
+                  <option value="vc">Сент-Винсент и Гренадины</option>
+                  <option value="kn">Сент-Киттс и Невис</option>
+                  <option value="lc">Сент-Люсия</option>
+                  <option value="rs">Сербия</option>
+                  <option value="sg">Сингапур</option>
+                  <option value="sx">Синт-Мартен</option>
+                  <option value="sk">Словакия</option>
+                  <option value="si">Словения</option>
+                  <option value="sb">Соломоновы острова</option>
+                  <option value="so">Сомали</option>
+                  <option value="sr">Суринам</option>
+                  <option value="sl">Сьерра-Леоне</option>
+                  <option value="tj">Таджикистан</option>
+                  <option value="th">Таиланд</option>
+                  <option value="tw">Тайвань</option>
+                  <option value="tg">Того</option>
+                  <option value="tk">Токелау</option>
+                  <option value="to">Тонга</option>
+                  <option value="tt">Тринидад и Тобаго</option>
+                  <option value="tv">Тувалу</option>
+                  <option value="tn">Тунис</option>
+                  <option value="tm">Туркмения</option>
+                  <option value="tr">Турция</option>
+                  <option value="ug">Уганда</option>
+                  <option value="uz">Узбекистан</option>
+                  <option value="ua">Украина</option>
+                  <option value="uy">Уругвай</option>
+                  <option value="fo">Фарерские острова</option>
+                  <option value="fj">Фиджи</option>
+                  <option value="ph">Филиппины</option>
+                  <option value="fi">Финляндия</option>
+                  <option value="fk">Фолклендские острова</option>
+                  <option value="fr">Франция</option>
+                  <option value="gf">Французская Гвиана</option>
+                  <option value="pf">Французская Полинезия</option>
+                  <option value="tf">Французские Южные Территории</option>
+                  <option value="hr">Хорватия</option>
+                  <option value="cf">Центральноафриканская Республика</option>
+                  <option value="td">Чад</option>
+                  <option value="me">Черногория</option>
+                  <option value="cz">Чехия</option>
+                  <option value="cl">Чили</option>
+                  <option value="ch">Швейцария</option>
+                  <option value="se">Швеция</option>
+                  <option value="lk">Шри-Ланка</option>
+                  <option value="ec">Эквадор</option>
+                  <option value="gq">Экваториальная Гвинея</option>
+                  <option value="er">Эритрея</option>
+                  <option value="ee">Эстония</option>
+                  <option value="et">Эфиопия</option>
+                  <option value="gs">Южная Георгия и Южные Сандвичевы острова</option>
+                  <option value="kr">Южная Корея</option>
+                  <option value="za">Южно-Африканская Республика</option>
+                  <option value="ss">Южный Судан</option>
+                  <option value="jm">Ямайка</option>
+                  <option value="jp">Япония</option>
+                  <option value="tc">о-ва Теркс и Кайкос</option>
+                  <option value="hm">о-ва Херд и Макдональд</option>
+                  <option value="gg">остров Гернси</option>
+                  <option value="je">остров Джерси</option>
+                  <option value="im">остров Мэн</option>
+                  <option value="nf">остров Норфолк</option>
+                  <option value="cx">остров Рождества</option>
+                  <option value="sh">остров Святой Елены</option>
+                  <option value="pn">острова Питкэрн</option>
+                  <option value="wf">острова Уоллис и Футуна</option>
+                  <option value="sj">острова Шпицберген и Ян-Майен</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Город</p>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputCity" placeholder="Например, Минск">
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Почтовый индекс</p>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputIndex" placeholder="">
+          </div>
+        </div>
+
+
+
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+			    </div>
+			  </div>
+			</form>			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<footer><p>Krasovskii © Copyright 2018</p></footer>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Вход</h4>
+      </div>
+      <div class="modal-body">
+        
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Введите пароль</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> запомнить меня
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Забыли пароль?</button>
+        <button type="button" class="btn btn-primary">Войти</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
