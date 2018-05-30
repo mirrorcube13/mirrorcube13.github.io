@@ -61,8 +61,8 @@
     </script>
     <script>
 
-        var map = [];
-        var start = [0, 0, 0];
+        var map = []; // Создаём массив, где будут храниться значения о карте
+        var start = [0, 0, 0]; // Создаём массив с начальными значениями
 
         xhr = new XMLHttpRequest();
         xhr.open("GET", "tracks/mists/map.json", true);
@@ -91,18 +91,19 @@
                     tilesToJson();
                 };
 
+                // Запускаем функцию отрисовки карты
                 drawMap();
             }
         };
-        xhr.send();
+        xhr.send(); // Отсылаем AJAX запрос на сервер
 
         var colors = {
-            0: "#cccccc", // road
-            1: "#ff0000", // wall
-            2: "#00ff00", // grass
-            3: "#ffff00", // boost
-            4: "#ffffff", // start
-            5: "#aaaaaa", // checkpoint
+            0: "#cccccc", // Отрисовка дороги
+            1: "#ff0000", // Отрисовка стен
+            2: "#00ff00", // Отрисовка травы
+            3: "#ffff00", // Отрисовка ускорителей
+            4: "#ffffff", // Отрисовка финиша (белый)
+            5: "#aaaaaa", // Отрисовка финиша (серый)
             999: "#ff00ff"
         };
 
