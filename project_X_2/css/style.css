@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+i{
+    color: #38D956;
+    font-size: 26px;
+}
+hr{
+background: rgb(50, 50, 50);
+color: rgb(50, 50, 50);
+border-color: rgb(50, 50, 50);
+}
+.centered{
+    text-align:center; 
+}
+/*навбар*/
+    /* цвет фона и рамки навигационного меню */
+    .navbar-default {
+        background-color: rgba(46,204,113,0.8);/*rgba(46,204,113,1)*/
+        border-color: #27ae60;
+    }
+    /* цвет текста, содержащий название сайта или бренда */
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+    }
+    /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #d1ffed;
+    }
+    /* Цвет пунктов навигационного меню */
+    .navbar-default .navbar-nav > li > a {
+        color: #ecf0f1;
+        font-size: 16px;
+    }
+    /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #d1ffed;
+    }
+    /* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #d1ffed;
+        background-color: #27ae60;
+    }
+    /* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #d1ffed;
+        background-color: #27ae60;
+    }
+    /* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
+    .navbar-default .navbar-nav > .dropdown > a .caret {
+        border-top-color: #ecf0f1;
+        border-bottom-color: #ecf0f1;
+    }
+    /* Цвет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+    .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+        border-top-color: #d1ffed;
+        border-bottom-color: #d1ffed;
+    }
+    /* Цвет стрелочки (треугольничка), открывшегося пункта меню */
+    .navbar-default .navbar-nav > .open > a .caret, 
+    .navbar-default .navbar-nav > .open > a:hover .caret, 
+    .navbar-default .navbar-nav > .open > a:focus .caret {
+        border-top-color: #d1ffed;
+        border-bottom-color: #d1ffed;
+    }
+    /* CSS стили для мобильных устройств */
+    /* Цвет рамки у кнопки, которая открывает меню */
+    .navbar-default .navbar-toggle {
+        border-color: #27ae60;
+    }
+    /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #27ae60;
+    }
+    /* Цвет полосочек в кнопочке, которая открывает меню */
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    /* Цвет пунктов меню в раскрывающихся списках */
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+      }
+    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #d1ffed;
+            background-color: #27ae60;
+        }
+    }
+/***********/
+#section1{
+    background: url(../img/1.png) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    height: 100vh;
+/*  height: calc(100vh - 50px);*/
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    color: #fff;
+    -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+}
+    
+#about-us{
+    padding: 50px 0;
+    background: #fff;
+    min-height: 400px;
+    text-align: center;
+}
+#about-us p{
+    font-size: 16px;
+}
+
+
+#popular-cities{
+    padding: 70px 0;
+    background: #F0F0F0;
+    min-height: 700px;
+-webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+
+#popular-cities img:hover {
+  opacity:0.6;
+  -moz-opacity:0.6;
+  filter: alpha(opacity=60) black;
+  -khtml-opacity: 0.6;
+}
+
+#section4{
+    padding: 50px 0;
+    background: #fff;
+    min-height: 400px;
+    text-align: center;
+}
+#section4 p{
+    font-size: 20px;
+}
+#section5{
+    padding: 50px 0;
+    background: #F0F0F0;
+    min-height: 300px;
+    text-align: center;
+}
+/******/
+#registration{
+    margin: 50px 0;
+    background: #fff;
+    min-height: 300px;
+}
+#registration input, #registration select{
+    width: 50%;
+}
+/******/
+#search_info{
+    margin-top: 50px;
+    padding: 10px 0;
+    min-height: 100px;
+
+}
+#search_results{
+    margin-top: 50px;
+    position: relative;
+    padding: 50px 0;
+    background: #fff;
+    min-height: 900px;
+}
+
+#hotel{
+    border: 1px solid black;
+    min-height: 200px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.image-block-zoom{
+    overflow:hidden;
+    width:200px;
+    height:200px;
+}
+
+#hotel img{
+/*float: left;*/
+height: 200px;
+width: 200px;
+
+    -moz-transition:all 2s ease-out;
+    -o-transition:all 2s ease-out;
+    -webkit-transition:all 2s ease-out;
+}
+#hotel img:hover{
+    -webkit-transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -o-transform:scale(1.3);
+}
+
+
+footer{
+    min-height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: #303030;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+}
+footer p:hover{
+    color: #38C355;
+}
+
+p.icon {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+p.icon:before,
+p.icon:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 25%;
+  height: 1px;
+  vertical-align: middle;
+  background: #38D956;
+}
+p.icon:before {
+  left: -30px;
+  margin-left: -50%;
+}
+p.icon:after {
+  left: 30px;
+  margin-right: -50%;
+}
+
+
+/*стрелка на фоне*/
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+
+.arrow a {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    left:49%
+}
+
+#main-form form{
+    padding: 15px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(25,140,50,0.8), rgba(120,235,180,0.8));
+    color: #000;
+    margin: auto;
+}
+#main-form form input,#main-form form select{
+    padding: 5px;
+}
+#main-form form select{
+    width: 100%;
+    margin: 5px 0;
+}
+
+#main-form form input[type=submit]{
+    background: #5998DE;
+    border: 1px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 1s;
+}
+#main-form form input[type=submit]:hover{
+    background: #1F63AF;
+    color: #fff;
+    transition: 1s;
+}
+#filter form {
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 50px;
+}
+/*04.06*/
+.star{
+    color: #FFD700;
+    font-size: 20px;
+}
+
+
+#hotel button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #37C975;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif; 
+  color: #37C975;
+  transition: .2s ease-in-out;
+  font-size: 18px;
+}
+#hotel button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+#hotel button:hover {
+  background: #37C975;
+  color: #fff;
+}
+#hotel button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+
+
+
+button.edit {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #37C975;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif; 
+  color: #37C975;
+  transition: .2s ease-in-out;
+  font-size: 18px;
+}
+button.edit:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+button.edit:hover {
+  background: #37C975;
+  color: #fff;
+}
+button.edit:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+
+.delete {
+    color: #FF0000;
+}
+.delete:hover{
+    color: #6D0808;
+}
+table{
+    font-size: 18px;
+}
+
+#hotel-info{
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+}
+.carousel-inner img {
+  height: auto;
+  width: 100%;
+}

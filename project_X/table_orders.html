@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Заказы бронирования</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-default "><!-- navbar-fixed-top -->
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index_admin.html">Главная</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="searchresults.html">Подобрать отель</a></li>
+        <li><a href="registration-hotel.html">Добавить отель</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="table_users.html">Пользователи</a></li>
+        <li><a href="table_orders.html">Заявки</a></li>
+        <li><a href="registration.html">(Admin)</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Выйти</a></li>
+      </ul>
+		
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div id="registration">
+	<div class="container">
+		<div class="row">
+			<div class="page-header">
+			  <h1 class="centered">Заявки на бронирование</h1>
+			</div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id заказа</th>
+        <th>id пользователя</th>
+        <th>Начало брони</th>
+        <th>Конец брони</th>
+        <th>Город</th>
+        <th>Отель</th>
+        <th>Номер</th>
+        <th>Статус</th><!-- в процессе -->
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16</td>
+        <td>1</td>
+        <td>2018-06-06</td>
+        <td>2018-07-06</td>
+        <td>Токио</td>
+        <td>Oakwood Premier</td>
+        <td>De Luxe</td>
+        <td style="color: #37C975">В процессе</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>13</td>
+        <td>2018-04-01</td>
+        <td>2018-05-23</td>
+        <td>Париж</td>
+        <td>Gare de Lyon</td>
+        <td> De Luxe</td>
+        <td style="color: #FF0000">Завершен</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>11</td>
+        <td>2018-02-07</td>
+        <td>2018-03-08</td>
+        <td>Рим</td>
+        <td>Camping Village</td>
+        <td>Apartment</td>
+        <td style="color: #FF0000">Завершен</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>8</td>
+        <td>2018-06-12</td>
+        <td>2018-06-20</td>
+        <td>Париж</td>
+        <td>Gare de Lyon</td>
+        <td>Standard </td>
+        <td style="color: #37C975">В процессе</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>23</td>
+        <td>2018-05-12</td>
+        <td>2018-05-19</td>
+        <td>Нью-Йорк</td>
+        <td>Hilton Garden</td>
+        <td>Standard </td>
+        <td style="color: #FF0000">Завершен</td>
+      </tr>
+            <tr>
+        <td>11</td>
+        <td>15</td>
+        <td>2018-07-07</td>
+        <td>2018-07-18</td>
+        <td>Варшава</td>
+        <td>Novotel Warszawa Centrum</td>
+        <td>De Luxe</td>
+         <td style="color: #37C975">В процессе</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>7</td>
+        <td>2018-05-20</td>
+        <td>2018-05-29</td>
+        <td>Берлин</td>
+        <td>Plaza Berlin</td>
+        <td>Standard </td>
+        <td style="color: #FF0000">Завершен</td>
+      </tr>
+<!--       <tr>
+        <td>9</td>
+        <td>23</td>
+        <td>2018-07-20</td>
+        <td>2018-08-10</td>
+        <td>Нью-Йорк</td>
+        <td>Urbihop Hotel</td>
+        <td>Standard </td>
+        <td style="color: #37C975">В процессе</td>
+      </tr> -->
+    </tbody>
+  </table>
+ 
+  		</div>
+	</div>
+</div>
+
+
+
+
+
+<footer><p>Krasovskii © Copyright 2018</p></footer>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Вход</h4>
+      </div>
+      <div class="modal-body">
+        
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Введите пароль</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> запомнить меня
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Забыли пароль?</button>
+        <button type="button" class="btn btn-primary">Войти</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

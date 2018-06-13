@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>об отеле</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+   li {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 3px;
+   }
+   li > i{
+    font-size: 20px;
+   }
+</style>
+  </head>
+  <body>
+
+<nav class="navbar navbar-default "><!-- navbar-fixed-top -->
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Главная</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="searchresults.html">страница с фильтром</a></li>
+        <li><a href="#">Добавить отель</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.html">Зарегистрироваться</a></li>
+        <li><a href="registration-hotel.html" data-toggle="modal" data-target="#login">Войти в аккаунт</a></li>
+      </ul>
+		
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div id="hotel-info">
+  <div class="container-fluid">
+    <div class="row">
+      
+
+
+
+<div class="col-md-6" style="padding: 0;">
+  
+        <div id="testCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Индикаторы карусели -->
+          <ol class="carousel-indicators">
+            <!-- Перейти к слайду №0 с помощью соответствующего атрибута с индексом data-slide-to="0" -->
+            <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+            <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="1" -->
+            <li data-target="#testCarousel" data-slide-to="1"></li>
+            <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="2" -->
+            <li data-target="#testCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Слайды карусели -->
+          <div class="carousel-inner">
+            <!-- Слайд 1 -->
+            <div class="item active">
+              <img src="img/hotel1.jpg" alt="...">
+            </div>
+
+
+          </div>
+
+          <!-- Навигация карусели (следующий или предыдущий слайд) -->
+          <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+          <a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+          <a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel2.jpg" width="100%;" ></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel3.jpg" width="100%;"></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel4.jpg" width="100%;"></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel5.jpg" width="100%;"></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel5.jpg" width="100%;" ></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel4.jpg" width="100%;"></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel3.jpg" width="100%;"></div>
+<div class="col-md-3" style="padding: 0;"><img src="img/hotel2.jpg" width="100%;"></div>
+
+<button id="click" class="centered edit">Бронировать</button>
+<script>
+  $('click').click(function(){
+    swal("Hello world!");
+});
+
+</script>
+</div>
+
+
+<div class="col-md-6">
+  
+  <h2 class="centered">The Prince Gallery Tokyo Kioicho <span> <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span></h2>
+
+  <hr width="80%" style="margin: auto;border: 1px solid #5C5C5C;border-radius: 50%;"><br>
+
+<div style="padding: 20px;">
+  <h4><i class="fas fa-map-marker-alt" style="color: blue"></i> 102-8585 Токио, Chiyoda-ku, Kioicho 1-2, Япония</h4>
+  <h4><i class="fas fa-certificate" style="color: grey"></i> Отличное расположение</h4>
+  <h4><i class="far fa-thumbs-up" style="color: red"></i> Хорошие отзывы</h4>
+</div>
+<div style="margin: 10px 0;min-height:20px;" class="centered">
+  <hr>
+<h3 class="centered">Вам понравится</h3>
+<div class="col-md-3"><i class="fas fa-plane"></i><p>Трансфер до/из аэропорта</p></div>
+<div class="col-md-3"><i class="fas fa-subway"></i><p>460 м от общественного транспорта</p></div>
+<div class="col-md-3"><i class="fas fa-hand-holding-usd"></i><p>обмен валют</p></div>
+<div class="col-md-3"><i class="far fa-building"></i><p>Центр города</p></div>
+<br>
+
+</div><br><br>
+ <hr>
+    <div style="margin-top: 10px;">
+      <p style="text-indent: 20px;">Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши и теппаньяки, а также фитнес-центр и круглосуточная стойка регистрации.</p>
+
+
+
+
+    <p style="text-indent: 20px;">От отеля на метро можно без пересадок доехать до станции Nagatacho линии Нанбоку. Поездка на автомобиле до железнодорожного вокзала Токио займет 10 минут, до аэропорта Ханэда — 30 минут, а до международного аэропорта Нарита — 100 минут.</p>
+
+    <p style="text-indent: 20px;">В распоряжении гостей отеля The Prince Gallery Tokyo Kioicho оздоровительный центр, спа-салон, сауна, круглосуточная стойка регистрации и пункт обмена валюты. За дополнительную плату предоставляются услуги прачечной.</p>
+    </div>
+<div>
+  <h4 class="centered">Самые популярные удобства</h4>
+  <div class="col-md-6">
+    <ul>    <li><i class="fas fa-male"></i> Номера для некурящих</li>
+    <li><i class="fas fa-wifi"></i> Бесплатный Wi-Fi</li>
+    <li><i class="fas fa-parking"></i> Парковка</li>
+    <li><i class="fas fa-bus"></i> Трансфер от/до аэропорта</li></ul>
+  </div>
+  <div class="col-md-6"></div>
+  <ul>
+
+    <li><i class="fas fa-tint"></i> Бассейн</li>
+    <li><i class="fas fa-dumbbell"></i> Великолепный фитнес-центр</li>
+    <li><i class="fas fa-glass-martini"></i> Бар</li>
+    <li><i class="fas fa-male"></i> Хороший вариант для пар — они оценили удобства для поездки вдвоем на 9,6. </li>
+  </ul>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer><p>Krasovskii © Copyright 2018</p></footer>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Вход</h4>
+      </div>
+      <div class="modal-body">
+        
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Введите пароль</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> запомнить меня
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Забыли пароль?</button>
+        <button type="button" class="btn btn-primary">Войти</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

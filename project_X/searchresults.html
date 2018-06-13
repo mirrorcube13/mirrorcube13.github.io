@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
-  <body>
+  <body >
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -29,8 +29,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="searchresults.html">страница с фильтром</a></li>
-        <li><a href="registration-hotel.html">Добавить отель</a></li>
+        <li><a href="searchresults.html">Подобрать отель</a></li>
+       <!--  <li><a href="registration-hotel.html">Добавить отель</a></li> -->
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -42,11 +42,12 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div >
 <div id="search_info">
 	<div class="container">
 		<div class="row">
-			<h1>Токио(город который выбрали)</h1>
-			<p>some text...</p>
+			<h1>Токио</h1>
+			<p style="font-size: 16px;color: #4A4A4A">Токио — один из самых безопасных мегаполисов мира. Здесь можно спокойно гулять ночью в любом районе. Из-за разницы во времени с европейской частью России, многие туристы, прилетевшие из Москвы и Санкт-Петербурга, так и поступают. Прогуляйтесь и вы по ночному Токио, ведь здесь так красиво!</p>
 			<hr>
 		</div>
 	</div>
@@ -103,18 +104,14 @@
 		        		</select>
 				 	<hr>
 				 	<input type="submit" value="Искать" onclick="">
-				</form>
-</div>
-
-<div id="filter">
-	<form>			
-   <h4>Количество звезд</h4>
+<hr>
+    <h4>Количество звезд</h4>
    <p><input type="checkbox" name="star1" value="1"> 1 звезда</p>
    <p><input type="checkbox" name="star2" value="2"> 2 звезды</p>
    <p><input type="checkbox" name="star3" value="3"> 3 звезды</p>
    <p><input type="checkbox" name="star4" value="4"> 4 звезды</p>
    <p><input type="checkbox" name="star5" value="5"> 5 звезд</p>
-   <hr>				
+   <hr>       
    <h4>Удобства</h4>
    <p><input type="checkbox" name="a" value="1"> Бесплатный Wi-fi</p>
    <p><input type="checkbox" name="a" value="2"> Трансфер от/до аэропорта</p>
@@ -126,50 +123,127 @@
    <p><input type="checkbox" name="a" value="1"> Балкон</p>
    <p><input type="checkbox" name="a" value="2"> Кондиционер</p>
    <p><input type="checkbox" name="a" value="3"> Кофемашина</p>
-   <p><input type="checkbox" name="a" value="4"> Ванна</p>			
-	</form>
+   <p><input type="checkbox" name="a" value="4"> Ванна</p>            
+				</form>
 </div>
+
+
 
 			</div>
 			<div class="col-md-8 col-md-offset-1">
+<!--     <div id="hotel">
+<div class="row">
+  <div class="col-md-4 image-block-zoom">
+    <img src="/img/hotels/<?= $hotel['r_id'] ?>.jpg" сlass="img-zoom" width="200" height="200">
+  </div>
+  <div class="col-md-8">
+    <h1><?= $hotel['r_name'] ?>  <span><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span> </h1>
+    <p><?= $hotel['r_desc'] ?></p>
+    <p>Цена:<?= $hotel['r_price'] ?>$</p>
+    <p>С <?= date('m.d.Y', $hotel['r_start']) ?> по <?= date('m.d.Y', $hotel['r_end']) ?></p>
+    <button type="button">Подробнее</button>
+  </div>
+</div> -->
+
+
+        <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h1.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h1>The Prince Gallery Tokyo Kioicho</h1>
+          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
+          <p>100$</p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>
+
+      <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h2.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h1>The Prince Gallery Tokyo Kioicho</h1>
+          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
+          <p>100$</p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>
+
+      <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h3.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h1>The Prince Gallery Tokyo Kioicho</h1>
+          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
+          <p>100$</p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>
+
+      <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h4.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h1>The Prince Gallery Tokyo Kioicho</h1>
+          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
+          <p>100$</p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>
+
+
 				<div id="hotel">
-					<img src="img/hotel.jpg" style="float: left;height: 200px;width: 200px;">
-					<h1>hotel 1</h1>
-					<p>some text</p>
+					<img src="img/h5.jpg" style="float: left;height: 200px;width: 200px;">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+					<h1>The Prince Gallery Tokyo Kioicho</h1>
+					<p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
 					<p>100$</p>
+          <button type="button" class="edit">Подробнее</button>
 				</div>
-				<div id="hotel">
-					<img src="img/hotel.jpg" style="float: left;height: 200px;width: 200px;">
-					<h1>hotel 2</h1>
-					<p>some text</p>
-					<p>100$</p>
-				</div>
-				<div id="hotel">
-					<img src="img/hotel.jpg" style="float: left;height: 200px;width: 200px;">
-					<h1>hotel 3</h1>
-					<p>some text</p>
-					<p>100$</p>
-				</div>
-				<div id="hotel">
-					<img src="img/hotel.jpg" style="float: left;height: 200px;width: 200px;">
-					<h1>hotel 4</h1>
-					<p>some text</p>
-					<p>100$</p>
-				</div>
-				<div id="hotel">
-					<img src="img/hotel.jpg" style="float: left;height: 200px;width: 200px;">
-					<h1>hotel 5</h1>
-					<p>some text</p>
-					<p>100$</p>
-				</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination pagination-lg">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
 			</div>
 		</div>
 	</div>
 </div>
 
+</div>
 
 
-<footer><p>Krasovskii © Copyright 2018</p></footer>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="login">
   <div class="modal-dialog" role="document">
