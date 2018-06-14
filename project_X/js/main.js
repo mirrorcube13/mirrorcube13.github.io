@@ -33,3 +33,29 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+
+		$('#btnDel').click(function(){
+
+			swal({
+			    title: "Внимание!!!",
+			    text: "При удалении аккаунта ваш профиль, фото, данные удаляются навсегда.",
+			   	type: "warning",
+			   	showCancelButton: true,
+			   	confirmButtonColor: "#CE2525",
+			   	confirmButtonText: "Удалить",
+			   	cancelButtonText: "Отмена",
+			   	closeOnConfirm: false,
+			   	closeOnCancel: false },
+			   		function(isConfirm){
+			   	        if (isConfirm) {
+			   	               swal("Удалено!", "Аккаунт удален", "success");
+			   	               document.getElementById('del').style.display='none';return false;
+			   	          } 
+			   	        else {
+			   	               swal("Отменена", "Аккаунт не удален", "error"); 
+
+			   	                }
+			   	        });
+		});
+
