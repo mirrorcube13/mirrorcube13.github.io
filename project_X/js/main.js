@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 });
 
-
+// удаление
 		$('#btnDel').click(function(){
 
 			swal({
@@ -59,3 +59,35 @@ $(document).ready(function(){
 			   	        });
 		});
 
+
+// регистрация
+	$('#regist').click(function(){
+
+			swal({
+			    title: "Регистрация выполнена успешно!",
+			    text: "Нажмите 'OK' чтобы продолжить",
+			   	type: "success" },
+			   		function(){
+						window.location = "index2.html";
+			   	  
+			   	        });
+		});
+
+		$('#more-info').click(function(){
+
+			swal({
+			    title: "Регистрация выполнена успешно!",
+			    text: "Нажмите чтобы продолжить",
+			   	type: "info" }
+			   // 		function(){
+						// window.location = "index2.html";
+			   	  
+			   // 	        }
+			   	        );
+		});
+
+// dsad
+		$('#bron').click(function(){
+
+swal("Ваша заявка на бронирование отправлена", "В ближайшее время с Вами свяжется наш менеджер", "success");
+		});

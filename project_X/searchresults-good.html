@@ -63,7 +63,7 @@
 	<form onsubmit="alert('submit');return false" >			
 					<h2><i class="fas fa-search"></i> Поиск отелей</h2>
 					<hr>
-					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Токио" onfocus="if (this.value == 'Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Токио';}">
+					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Например, Токио" onfocus="if (this.value == ' Например, Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Например, Токио';}">
 					<hr>
 					<div class="row">
 						<div class="col-md-6">Заезд<br><input id="date" type="date"></div>
@@ -103,20 +103,20 @@
 			                <option value="10">10 номеров</option>
 		        		</select>
 				 	<hr>
-				 	<input type="submit" value="Искать" onclick="location.href='searchresults-good.html'">
+				 	<input type="submit" value="Искать" onclick="">
 <hr>
     <h4>Количество звезд</h4>
    <p><input type="checkbox" name="star1" value="1"> 1 звезда</p>
    <p><input type="checkbox" name="star2" value="2"> 2 звезды</p>
    <p><input type="checkbox" name="star3" value="3"> 3 звезды</p>
    <p><input type="checkbox" name="star4" value="4"> 4 звезды</p>
-   <p><input type="checkbox" name="star5" value="5"> 5 звезд</p>
+   <p><input type="checkbox" name="star5" value="5" checked> 5 звезд</p>
    <hr>       
    <h4>Удобства</h4>
-   <p><input type="checkbox" name="a" value="1"> Бесплатный Wi-fi</p>
-   <p><input type="checkbox" name="a" value="2"> Трансфер от/до аэропорта</p>
+   <p><input type="checkbox" name="a" value="1" checked> Бесплатный Wi-fi</p>
+   <p><input type="checkbox" name="a" value="2" checked> Трансфер от/до аэропорта</p>
    <p><input type="checkbox" name="a" value="3"> Парковка</p>
-   <p><input type="checkbox" name="a" value="4"> Бассейн</p>
+   <p><input type="checkbox" name="a" value="4" checked> Бассейн</p>
    <p><input type="checkbox" name="a" value="5"> Фитнес-центр</p>
    <hr>
    <h4>Удобства в номере</h4>
@@ -144,38 +144,21 @@
     <button type="button">Подробнее</button>
   </div>
 </div> -->
-        <div id="hotel">
-            <div class="row">
-              <div class="col-md-4 image-block-zoom">
-                <img src="img/h1.jpg" style="float: left;height: 200px;width: 200px;">
-              </div>
-              <div class="col-md-8">
-            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>Hotel Asakusa Tawaramachi Ekimae </h3>
-            <p>Отель Asakusa Taharamachi Ekimae удобно расположен всего в 1 минуте ходьбы от станции метро Tawaramachi, в 12 минутах ходьбы от храма Сэнсодзи и в 10 минутах езды на автомобиле от музея Эдо-Токио...</p>
-            <button type="button" class="edit">Подробнее</button>
-              </div>
-          </div>
-        </div>
 
-        <div id="hotel">
-          <img src="img/h2.jpg" style="float: left;height: 200px;width: 200px;">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
-            </span>
-          <h3>Park Hotel Tokyo</h3>
-          <p>Отель Park Tokyo с потрясающим видом на город удобно расположен в Токио, всего в нескольких шагах от станции метро Shiodome. К услугам гостей стильные номера с бесплатным Wi-Fi. </p>
-          <button type="button" class="edit">Подробнее</button>
-        </div>
+
+
+
+
 
         <div id="hotel">
             <div class="row">
               <div class="col-md-4 image-block-zoom">
-                <img src="img/h3.jpg" style="float: left;height: 200px;width: 200px;">
+                <img src="img/h6.jpg" style="float: left;height: 200px;width: 200px;">
               </div>
               <div class="col-md-8">
-            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>APA Hotel & Resort Nishishinjuku-Gochome-Eki Tower </h3>
-            <p>Курортный отель APA Nishishinjuku-Gochome-Eki Tower расположен в Токио. В нем предоставляется бесплатный Wi-Fi. До храма Мэйдзи Дзингу 2,2 км, а до национального парка «Синдзюку-Гёэн» 2,5 км.</p>
+            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+            <h3>Ascott Marunouchi Tokyo </h3>
+            <p>Отель Ascott Marunouchi Tokyo расположен в центре Токио, в 800 метрах от железнодорожного вокзала Токио. Из элегантно оформленных номеров на верхних этажах открывается вид на город.</p>
             <button type="button" class="edit">Подробнее</button>
               </div>
           </div>
@@ -196,22 +179,49 @@
         </div>
       </div>
 
+
       <div id="hotel">
           <div class="row">
             <div class="col-md-4 image-block-zoom">
-              <img src="img/h5.jpg" style="float: left;height: 200px;width: 200px;">
+              <img src="img/h7.jpg" style="float: left;height: 200px;width: 200px;">
             </div>
             <div class="col-md-8">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>Hotel Sugamo Ekimae</h3>
-          <p>Отель Sugamo Ekimae сети APA расположен в Токио, всего в 1 минуте ходьбы от выхода A4 железнодорожного вокзала Сугамо. </p>
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h3>ANA InterContinental Tokyo</h3>
+          <p>Отель ANA InterContinental Tokyo расположен в Токио, в деловом комплексе Ark Hills, в 1 минуте ходьбы от станций метро Tameike-sanno и Roppongi-itchome. </p>
           <button type="button" class="edit">Подробнее</button>
             </div>
         </div>
       </div>
 
 
+      <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h8.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h3>Imperial Hotel Tokyo</h3>
+          <p>Престижный отель Imperial Tokyo, открытый более века назад, в 1890 году, расположен в центре города, в 5 минутах ходьбы от 3 станций метро. </p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>
 
+      <div id="hotel">
+          <div class="row">
+            <div class="col-md-4 image-block-zoom">
+              <img src="img/h9.jpg" style="float: left;height: 200px;width: 200px;">
+            </div>
+            <div class="col-md-8">
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h3>Shangri-La Hotel, Tokyo</h3>
+          <p>Роскошный отель Shangri-La, Tokyo удобно расположен рядом с железнодорожным вокзалом Токио, напротив Императорского дворца. </p>
+          <button type="button" class="edit">Подробнее</button>
+            </div>
+        </div>
+      </div>      
 
 
 
