@@ -8,6 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
@@ -29,13 +30,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="searchresults.html">страница с фильтром</a></li>
+        <li><a href="searchresults.html">Подобрать отель</a></li>
         <li><a href="registration-hotel.html">Добавить отель</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="registration.html">Зарегистрироваться</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#login">Войти в аккаунт</a></li>
+        <li><a style="cursor: pointer;" onclick="location.href='table_users.html'">Пользователи</a></li>
+        <li><a href="table_orders.html">Заявки</a></li>
+        <li><a href="registration.html">(Admin)</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Выйти</a></li>
       </ul>
 		
 
@@ -50,7 +53,7 @@
 			<div class="page-header">
 			  <h1 class="centered">Добавить отель</h1>
 			</div>
-      <h3>jack, добро пожаловать! </h3>
+      <h3>Admin, добро пожаловать! </h3>
       <p>Для начала укажите адрес, тип и название вашего объекта, а также контактные данные</p>
 
 			<form class="form-horizontal">
@@ -397,7 +400,8 @@
 
 			  <div class="form-group">
 			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+			      <button type="button" class="btn btn-default edit" id="dobavl">Зарегистрировать</button>
+
 			    </div>
 			  </div>
 			</form>			
@@ -455,7 +459,10 @@
 </div><!-- /.modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
     <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   </body>
 </html>
 

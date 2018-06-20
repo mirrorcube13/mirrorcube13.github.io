@@ -30,12 +30,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="searchresults.html">Подобрать отель</a></li>
-       <!--  <li><a href="registration-hotel.html">Добавить отель</a></li> -->
+       <!--  <li><a href="registration-hotel.html"></a></li> -->
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="registration.html">Зарегистрироваться</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#login">Войти в аккаунт</a></li>
+        <li><a href="profile.html">(Oleg)</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Выйти</a></li>
       </ul>
 		
 
@@ -66,8 +66,8 @@
 					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Токио" onfocus="if (this.value == 'Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Токио';}">
 					<hr>
 					<div class="row">
-						<div class="col-md-6">Заезд<br><input id="date" type="date"></div>
-						<div class="col-md-6">Выезд<br><input id="date" type="date"></div>
+            <div class="col-md-6">Заезд<br><input id="date" type="date" value="2018-06-30"></div>
+            <div class="col-md-6">Выезд<br><input id="date" type="date" value="2018-07-07"></div>
 					</div>
 					<hr>
 		    <select name="" id="adult" class="">
@@ -158,13 +158,19 @@
           </div>
         </div>
 
+
         <div id="hotel">
-          <img src="img/h2.jpg" style="float: left;height: 200px;width: 200px;">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
-            </span>
-          <h3>Park Hotel Tokyo</h3>
-          <p>Отель Park Tokyo с потрясающим видом на город удобно расположен в Токио, всего в нескольких шагах от станции метро Shiodome. К услугам гостей стильные номера с бесплатным Wi-Fi. </p>
-          <button type="button" class="edit">Подробнее</button>
+            <div class="row">
+              <div class="col-md-4 image-block-zoom">
+                <img src="img/h2.jpg" style="float: left;height: 200px;width: 200px;">
+              </div>
+              <div class="col-md-8">
+            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+            <h3>Park Hotel Tokyo</h3>
+            <p>Отель Park Tokyo с потрясающим видом на город удобно расположен в Токио, всего в нескольких шагах от станции метро Shiodome. К услугам гостей стильные номера с бесплатным Wi-Fi.</p>
+            <button type="button" class="edit">Подробнее</button>
+              </div>
+          </div>
         </div>
 
         <div id="hotel">
@@ -243,6 +249,7 @@
 </div>
 
 
+<footer><p>Krasovskii © Copyright 2018</p></footer>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="login">
   <div class="modal-dialog" role="document">

@@ -36,7 +36,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="table_users.html">Пользователи</a></li>
-        <li><a href="table_orders.html">Заявки</a></li>
+        <li><a style="cursor: pointer;" onclick="location.href='table_orders.html'">Заявки</a></li>
         <li><a href="registration.html">(Admin)</a></li>
         <li><a href="#" data-toggle="modal" data-target="#login">Выйти</a></li>
       </ul>
@@ -111,7 +111,18 @@
         <td>Yana90</td>
         <td>Шубина Яна Даниловна</td>
         <td>yana@gmail.com</td>
-        <td>29 246-867-86</td>
+        <td>29 246-67-86</td>
+        <td style="float: right;">
+          <button onclick="location.href='table_users_edit.html';" class="edit">Редактировать</button>
+          <a href="#"><i class="fas fa-trash-alt delete"></i></a>
+        </td>
+      </tr>
+          <tr>
+        <td>6</td>
+        <td>Oleg</td>
+        <td>Белько Олег Михайлович</td>
+        <td>Oleg1990@gmail.com</td>
+        <td>29 333-33-33</td>
         <td style="float: right;">
           <button onclick="location.href='table_users_edit.html';" class="edit">Редактировать</button>
           <a href="#"><i class="fas fa-trash-alt delete"></i></a>
@@ -119,7 +130,7 @@
       </tr>
     </tbody>
   </table>
-  <a href="table_users_new.html" class="edit">Добавить нового пользователя</a>
+  <a style="cursor: pointer;" onclick="location.href='table_users_new.html'" class="edit">Добавить нового пользователя</a>
   		</div>
 	</div>
 </div>

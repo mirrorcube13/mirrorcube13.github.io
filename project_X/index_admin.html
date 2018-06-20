@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="searchresults.html">Подобрать отель</a></li>
-        <li><a href="registration-hotel.html">Добавить отель</a></li>
+        <li><a style="cursor: pointer;" onclick="location.href='registration-hotel.html'">Добавить отель</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -52,7 +52,8 @@
 	<form onsubmit="alert('submit');return false" >			
 		<h2><i class="fas fa-search"></i> Поиск отелей</h2>
 		<hr>
-		<label>Город, отель, место или адрес</label><input type="text" size="30" value="Например, Токио" onfocus="if (this.value == ' Например, Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Например, Токио';}">
+		<input type="text" size="40" placeholder="Например, Нью-Йорк">
+<!-- 		<label>Город, отель, место или адрес</label><input type="text" size="30" value="Например, Токио" onfocus="if (this.value == ' Например, Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Например, Токио';}"> -->
 		<hr>
 		<div class="row">
 			<div class="col-md-6">Заезд<br><input id="date" type="date"></div>
