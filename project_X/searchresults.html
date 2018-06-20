@@ -46,8 +46,8 @@
 <div id="search_info">
 	<div class="container">
 		<div class="row">
-			<h1>Токио</h1>
-			<p style="font-size: 16px;color: #4A4A4A">Токио — один из самых безопасных мегаполисов мира. Здесь можно спокойно гулять ночью в любом районе. Из-за разницы во времени с европейской частью России, многие туристы, прилетевшие из Москвы и Санкт-Петербурга, так и поступают. Прогуляйтесь и вы по ночному Токио, ведь здесь так красиво!</p>
+			<h1>Могилев</h1>
+			<p style="font-size: 16px;color: #4A4A4A">Могилёв – один из красивейших городов Беларуси, он неоднократно признавался культурной столицей Беларуси. Расположившись на живописных берегах реки Днепр, Могилёв из века в век хранит память о великих исторических событиях и датах.</p>
 			<hr>
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 	<form onsubmit="alert('submit');return false" >			
 					<h2><i class="fas fa-search"></i> Поиск отелей</h2>
 					<hr>
-					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Токио" onfocus="if (this.value == 'Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Токио';}">
+					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Могилев" onfocus="if (this.value == 'Могилев') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Могилев';}">
 					<hr>
 					<div class="row">
             <div class="col-md-6">Заезд<br><input id="date" type="date" value="2018-06-30"></div>
@@ -105,14 +105,22 @@
 				 	<hr>
 				 	<input type="submit" value="Искать" onclick="location.href='searchresults-good.html'">
 <hr>
-    <h4>Количество звезд</h4>
+   <h4>Тип размещения </h4>
+   <p><input type="checkbox" name="a" value="1"> Апартаменты</p>
+   <p><input type="checkbox" name="a" value="2"> Отель</p>
+   <p><input type="checkbox" name="a" value="3"> Усадьбы</p>
+   <p><input type="checkbox" name="a" value="4"> Гостевой дом</p>
+   <p><input type="checkbox" name="a" value="5"> Хостел</p>
+   <p><input type="checkbox" name="a" value="5"> Вилла</p>
+   <hr>                
+   <h4>Количество звезд</h4>
    <p><input type="checkbox" name="star1" value="1"> 1 звезда</p>
    <p><input type="checkbox" name="star2" value="2"> 2 звезды</p>
    <p><input type="checkbox" name="star3" value="3"> 3 звезды</p>
    <p><input type="checkbox" name="star4" value="4"> 4 звезды</p>
    <p><input type="checkbox" name="star5" value="5"> 5 звезд</p>
    <hr>       
-   <h4>Удобства</h4>
+   <h4>Удобства и услуги</h4>
    <p><input type="checkbox" name="a" value="1"> Бесплатный Wi-fi</p>
    <p><input type="checkbox" name="a" value="2"> Трансфер от/до аэропорта</p>
    <p><input type="checkbox" name="a" value="3"> Парковка</p>
@@ -123,7 +131,20 @@
    <p><input type="checkbox" name="a" value="1"> Балкон</p>
    <p><input type="checkbox" name="a" value="2"> Кондиционер</p>
    <p><input type="checkbox" name="a" value="3"> Кофемашина</p>
-   <p><input type="checkbox" name="a" value="4"> Ванна</p>            
+   <p><input type="checkbox" name="a" value="4"> Ванна</p>
+   <hr>
+   <h4>Развлечения и досуг</h4>
+   <p><input type="checkbox" name="a" value="1"> Озеро</p>
+   <p><input type="checkbox" name="a" value="2"> Рыбалка</p>
+   <p><input type="checkbox" name="a" value="3"> Лес</p>
+   <p><input type="checkbox" name="a" value="4"> Баня</p>
+   <p><input type="checkbox" name="a" value="5"> Велосипеды</p>
+   <p><input type="checkbox" name="a" value="6"> Пешие прогулки</p>
+   <p><input type="checkbox" name="a" value="7"> Мангал</p>
+   <p><input type="checkbox" name="a" value="8"> Сбор грибов и ягод</p>  
+
+
+
 				</form>
 </div>
 
@@ -151,8 +172,8 @@
               </div>
               <div class="col-md-8">
             <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>Hotel Asakusa Tawaramachi Ekimae </h3>
-            <p>Отель Asakusa Taharamachi Ekimae удобно расположен всего в 1 минуте ходьбы от станции метро Tawaramachi, в 12 минутах ходьбы от храма Сэнсодзи и в 10 минутах езды на автомобиле от музея Эдо-Токио...</p>
+            <h3>АМАКС Отель Могилев </h3>
+            <p>Гостиница «AMAKS Могилев» расположена в центре города Могилев и выходит окнами на реку Дубровенка. К услугам гостей камера хранения багажа и круглосуточная стойка регистрации. </p>
             <button type="button" class="edit">Подробнее</button>
               </div>
           </div>
@@ -166,8 +187,8 @@
               </div>
               <div class="col-md-8">
             <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>Park Hotel Tokyo</h3>
-            <p>Отель Park Tokyo с потрясающим видом на город удобно расположен в Токио, всего в нескольких шагах от станции метро Shiodome. К услугам гостей стильные номера с бесплатным Wi-Fi.</p>
+            <h3>Агроусадьба «Белые Лебеди»</h3>
+            <p> в самом центре Чигиринского водохранилища, в деревне «Подлужье» радушно открывает свои двери для отдыхающих усадьба «Белые лебеди».</p>
             <button type="button" class="edit">Подробнее</button>
               </div>
           </div>
@@ -180,8 +201,8 @@
               </div>
               <div class="col-md-8">
             <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>APA Hotel & Resort Nishishinjuku-Gochome-Eki Tower </h3>
-            <p>Курортный отель APA Nishishinjuku-Gochome-Eki Tower расположен в Токио. В нем предоставляется бесплатный Wi-Fi. До храма Мэйдзи Дзингу 2,2 км, а до национального парка «Синдзюку-Гёэн» 2,5 км.</p>
+            <h3>Апартаменты «Звездном место»</h3>
+            <p>Апартаменты «В центре» расположены в Могилевской области. К услугам гостей балкон и бесплатный Wi-Fi.</p>
             <button type="button" class="edit">Подробнее</button>
               </div>
           </div>
@@ -195,8 +216,8 @@
             </div>
             <div class="col-md-8">
           <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>The Prince Gallery Tokyo Kioicho, a Luxury Collection Hotel </h3>
-          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
+          <h3>Апартаменты «PaulMarie»</h3>
+          <p>Апартаменты «PaulMarie на улице Народной Ополчения» с полностью оборудованной кухней находятся в Могилеве. </p>
           <button type="button" class="edit">Подробнее</button>
             </div>
         </div>
@@ -209,8 +230,8 @@
             </div>
             <div class="col-md-8">
           <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>Hotel Sugamo Ekimae</h3>
-          <p>Отель Sugamo Ekimae сети APA расположен в Токио, всего в 1 минуте ходьбы от выхода A4 железнодорожного вокзала Сугамо. </p>
+          <h3>Усадьба «Охотничий стан»</h3>
+          <p>Усадьба «Охотничий стан» расположилась в Могилевской области в деревне Проточное рядом с чистым водоемом. Здесь можно не только приятно отдохнуть у воды, но и отлично порыбачить.</p>
           <button type="button" class="edit">Подробнее</button>
             </div>
         </div>

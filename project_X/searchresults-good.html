@@ -46,8 +46,8 @@
 <div id="search_info">
 	<div class="container">
 		<div class="row">
-			<h1>Токио</h1>
-			<p style="font-size: 16px;color: #4A4A4A">Токио — один из самых безопасных мегаполисов мира. Здесь можно спокойно гулять ночью в любом районе. Из-за разницы во времени с европейской частью России, многие туристы, прилетевшие из Москвы и Санкт-Петербурга, так и поступают. Прогуляйтесь и вы по ночному Токио, ведь здесь так красиво!</p>
+			<h1>Могилев</h1>
+			<p style="font-size: 16px;color: #4A4A4A">Могилёв – один из красивейших городов Беларуси, он неоднократно признавался культурной столицей Беларуси. Расположившись на живописных берегах реки Днепр, Могилёв из века в век хранит память о великих исторических событиях и датах.</p>
 			<hr>
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 	<form onsubmit="alert('submit');return false" >			
 					<h2><i class="fas fa-search"></i> Поиск отелей</h2>
 					<hr>
-					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Токио" onfocus="if (this.value == 'Токио') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Токио';}">
+					<label>Город, отель, место или адрес</label><input type="text" size="30" value="Могилев" onfocus="if (this.value == 'Могилев') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Могилев';}">
 					<hr>
 					<div class="row">
 						<div class="col-md-6">Заезд<br><input id="date" type="date" value="2018-06-30"></div>
@@ -105,25 +105,44 @@
 				 	<hr>
 				 	<input type="submit" value="Искать" onclick="">
 <hr>
-    <h4>Количество звезд</h4>
+   <h4>Тип размещения </h4>
+   <p><input type="checkbox" name="a" value="1"> Апартаменты</p>
+   <p><input type="checkbox" name="a" value="2"> Отель</p>
+   <p><input type="checkbox" name="a" value="3" checked> Усадьбы</p>
+   <p><input type="checkbox" name="a" value="4"> Гостевой дом</p>
+   <p><input type="checkbox" name="a" value="5"> Хостел</p>
+   <p><input type="checkbox" name="a" value="5"> Вилла</p>
+   <hr>                
+   <h4>Количество звезд</h4>
    <p><input type="checkbox" name="star1" value="1"> 1 звезда</p>
    <p><input type="checkbox" name="star2" value="2"> 2 звезды</p>
-   <p><input type="checkbox" name="star3" value="3"> 3 звезды</p>
-   <p><input type="checkbox" name="star4" value="4"> 4 звезды</p>
+   <p><input type="checkbox" name="star3" value="3" checked> 3 звезды</p>
+   <p><input type="checkbox" name="star4" value="4" checked> 4 звезды</p>
    <p><input type="checkbox" name="star5" value="5" checked> 5 звезд</p>
    <hr>       
-   <h4>Удобства</h4>
+   <h4>Удобства и услуги</h4>
    <p><input type="checkbox" name="a" value="1" checked> Бесплатный Wi-fi</p>
-   <p><input type="checkbox" name="a" value="2" checked> Трансфер от/до аэропорта</p>
+   <p><input type="checkbox" name="a" value="2"> Трансфер от/до аэропорта</p>
    <p><input type="checkbox" name="a" value="3"> Парковка</p>
-   <p><input type="checkbox" name="a" value="4" checked> Бассейн</p>
+   <p><input type="checkbox" name="a" value="4"> Бассейн</p>
    <p><input type="checkbox" name="a" value="5"> Фитнес-центр</p>
    <hr>
    <h4>Удобства в номере</h4>
    <p><input type="checkbox" name="a" value="1"> Балкон</p>
    <p><input type="checkbox" name="a" value="2" checked> Кондиционер</p>
    <p><input type="checkbox" name="a" value="3"> Кофемашина</p>
-   <p><input type="checkbox" name="a" value="4"> Ванна</p>            
+   <p><input type="checkbox" name="a" value="4"> Ванна</p>
+   <hr>
+   <h4>Развлечения и досуг</h4>
+   <p><input type="checkbox" name="a" value="1" checked> Озеро</p>
+   <p><input type="checkbox" name="a" value="2" checked> Рыбалка</p>
+   <p><input type="checkbox" name="a" value="3" checked> Лес</p>
+   <p><input type="checkbox" name="a" value="4"> Баня</p>
+   <p><input type="checkbox" name="a" value="5"> Велосипеды</p>
+   <p><input type="checkbox" name="a" value="6"> Пешие прогулки</p>
+   <p><input type="checkbox" name="a" value="7" checked> Мангал</p>
+   <p><input type="checkbox" name="a" value="8"> Сбор грибов и ягод</p>  
+        
 				</form>
 </div>
 
@@ -156,57 +175,54 @@
                 <img src="img/h6.jpg" style="float: left;height: 200px;width: 200px;">
               </div>
               <div class="col-md-8">
-            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-            <h3>Ascott Marunouchi Tokyo </h3>
-            <p>Отель Ascott Marunouchi Tokyo расположен в центре Токио, в 800 метрах от железнодорожного вокзала Токио. Из элегантно оформленных номеров на верхних этажах открывается вид на город.</p>
+            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+            <h3>Чигиринская протока </h3>
+            <p>Это тихое и уютное место, в котором можно уединиться и по-настоящему отдохнуть от городской суеты и ежедневных бытовых забот.</p>
             <button type="button" class="edit">Подробнее</button>
               </div>
           </div>
         </div>
 
-      <div id="hotel">
-          <div class="row">
-            <div class="col-md-4 image-block-zoom">
-              <img src="img/h7.jpg" style="float: left;height: 200px;width: 200px;">
-            </div>
-            <div class="col-md-8">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>ANA InterContinental Tokyo</h3>
-          <p>Отель ANA InterContinental Tokyo расположен в Токио, в деловом комплексе Ark Hills, в 1 минуте ходьбы от станций метро Tameike-sanno и Roppongi-itchome. </p>
-          <button type="button" class="edit">Подробнее</button>
-            </div>
+
+        <div id="hotel">
+            <div class="row">
+              <div class="col-md-4 image-block-zoom">
+                <img src="img/h2.jpg" style="float: left;height: 200px;width: 200px;">
+              </div>
+              <div class="col-md-8">
+            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+            <h3>Агроусадьба «Белые Лебеди»</h3>
+            <p> в самом центре Чигиринского водохранилища, в деревне «Подлужье» радушно открывает свои двери для отдыхающих усадьба «Белые лебеди».</p>
+            <button type="button" class="edit">Подробнее</button>
+              </div>
+          </div>
         </div>
-      </div>
+
+        <div id="hotel">
+            <div class="row">
+              <div class="col-md-4 image-block-zoom">
+                <img src="img/h7.jpg" style="float: left;height: 200px;width: 200px;">
+              </div>
+              <div class="col-md-8">
+            <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+            <h3>Усадьба «Рыбацкая Пульва»</h3>
+            <p>Усадьба «Рыбацкая Пульва» расположена на самом берегу живописного Чигиринского водохранилища. Есть собственный пирс.</p>
+            <button type="button" class="edit">Подробнее</button>
+              </div>
+          </div>
+        </div>
 
 
         <div id="hotel">
-          <div class="row">
-            <div class="col-md-4 image-block-zoom">
-              <img src="img/h4.jpg" style="float: left;height: 200px;width: 200px;">
-            </div>
-            <div class="col-md-8">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>The Prince Gallery Tokyo Kioicho, a Luxury Collection Hotel </h3>
-          <p>Отель The Prince Gallery Tokyo Kioicho расположен в нескольких минутах ходьбы от станции метро Akasaka-Mitsuke линии Гиндза. К услугам гостей беплатный Wi-Fi на всей территории, сакэ-бар, рестораны суши...</p>
-          <button type="button" class="edit" onClick='location.href="hotel_info.html"'>Подробнее</button>
-            </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div id="hotel">
           <div class="row">
             <div class="col-md-4 image-block-zoom">
               <img src="img/h8.jpg" style="float: left;height: 200px;width: 200px;">
             </div>
             <div class="col-md-8">
           <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>Imperial Hotel Tokyo</h3>
-          <p>Престижный отель Imperial Tokyo, открытый более века назад, в 1890 году, расположен в центре города, в 5 минутах ходьбы от 3 станций метро. </p>
-          <button type="button" class="edit">Подробнее</button>
+          <h3>Усадьба «Чигиринское Предместье»</h3>
+          <p> Усадьба «Чигиринское предместье» как раз является тем местом, в котором вы сможете расслабиться на природе, вдали от городской суеты, а также доставить своему организму бесценную пользу благодаря окружающему целебному воздуху.</p>
+          <button type="button" class="edit" onClick='location.href="hotel_info.html"'>Подробнее</button>
             </div>
         </div>
       </div>
@@ -214,16 +230,16 @@
       <div id="hotel">
           <div class="row">
             <div class="col-md-4 image-block-zoom">
-              <img src="img/h9.jpg" style="float: left;height: 200px;width: 200px;">
+              <img src="img/h5.jpg" style="float: left;height: 200px;width: 200px;">
             </div>
             <div class="col-md-8">
-          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
-          <h3>Shangri-La Hotel, Tokyo</h3>
-          <p>Роскошный отель Shangri-La, Tokyo удобно расположен рядом с железнодорожным вокзалом Токио, напротив Императорского дворца. </p>
+          <span style="float: right;"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i></span>
+          <h3>Усадьба «Охотничий стан»</h3>
+          <p>Усадьба «Охотничий стан» расположилась в Могилевской области в деревне Проточное рядом с чистым водоемом. Здесь можно не только приятно отдохнуть у воды, но и отлично порыбачить.</p>
           <button type="button" class="edit">Подробнее</button>
             </div>
         </div>
-      </div>      
+      </div>  
 
 
 
