@@ -1,17 +1,27 @@
-$('.carousel').carousel({
-	interval: 5000,
-	pause: "false"
-})
+ 
+$(document).ready(function(){
+	$("#menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
 
-// var hammer = new Hammer(document.querySelector('.carousel'));
-// var $carousel = $(".carousel").carousel({"interval":0});
-// hammer.get("swipe");
-// hammer.on("swipeleft", function(){
-//     $carousel.carousel("next");
-// });
-// hammer.on("swiperight", function(){
-//     $carousel.carousel("prev");
-// });
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+});
+
+
+
+// $('.carousel').carousel({
+// 	interval: 5000,
+// 	pause: "false"
+// })
+
 
 // на вверх
 // When the user scrolls down 20px from the top of the document, show the button
@@ -30,3 +40,4 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
