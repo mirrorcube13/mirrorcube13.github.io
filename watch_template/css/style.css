@@ -1,0 +1,511 @@
+@font-face {
+    font-family: Bebas_neue;
+    src: url(../fonts/Bebas_neue/Bebas-Neue.ttf);
+}
+@font-face {
+    font-family: PTSans;
+    src: url(../fonts/PTSans/PTSans.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative; 
+  background: #0e0e0e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bebas_neue', sans-serif;
+	color: #FFFFFF;
+	text-transform: uppercase;
+
+}
+p{
+	font-family: 'PTSans', sans-serif;
+	font-size: 16px;
+}
+.centered{
+	text-align: center;
+}
+/*************************************/
+header{
+	height: 63px;
+	background: #0e0e0e;
+	line-height: 63px;
+}
+header p{
+	color: #5a5a5a;
+	line-height: 63px;
+}
+header a{
+	padding: 0 10px;
+}
+header h1{
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+
+.maket img { position:absolute; opacity:0.5; z-index:1;width: 100%; }
+
+
+
+/*1й блок*/
+.main-block{
+	height: calc(100vh - 70px);
+	background: #000000;
+	position: relative;
+}
+/*.main-block .mask{
+  position: relative;
+  background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+  height:100vh;
+}*/
+
+.main-block h3{
+	font-size: 82px;
+
+}
+.main-block button{
+	border: 2px solid #977869;
+	background: transparent;
+	color: #977869;
+	padding: 12px 33px;
+	font-size: 18px;
+	font-family: 'Bebas_neue', sans-serif;
+	margin: 46px 26px 0 0;
+	letter-spacing: 1.6px;
+}
+.main-block button:hover{
+	background: #977869;
+	color: #FFFFFF;
+}
+
+
+.main-block-slider {
+    height: 100vh;
+    width: 100%;
+    }
+
+.sl__slide-main{
+	position: relative;
+}
+
+.sl__text-main{
+	position: absolute;
+	color: #FFFFFF;
+	top: 30%;left: 9%;
+	width: 35%;
+	}
+
+
+
+     .main-block-slider .slick-slide {
+      margin: 0px;
+    }
+
+   .main-block-slider .slick-slide img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: red;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+
+
+
+/*****************/
+
+
+
+
+
+
+
+
+
+/*info*/
+.info-block{
+  position: relative;
+  height:100vh;
+  background: url(../img/info.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.info-block .mask{
+  position: relative;
+  background: -moz-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+background: -webkit-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
+  height:100vh;
+}
+
+.info-block-text{
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  text-align: left;
+  width: 100%;
+}
+.info-block h2{
+	font-size: 48px;
+}
+.info-block p{
+	color: #858585;
+	font-size: 24px;
+}
+
+
+
+.info-block-slider{
+    height: 100%;
+    width: 100%;
+}
+.sl__slide-info{
+	position: relative;
+}
+
+
+
+/******/
+
+
+/*collection*/
+
+.collection-block{
+	height: 95vh;
+	background: #000000;padding: 70px;
+}
+.collection-block-top{
+	
+}
+
+.collection-block-top h1{
+	float: left;
+	color: #FFFFFF;
+}
+
+.collection-block-top button{
+	font-family: 'PTSans', sans-serif;
+ float: right;
+   outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+      font-weight: bold;
+  padding:0 10px; 
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.collection-block-top button:hover{
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */  
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(182,144,126,1) 51%, rgba(182,144,126,1) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(182,144,126,1) 51%,rgba(182,144,126,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(182,144,126,1) 51%,rgba(182,144,126,1) 100%);
+}
+
+
+
+
+
+.collection-block-slider{
+
+	width: 100%;
+	min-height: 50px;
+    margin: 50px auto;
+}
+.collection-block-slider .slick-slide {
+     margin: 0px 20px;
+    }
+
+.collection-block-slider  .slick-slide img {
+      width: 100%;
+    }
+
+
+
+.watch-box{
+	border: 1px solid #2B2B2B;text-align: center;
+}
+.watch-box h2.price{
+	color: #B6907E;
+}
+
+
+.watch-box img{	
+	padding: 50px;
+    display: block;
+    margin: 0 auto;
+    max-height: 480px;
+    }
+
+
+
+
+
+
+/*brands*/
+.brands{
+	height: 250px;
+	position: relative;
+	background: #0E0E0E;
+}
+.brands-img{
+height: 250px;	
+}
+.brands-img img{
+	filter: grayscale(100%); 
+	position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#Reviews{
+	padding: 50px 0;
+  height:600px;
+  color: #fff;
+  background: #000000;
+
+}
+
+  .reviews_block{
+    min-height: 200px;
+    padding: 15px;
+    float: left;
+  }
+  .reviews_block img{
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px; 
+  }
+
+  .reviews_block_text{
+  text-align: left;
+  overflow:hidden;
+  }
+  .reviews_block_text p{
+  	font-size: 18px;
+  	color: #767676;
+  	letter-spacing: 1px;
+
+  }
+
+.carousel-indicators {
+  bottom:-150px;
+
+}
+ol.carousel-indicators li{
+  background: #5b483f;
+  border: transparent;
+
+}
+
+ol.carousel-indicators li.active {
+  background: #b6907e;
+}
+
+/*navbar*/
+.navbar {
+	font-family: 'Bebas_neue', sans-serif;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+    /* цвет фона и рамки навигационного меню */
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    /* цвет текста, содержащий название сайта или бренда */
+    .navbar-default .navbar-brand {
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    /* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #FFFFFF;
+    }
+    /* Цвет пунктов навигационного меню */
+    .navbar-default .navbar-nav > li > a {
+        color: #FFFFFF;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #b6907e;
+        border-bottom:2px solid #b6907e;
+    }
+    /* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #b6907e;
+        
+        background-color: transparent;
+    }
+    /* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #b6907e;
+        background-color: #27ae60;
+    }
+    /* Цвет стрелочки (треугольничка) у раскрывающихся пунктов меню */
+    .navbar-default .navbar-nav > .dropdown > a .caret {
+        border-top-color: #ecf0f1;
+        border-bottom-color: #ecf0f1;
+    }
+    /* Цвет стрелочки (треугольничка) при поднесении к нему курсора мышки или при его нахождении в фокусе */
+    .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+    .navbar-default .navbar-nav > .dropdown > a:focus .caret {
+        border-top-color: #b6907e;
+        border-bottom-color: #b6907e;
+    }
+    /* Цвет стрелочки (треугольничка), открывшегося пункта меню */
+    .navbar-default .navbar-nav > .open > a .caret, 
+    .navbar-default .navbar-nav > .open > a:hover .caret, 
+    .navbar-default .navbar-nav > .open > a:focus .caret {
+        border-top-color: #b6907e;
+        border-bottom-color: #b6907e;
+    }
+    /* CSS стили для мобильных устройств */
+    /* Цвет рамки у кнопки, которая открывает меню */
+    .navbar-default .navbar-toggle {
+        border-color: #27ae60;
+    }
+    /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #27ae60;
+    }
+    /* Цвет полосочек в кнопочке, которая открывает меню */
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    /* Цвет пунктов меню в раскрывающихся списках */
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #ecf0f1;
+      }
+    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #b6907e;
+            background-color: #27ae60;
+        }
+    }
+
+
+ footer{
+height: 300px;
+background: #0e0e0e;
+text-align: left;
+ }
+ footer p{
+ 	color: #5E5D5D;
+ 	
+ }
+
+ footer button{
+	border: 1px solid #977869;
+	background: #977869;
+	color: #705142;
+	padding: 12px 33px;
+	font-size: 18px;
+	font-family: 'Bebas_neue', sans-serif;
+	letter-spacing: 1.6px;
+}
+ footer button:hover{
+	background: #977869;
+	color: #FFFFFF;
+}
+
+ footer input[type=email]{
+  width:calc(50% - 2px);
+  	border: 1px solid #2b2b2b;
+	background: transparent;
+	color: #494949;
+	padding: 12px 33px;
+	font-size: 18px;
+	font-family: 'Bebas_neue', sans-serif;
+	letter-spacing: 1.6px;
+
+}
+
+footer span.logo{
+	font-style: italic;
+	font-size: 14px;
+}
+footer .menu a{
+	font-family: 'Bebas_neue', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	text-decoration: none;
+	color: #5e5d5d;
+	padding: 5px 0;
+}
+footer .menu a:hover, .icon a:hover{
+	color: #977869;
+}
+footer .icon a{
+	text-align: right;
+	font-size: 18px;
+	padding: 0 10px;
+	color: #333333;
+}
+.footer__second{
+	padding: 50px 0;
+	margin-bottom: -20px;
+}
+
+
+
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 10px;
+  }
+
+
+
