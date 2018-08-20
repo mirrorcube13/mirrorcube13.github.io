@@ -157,6 +157,21 @@ background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,
   -o-background-size: cover;
 }
 
+.info-block .controllers i{
+	padding: 10px 0;
+}
+
+.info-block .controllers i:first-child{
+	padding-right: 20px;
+}
+.info-block .controllers i:last-child{
+	padding-left: 20px;
+}
+
+.info-block .controllers i:hover{
+	color: #977869;
+}
+
 .info-block .mask{
   position: relative;
   background: -moz-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
@@ -292,12 +307,15 @@ height: 250px;
 
 #Reviews{
 	padding: 50px 0;
-  height:600px;
+  min-height:650px;
   color: #fff;
   background: #000000;
 
 }
 
+#Reviews .title, .carousel{
+	padding: 50px 0;
+}
   .reviews_block{
     min-height: 200px;
     padding: 15px;
@@ -323,6 +341,7 @@ height: 250px;
 
 .carousel-indicators {
   bottom:-150px;
+
 
 }
 ol.carousel-indicators li{
