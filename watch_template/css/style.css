@@ -208,8 +208,19 @@ background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0
 
 
 /******/
+.slick-prev:before, .slick-next:before {     display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color:grey; }   
 
+.slick-prev:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f060"; }
+[dir="rtl"] .slick-prev:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f061"; }
 
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f061"; }
+[dir="rtl"] .slick-next:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f060"; }
 /*collection*/
 
 .collection-block{
