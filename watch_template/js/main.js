@@ -1,12 +1,58 @@
     $(document).on('ready', function() {
 
       $(".regular").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        cssEase: 'linear'
+        cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 1
+          }
+        }
+      ]
       });
+
+      $(".reviews").slick({
+        dots: true,
+        arrows:false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        cssEase: 'linear',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 1
+          }
+        }
+      ]
+      });
+
       $(".lazy").slick({
         infinite: true,              
         autoplay: true,
@@ -42,12 +88,6 @@
     });
 
 
-
-
-    $('.carousel').carousel({
-	interval: 5000,
-	pause: "false"
-})
 
 
 

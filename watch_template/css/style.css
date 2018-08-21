@@ -34,7 +34,7 @@ p{
 }
 /*************************************/
 header{
-	height: 63px;
+	min-height: 63px;
 	background: #0e0e0e;
   padding: 20px 0;
 }
@@ -339,7 +339,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(1
 
 /*brands*/
 .brands{
-	height: 250px;
+	min-height: 250px;
 	position: relative;
 	background: #0E0E0E;
 }
@@ -369,8 +369,9 @@ height: 250px;
 }
   .reviews_block{
     min-height: 200px;
-    padding: 15px;
+
     float: left;
+
   }
   .reviews_block img{
     float: left;
@@ -390,20 +391,41 @@ height: 250px;
 
   }
 
-.carousel-indicators {
-  bottom:-150px;
 
+.reviews-slider{
 
+  width: 100%;
+  min-height: 50px;
+    margin: 50px auto;
 }
-ol.carousel-indicators li{
-  background: #5b483f;
-  border: transparent;
+.reviews-slider .slick-slide {
+     margin: 0px 20px;
+    }
 
+
+
+.slick-dots li button
+{
+    background: transparent;
 }
 
-ol.carousel-indicators li.active {
-  background: #b6907e;
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
 }
+.slick-dots li button:before
+{    
+  font-size: 16px;
+    opacity: 0.5;
+    color: #5B483F;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #B6907E;
+}
+
 .fa-phone{
   color: #977869;
   padding-right: 5px;
@@ -597,3 +619,107 @@ footer .icon a{
 
 
 
+    @media (max-width: 767px) {
+.main-block h3{
+  font-size: 26px;
+}
+.main-block p{
+  font-size: 14px;
+}
+
+
+.main-block button{
+  border: 2px solid #977869;
+
+  padding: 12px;
+  font-size: 14px;
+  margin: 15px 26px 0 0;
+  letter-spacing: 1.6px;
+
+}
+
+.sl__text-main{
+  width: 100%;
+  }
+
+
+
+.info-block .controllers i{
+  padding: 10px 0;
+}
+
+.info-block .controllers i:first-child{
+  padding-right: 10%;
+}
+.info-block .controllers i:last-child{
+  padding-left: 10%;
+}
+
+.info-block .controllers i:hover{
+  color: #977869;
+}
+
+.info-block-text{
+  color: #FFFFFF;
+  top: 25%;
+  width: 100%;
+  padding: 10px;
+}
+.info-block h2{
+  font-size: 24px;
+}
+.info-block p{
+  color: #F7F7F7;
+  font-size: 14px;
+}
+
+
+
+
+
+.collection-block-slider{
+
+  width: 100%;
+  min-height: 50px;
+    margin: 50px auto;
+}
+.collection-block-slider .slick-slide {
+     margin: 0px 20px;
+    }
+
+.collection-block-slider  .slick-slide img {
+      width: 100%;
+    }
+
+
+
+.watch-box{
+  border: 1px solid #2B2B2B;text-align: center;
+}
+.watch-box h2.price{
+  color: #B6907E;
+}
+
+
+.watch-box img{ 
+  padding: 10px;
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
+    }
+
+.slick-prev{
+  left: -50px;
+}
+.slick-next{
+  right: -20px;
+}
+
+
+.brands-img{
+height: 100px;
+margin: 5px;  
+}
+
+
+    }
