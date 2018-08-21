@@ -279,7 +279,7 @@ color: red;
 .collection-block-top button{
 	font-family: 'PTSans', sans-serif;
  float: right;
-   outline: none; /* Для синий ободки */
+   outline: none; 
   border: 0;
   background: transparent;
   text-transform: uppercase;
@@ -727,5 +727,12 @@ footer .icon a{
 height: 100px;
 margin: 5px;  
 }
+
+.collection-block-top-buttons {
+float: left;
+display: block;
+margin-left: -10px;
+}
+
 
     }
