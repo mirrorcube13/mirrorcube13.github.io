@@ -29,47 +29,65 @@ p{
 .centered{
 	text-align: center;
 }
+.modal-title{
+  color: #000000;
+}
 /*************************************/
 header{
 	height: 63px;
 	background: #0e0e0e;
-	line-height: 63px;
+  padding: 20px 0;
 }
 header p{
 	color: #5a5a5a;
-	line-height: 63px;
+	
 }
 header a{
-	padding: 0 10px;
-}
-header h1{
-  font-size: 54px;
-  text-transform: uppercase;
+	padding: 0 10px;float: right;
 }
 
 
 .maket img { position:absolute; opacity:0.5; z-index:1;width: 100%; }
 
-
-
+header span{
+  padding: 0 5px;
+}
 /*1й блок*/
 .main-block{
 	height: calc(100vh - 70px);
 	background: #000000;
 	position: relative;
 }
-/*.main-block .mask{
+
+.main-mask {
+  position: relative;
+}
+ 
+.main-mask::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);  
+  z-index: 1;
+}
+  /*.main-block .mask{
   position: relative;
   background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
 background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
 background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0.8) 50%,rgba(5,0,0,0.5) 75%,rgba(0,0,0,0.2) 100%);
   height:100vh;
-}*/
+}*/  
 
 .main-block h3{
 	font-size: 82px;
-
 }
+.main-block p{
+  font-size: 20px;
+}
+
 .main-block button{
 	border: 2px solid #977869;
 	background: transparent;
@@ -79,10 +97,12 @@ background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,
 	font-family: 'Bebas_neue', sans-serif;
 	margin: 46px 26px 0 0;
 	letter-spacing: 1.6px;
+    transition-duration: 0.5s;
 }
 .main-block button:hover{
 	background: #977869;
 	color: #FFFFFF;
+  transition-duration: 0.5s;
 }
 
 
@@ -98,8 +118,9 @@ background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,
 .sl__text-main{
 	position: absolute;
 	color: #FFFFFF;
-	top: 30%;left: 9%;
+	top: 30%;left: 16%;
 	width: 35%;
+  z-index: 2;
 	}
 
 
@@ -213,14 +234,33 @@ background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    color:grey; }   
+    color:grey; }  
+.slick-prev:hover, .slick-next:hover{
+color: red;
+}
 
-.slick-prev:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f060"; }
-[dir="rtl"] .slick-prev:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f061"; }
+.slick-prev{
+  left: -100px;
+}
+.slick-next{
+  right: -40px;
+}
+/*.slick-prev:before { font-family: "Font Awesome 5 Free";font-size: 30px; font-weight: 900; content: "\f060"; }
+[dir="rtl"] .slick-prev:before { font-family: "Font Awesome 5 Free";font-size: 30px; font-weight: 900; content: "\f061"; }
 
 [dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
-.slick-next:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f061"; }
-[dir="rtl"] .slick-next:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f060"; }
+.slick-next:before { font-family: "Font Awesome 5 Free";font-size: 30px; font-weight: 900; content: "\f061"; }
+[dir="rtl"] .slick-next:before { font-family: "Font Awesome 5 Free";font-size: 30px; font-weight: 900; content: "\f060"; }*/
+
+.slick-prev:before {
+  content: url('../img/left.png');
+   }
+
+.slick-next:before { 
+   content: url('../img/right.png'); }
+
+
+
 /*collection*/
 
 .collection-block{
@@ -364,7 +404,10 @@ ol.carousel-indicators li{
 ol.carousel-indicators li.active {
   background: #b6907e;
 }
-
+.fa-phone{
+  color: #977869;
+  padding-right: 5px;
+}
 /*navbar*/
 .navbar {
 	font-family: 'Bebas_neue', sans-serif;
@@ -393,6 +436,14 @@ ol.carousel-indicators li.active {
         color: #FFFFFF;
         font-size: 18px;
         letter-spacing: 1px;
+        margin:15px 20px 5px 20px; padding: 0;
+    }
+    .navbar-default .navbar-nav > li > p {
+        color: #FFFFFF;
+        font-size: 18px;
+        margin:15px 20px 5px 20px; padding: 0;
+        font-family: 'Bebas_neue', sans-serif;
+
     }
     /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
     .navbar-default .navbar-nav > li > a:hover,
@@ -436,12 +487,12 @@ ol.carousel-indicators li.active {
     /* CSS стили для мобильных устройств */
     /* Цвет рамки у кнопки, которая открывает меню */
     .navbar-default .navbar-toggle {
-        border-color: #27ae60;
+        border-color: #b6907e;
     }
     /* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
-        background-color: #27ae60;
+        background-color: #b6907e;
     }
     /* Цвет полосочек в кнопочке, которая открывает меню */
     .navbar-default .navbar-toggle .icon-bar {
@@ -455,14 +506,21 @@ ol.carousel-indicators li.active {
     /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-            color: #b6907e;
-            background-color: #27ae60;
+            color: #FFFFFF;
+            background-color: #b6907e;
         }
     }
-
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
 
  footer{
-height: 300px;
+  margin-top: 50px; 
+min-height: 300px;
 background: #0e0e0e;
 text-align: left;
  }
