@@ -620,6 +620,13 @@ footer .icon a{
 
 
     @media (max-width: 767px) {
+
+.main-block{
+    height: calc(100vh - 100px);
+
+}
+
+
 .main-block h3{
   font-size: 26px;
 }
@@ -639,7 +646,7 @@ footer .icon a{
 }
 
 .sl__text-main{
-  width: 100%;
+  width: 80%;
   }
 
 
@@ -720,6 +727,5 @@ footer .icon a{
 height: 100px;
 margin: 5px;  
 }
-
 
     }
