@@ -15,6 +15,12 @@ p{
 /*	font-family: 'PTSans', sans-serif;
 	font-size: 16px;*/
 }
+h2{
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
 .centered{
 	text-align: center;
 }
@@ -31,43 +37,111 @@ p{
 }
 .text-block{
 	min-height: 100px;
-	padding: 50px 0;
+	padding: 30px 0;
 }
 
-.service-block{
+.service{
 	min-height: 200px;
-	background: #AAAAAA;
+	background: #f6f6f6;
 }
+	.service-block{
+		border-right: 2px solid #D5D5D5;
+		padding: 50px 20px;
+		text-align: center;
+	}
+	.border-none{
+		border: none;
+	}
+/*	.service-block:hover{
+	background: #E6E6E6;
+	}*/
+	.service-block img{
+      	display: block;
+     	margin: 0 auto;
+     	padding: 10px 0; 
+    }
+    .service-block button{
+		display: block;
+		margin: 0 auto;
+		background: #608082;
+		border: none;
+		padding: 5px 20px;
+		cursor: pointer;
+		transition: background-color 500ms;
+		color: #fff;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+	.service-block button:hover{
+		background-color: #f04f15;
+		
+	}
+
+
+
+
 
 .project-block{
 	min-height: 200px;
 }
 
 .project-block button{
-	display: flex;
-  	justify-content: center;
+	display: block;
+	margin: 0 auto;
+	background: #f04f15;
+	border: none;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: background-color 500ms;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
 }
+	.project-block button:hover{
+		background-color: #91310F;
+		
+	}
 
 .blog{
 	min-height: 200px;
+	margin: 50px 0;
 }
+	.blog .row{
+		margin-bottom: 20px;
+	}
+	.blog h4{
+		margin-bottom: .25rem;
+		font-weight: bold;
+		color: #647e83;
+	}
+	.blog a{
+		color: #f04f15;
+		text-decoration: none;
+	}
+	.blog a:hover{
+	font-weight: bold;
+	}
+
 	.blog-block{
 		
 	}
-.blog-block img{
-	float: left;
-	padding: 0 20px;
-}
+	.blog-block img{
+		float: left;
+		padding: 0 20px;
+	}
 
 
 .contacts{
 	min-height: 200px;
 	background: #647E83;
+	padding: 30px 0;
 	position: relative;
+	color: #fff;
 }
+	.contacts-title{
+		margin-bottom: 50px;
+	}
 	.letter-block{
-		background: #587375;
-		border-radius: 10px;
 		padding: 10px 20px;
 		text-align: justify;
 	}
@@ -77,6 +151,33 @@ p{
 		border-radius: 10px;
 		padding: 10px 20px;
 		text-align: justify;
+		color: #CECECE;
+	}
+	.twitter-block a{
+	text-decoration: none;color: #fff;
+	}
+	.twitter-block a:hover{
+	text-decoration: none;color: #f04f15;
+	}
+	.contacts button{
+	display: inline-block;
+	margin: 0 auto;
+	background: #587375;
+	border: none;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: background-color 500ms;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	}
+	.contacts button:hover{
+		background-color: #f04f15;
+		
+	}
+	.contacts input{
+	background: #587375;border: none;
+	padding: 5px 20px;border-radius: 5px;width: 80%;
 	}
 
 
@@ -84,7 +185,7 @@ p{
 .social-block{
 	min-height: 50px;
 	background: #fff;
-	padding: 30px 0;
+	padding: 50px 0;
 }
 .social-block img{
 	float: left;
