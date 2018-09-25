@@ -13,55 +13,52 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Sitename!</title>
   </head>
   <body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sitename</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href=".main-block">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".projects-text">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".blog-info">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".contacts">Contact</a>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      </div>
+    </nav>
 </header>
 
 
 <div class="main-block centered">
-  <h1>Lorem ipsum dolor sit amet.</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  <img src="img/pointer.png">
+  <div class="main-block__text">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <a href=".about"><img src="img/pointer.png"></a>
+  </div>
 </div>
-
-<div class="text-block centered">
+<div class="text-block about centered">
   <div class="container">
       <h2>Lorem ipsum dolor sit amet.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem, quasi.</p>
@@ -73,6 +70,14 @@
     <div class="row">
       <div class="col">
         <div class="service-block">
+          <img src="img/monitor.png">
+          <h4>Lorem ipsum.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vero.</p>
+          <button>More</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="service-block">
           <img src="img/jar.png">
           <h4>Lorem ipsum.</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vero.</p>
@@ -81,15 +86,7 @@
       </div>
       <div class="col">
         <div class="service-block">
-          <img src="img/sound.png">
-          <h4>Lorem ipsum.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vero.</p>
-          <button>More</button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="service-block">
-          <img src="img/monitor.png">
+          <img src="img/tuning.png">
           <h4>Lorem ipsum.</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vero.</p>
           <button>More</button>
@@ -97,7 +94,7 @@
       </div>
       <div class="col">
         <div class="service-block border-none">
-          <img src="img/tuning.png">
+          <img src="img/sound.png">
           <h4>Lorem ipsum.</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vero.</p>
           <button>More</button>
@@ -107,15 +104,21 @@
   </div>
 </div>
 
-<div class="text-block centered">
+<div class="text-block projects-text centered">
   <div class="container">
       <h2>Lorem ipsum dolor sit amet.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem, quasi.</p>
   </div>
 </div>
-<div class="project-block">
+<div class="container projects">
+    <div class="controllers">
+    <img class="prev" src="img/left.png">
+    <img class="next" src="img/right.png">
+  </div>
+</div>
 
-        <section class="lazy slider" data-sizes="50vw">
+<div class="project-block">
+    <section class="lazy slider" data-sizes="50vw">
     <div>
       <img src="img/pp3.jpeg">
     </div>
@@ -130,7 +133,7 @@
   <button>Click</button>
   </div>
 </div>
-<div class="container">
+<div class="container blog-info">
   <hr>
 </div>
 <div class="blog">
@@ -140,14 +143,14 @@
         <div class="blog-block">
           <img src="img/photo.png">
           <h4>Lorem ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="">+more</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="https://twitter.com/" target="_blank">+more</a></p>
         </div>
       </div>
       <div class="col-6">
         <div class="blog-block">
           <img src="img/photo1.png">
           <h4>Lorem ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="">+more</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="https://twitter.com/" target="_blank">+more</a></p>
         </div>
       </div>
     </div>
@@ -156,14 +159,14 @@
         <div class="blog-block">
           <img src="img/photo2.png">
           <h4>Lorem ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="">+more</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="https://twitter.com/" target="_blank">+more</a></p>
         </div>
       </div>
       <div class="col-6">
         <div class="blog-block">
           <img src="img/photo3.png">
           <h4>Lorem ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="">+more</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio dicta commodi a, praesentium harum iure ex hic excepturi recusandae. <a href="https://twitter.com/" target="_blank">+more</a></p>
         </div>
       </div>
     </div>
@@ -197,7 +200,7 @@
               <img src="img/twitter.png">
             </div>
             <div class="col-md-10">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptatibus est voluptatum? Sequi accusamus quae sapiente alias dolorem suscipit! <a href="">@Nick</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptatibus est voluptatum? Sequi accusamus quae sapiente alias dolorem suscipit! <a href="https://twitter.com/" target="_blank">@Nick</a></p>
             </div>
           </div>
         </div>
@@ -212,17 +215,17 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img src="img/facebook.png">
+        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png"></a>
         <h4>Follow us on Facebook</h4>
         <p>Lorem ipsum dolor.</p>
       </div>
       <div class="col-md-4">
-        <img src="img/googleplus.png">
+        <a href="https://plus.google.com/discover" target="_blank"><img src="img/googleplus.png"></a>
         <h4>Follow us on Google+</h4>
         <p>Lorem ipsum dolor.</p>
       </div>
       <div class="col-md-4">
-        <img src="img/linkedin.png">
+        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png"></a>
         <h4>Follow us on LinkedIn</h4>
         <p>Lorem ipsum dolor.</p>
       </div>

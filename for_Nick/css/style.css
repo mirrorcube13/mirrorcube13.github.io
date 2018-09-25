@@ -25,6 +25,28 @@ a{
 	text-align: center;
 }
 
+.navbar-light .navbar-brand{
+	color: #637F8B;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+.navbar-light .navbar-brand:hover{
+	color: #f04f15;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #637F8B;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #f04f15;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+	color: #BD4114;
+}
+
 .main-block{
 	position: relative;
   	height:50vh;
@@ -34,7 +56,27 @@ a{
   	-moz-background-size: cover;
   	background-size: cover;
   	-o-background-size: cover;
+  	
 }
+.main-block__text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-block__text h1{
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	padding: 0.5em 0;
+}
+.main-block__text p{
+	letter-spacing: 2px;
+	color: #D0D0D0;
+	text-transform: uppercase;
+	padding: 0.5em 0;
+}
+
 .text-block{
 	min-height: 100px;
 	padding: 30px 0;
@@ -43,6 +85,9 @@ a{
 .service{
 	min-height: 200px;
 	background: #f6f6f6;
+}
+.service .col{
+	padding: 0;
 }
 	.service-block{
 		border-right: 2px solid #D5D5D5;
@@ -74,11 +119,37 @@ a{
 	}
 	.service-block button:hover{
 		background-color: #f04f15;
-		
 	}
 
+.controllers {
+    overflow: hidden;
+    text-align: center;
+}
+.controllers:before,
+.controllers:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.1);
+    position: relative;
+}
+.controllers:before {
+    margin-left: -100%;
+    left: -14px;
+}
+.controllers:after {
+    margin-right: -100%;
+    right: -14px;
+}
 
-
+.controllers img:first-child{
+	padding-right: 10px;
+}
+.controllers img:last-child{
+	padding-left: 10px;
+}
 
 
 .project-block{
