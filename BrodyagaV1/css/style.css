@@ -158,7 +158,7 @@ color: #fff
 	font-size: 60px;
 	font-weight: 700;
 	padding-bottom: 50px;
-	/*color: #000;*/
+	color: #000;
 }
 .programs h3{
 	width: 100%;
@@ -173,21 +173,34 @@ color: #fff
 	padding: 20px;
 	text-align: center;
 	/*background: rgba(255,255,255,0.5);*/
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.6);
 	margin: 0;
 	font-size: 1.75rem;
 	color: #fff;
 	text-decoration: none;	
 }
-.programs a:hover{
+/*.programs a:hover{
 	padding: 80px 20px;
 	color: #E9A022;
+}*/
+.program-block:hover a{
+	padding: 80px 20px;
+	color: #E9A022;	
 }
 .program-block{
 	min-height: 600px;
 	color: #fff;
+	/*Новый вариант позиционирования*/
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	transition: 2s;	
 }
-
+.program-block:hover{
+	justify-content: center;
+	transition: 2s;	
+}
 .p1{
 	background: url(../img/program/p1.jpg);
 }
@@ -210,11 +223,6 @@ color: #fff
 .p1, .p2, .p3, .p4, .p5, .p6{
 	background-position: center;
 	background-size: cover;
-	/*Новый вариант позиционирования*/
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex-direction: column;
 }
 /******************************************/
 /*о нас*/
