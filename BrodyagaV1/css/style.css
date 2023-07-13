@@ -167,6 +167,20 @@ color: #fff
 	background: rgba(0,0,0,0.5);
 	margin: 0;
 }
+.programs a{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	/*background: rgba(255,255,255,0.5);*/
+	background: rgba(0,0,0,0.5);
+	margin: 0;
+	font-size: 1.75rem;
+	color: #fff;
+	text-decoration: none;	
+}
+.programs a:hover{
+	color: #E9A022;
+}
 .program-block{
 	min-height: 600px;
 	color: #fff;
