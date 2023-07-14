@@ -37,20 +37,44 @@ $(document).ready(function(){
 
 
 
-const time = 800;
-const step = 1;
 
-function outNum(num, elem) {
-  let e = document.querySelector("#out");
-  n = 0;
-  let t = Math.round(time / (num / step));
-  let interval = setInterval(() => {
-    n = n + step;
-    if (n == num) {
-      clearInterval(interval);
+var time = 2,
+  cc = 1;
+$(window).scroll(function() {
+  $('#about-us').each(function() {
+    var
+      cPos = $(this).offset().top,
+      topWindow = $(window).scrollTop();
+    if (cPos < topWindow + 1000) {
+      if (cc < 2) {
+        $(".number").addClass("viz");
+        $('div').each(function() {
+          var
+            i = 1,
+            num = $(this).data('num'),
+            step = 1000 * time / num,
+            that = $(this),
+            int = setInterval(function() {
+              if (i <= num) {
+                that.html(i);
+              } else {
+                cc = cc + 2;
+                clearInterval(int);
+              }
+              i++;
+            }, step);
+        });
+      }
     }
-    e.innerHTML = n;
-  }, t);
-}
+  });
+});
 
-outNum(10, "#out");
+
+
+
+
+
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options
+});

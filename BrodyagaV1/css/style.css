@@ -243,10 +243,13 @@ color: #fff
 	padding: 50px;
 	text-align: center;	
 }
+.gallery .row{
+padding: 12px;
+}
 /******************************************/
 /*блок инфо*/
 .info{
-	margin: 100px 0;
+	/*margin: 100px 0;*/
 	height: 400px;
 	background: #DADADA;	
 }
@@ -320,4 +323,19 @@ footer a:hover{
 }
 .bottom-fotter p{
 	margin:0;
+}
+
+
+/*счетчик*/
+.number {
+  font-size: 2em;
+  padding: 0 0 25px;
+  font-weight: bold;
+  opacity: 0;
+  display: inline-block;
+}
+
+.viz {
+  opacity: 1;
+  transition: 1s;
 }

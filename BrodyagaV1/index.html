@@ -6,6 +6,10 @@
 	<title>BrodyagaV1</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -97,16 +101,27 @@
 
 
 
-<div class="about-us">
+<div id="about-us" class="about-us">
   <div class="container">
     <h1>О нас</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore natus commodi veniam, nisi aspernatur. Dolorum earum pariatur ipsum. Necessitatibus natus pariatur assumenda tenetur numquam voluptatem ipsum, harum eius animi repudiandae labore hic neque fugiat. Rem expedita laudantium laboriosam necessitatibus sed commodi nulla est ducimus, reiciendis beatae aspernatur molestiae aliquid asperiores.</p>
     <div class="row">
-      <div class="col"><h3>Сотни положительных отзывов</h3></div>
-      <div class="col"><h3>Опыт организации сплавов</h3>
-        <p id="out" class="out-num">0</p></div>
-      <div class="col"><h3>Команда профессионалов</h3></div>
+      <div class="col">
+        <div data-num="100" class="number">0</div>
+        <h3>Сотни положительных отзывов</h3>
+      </div>
+      <div class="col">
+        <div data-num="10" class="number">0</div>
+        <h3>Опыт организации сплавов</h3>
+      </div>
+      <div class="col">
+        <h3>Команда профессионалов</h3>
+      </div>
     </div>
+
+
+
+
   </div>
 </div>
 
@@ -135,6 +150,41 @@
 <div class="gallery">
   <div class="container">
     <h1>Галерея</h1>
+
+    <div class="row">
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #1">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>
+      </div>
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #2">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>        
+      </div>
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #3">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #4">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>
+      </div>
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #5">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>        
+      </div>
+      <div class="col">
+        <a href="img/sad.jpg" data-fancybox="gallery" data-caption="Описание #6">
+          <img src="img/sad.jpg" alt="" class="img-fluid">
+        </a>        
+      </div>
+    </div>    
   </div>
 </div>
 
@@ -205,6 +255,11 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="script/script.js"></script>
+
+
 </body>
 </html>
