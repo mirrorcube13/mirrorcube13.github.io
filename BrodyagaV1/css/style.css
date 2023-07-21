@@ -123,23 +123,36 @@ li.nav-item{
 
 
 
-
-
+/******************************************/
+/*кнопки*/
 .nav-btn{
-padding: 5px 10px;
-background-color: transparent;
-border-radius: 5px;
-border: 1px solid #fff;
-color: #fff
+	padding: 5px 10px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	color: #fff;
 }
-
 .nav-btn:hover{
 	color: #fff;
 	border-color: #FA9512;
 	background-color: #FA9512;
 }
-
-
+.info-btn{
+	padding: 5px 10px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #000;
+	color: #000;
+	/*позиционирование*/
+	min-width: 10px;
+	margin: 0 auto;
+	display: block;	
+}
+.info-btn:hover{
+	color: #fff;
+	border-color: #FA9512;
+	background-color: #FA9512;	
+}
 
 /******************************************/
 /*блок програм*/
@@ -185,7 +198,7 @@ color: #fff
 }*/
 .program-block:hover a{
 	padding: 80px 20px;
-	color: #E9A022;	
+	color: #FA9512;	
 }
 .program-block{
 	min-height: 600px;
@@ -227,7 +240,7 @@ color: #fff
 /******************************************/
 /*о нас*/
 .about-us{
-	min-height: 500px;
+	min-height: 200px;
 	background: #000;
 	color: #fff;
 	padding: 50px;
@@ -246,20 +259,40 @@ color: #fff
 .gallery .row{
 padding: 12px;
 }
+.gallery h1{
+	font-family: 'Playfairdisplay', serif;
+	font-weight: 700;	
+}
 /******************************************/
 /*блок инфо*/
 .info{
 	/*margin: 100px 0;*/
-	height: 400px;
-	background: #DADADA;	
+	min-height: 200px;
+	background: #DADADA;
+	text-align: center;
+	/*не применяется к одному блоку	*/
 }
-.info .col{padding: 0}
+.info .col{
+	padding: 0
+}
+.info h2{
+	/*text-align: center;*/
+}
+.info a{
+	/*text-align: center;*/
+	font-size: 2em;
+	color: #fff;
+}
+.info a:hover{
+	color: #FA9512;
+}
 .info-block{
  padding: 30px;
  height: 200px;
 }
 .info-block-1{
 	background: #FEE856;
+	color: #000;
 
 }
 .info-block-2{
@@ -271,7 +304,7 @@ padding: 12px;
 
 
 .map{
-	background-color: #262f34;
+	background-color: #212529;
 	color: #fff;
 	text-align: center;	
 }
@@ -282,7 +315,8 @@ padding: 12px;
 /******************************************/
 footer{
 	min-height: 100px;
-	background-color: #262f34;
+	/*background-color: #262f34;*/
+	background-color: #212529;
 	color: #fff;
 	padding-top: 50px;
 }	
@@ -297,12 +331,13 @@ footer hr{
 	color: #fff;	
 }
 footer h3{
-	/*text-align: center;*/
+	text-align: center;
 }
 footer p{
-	/*text-align: center;*/
+	text-align: center;
 }
 footer li{
+	text-align: center;
 	list-style-type: none;
 }
 footer a{
@@ -317,7 +352,7 @@ footer a:hover{
 
 .bottom-fotter{
 	text-align: center;
-	background: #6E6E6E;
+	background: #0F1011;
 	min-height: 10px;
 	padding: 10px;
 }

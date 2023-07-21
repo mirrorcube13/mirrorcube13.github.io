@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, li, p{
+	color: #000;
+}
+#prokat h1, #prokat h3{
+	text-align: center;
+}
+#trenning h1{
+	text-align: center;
+}
