@@ -416,6 +416,11 @@ footer a:hover{
   height: auto;
   margin: 1em;
 }
+.container2 {
+  width: 80%;
+  column-count: 5;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 768px) {
   .container2 {
@@ -427,9 +432,4 @@ footer a:hover{
   .container2 {
     column-count: 2;
   }
-}
-.container2 {
-  width: 80%;
-  column-count: 5;
-  margin: 0 auto;
 }
