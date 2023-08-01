@@ -24,7 +24,7 @@ body{
 	height: 100%;
 }
 .navbar{
-	background-color: #262f34;
+	background-color: #212529;/*262f34*/
 }
 a.navbar-brand{
 	font-size: 30px;
@@ -121,6 +121,19 @@ li.nav-item{
     bottom: 0;
 }
 
+/******************************************/
+/*навбар*/
+header ul.dropdown-menu{
+	background-color: #212529;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background-color: #FA9512;
+}
+header a.dropdown-item{
+	color: #fff;
+}
+/******************************************/
 
 
 /******************************************/
@@ -164,6 +177,9 @@ li.nav-item{
 .programs .row{
 	padding: 15px 0;
 }
+.programs .col{
+	padding: 0 20px;
+}
 
 .programs h1{
 	text-align: center;
@@ -201,7 +217,7 @@ li.nav-item{
 	color: #FA9512;	
 }
 .program-block{
-	min-height: 600px;
+	min-height: 500px;
 	color: #fff;
 	/*Новый вариант позиционирования*/
 	display: flex;
@@ -245,7 +261,7 @@ li.nav-item{
 	color: #fff;
 	padding: 50px;
 	text-align: center;
-
+	font-family: 'Arial', serif;
 }
 /******************************************/
 /*галерея*/
@@ -280,6 +296,9 @@ padding: 12px;
 }
 .info h2{
 	/*text-align: center;*/
+}
+.info p{
+	font-size: 1.2em;
 }
 .info a{
 	/*text-align: center;*/
@@ -379,4 +398,13 @@ footer a:hover{
 .viz {
   opacity: 1;
   transition: 1s;
+}
+
+
+
+
+
+
+.centered{
+	font-size: 2em;
 }
