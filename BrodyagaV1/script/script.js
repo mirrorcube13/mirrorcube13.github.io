@@ -73,8 +73,18 @@ $(window).scroll(function() {
 
 
 
-
+new Carousel(
+  document.getElementById('myCarousel'),
+  {
+    // Custom Carousel options
+    Dots: false,
+  },
+  {
+    Thumbs,
+  }
+);
 
 Fancybox.bind('[data-fancybox="gallery"]', {
   // Your custom options
+  
 });

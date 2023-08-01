@@ -157,7 +157,7 @@ li.nav-item{
 /******************************************/
 /*блок програм*/
 .programs{
-	padding: 100px 0;
+	padding: 70px 0;
 	min-height: 100px;
 	background: #fff;
 }
@@ -210,10 +210,10 @@ li.nav-item{
 	flex-direction: column;
 	transition: 2s;	
 }
-.program-block:hover{
+/*.program-block:hover{
 	justify-content: center;
 	transition: 2s;	
-}
+}*/
 .p1{
 	background: url(../img/program/p1.jpg);
 }
@@ -262,6 +262,9 @@ padding: 12px;
 .gallery h1{
 	font-family: 'Playfairdisplay', serif;
 	font-weight: 700;	
+}
+.gallery img{
+	/*max-height: 400px;*/
 }
 /******************************************/
 /*блок инфо*/
@@ -335,6 +338,9 @@ footer h3{
 }
 footer p{
 	text-align: center;
+}
+footer ul{
+	padding: 0;
 }
 footer li{
 	text-align: center;
