@@ -408,3 +408,28 @@ footer a:hover{
 .centered{
 	font-size: 2em;
 }
+
+
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .container2 {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container2 {
+    column-count: 2;
+  }
+}
+.container2 {
+  width: 80%;
+  column-count: 5;
+  margin: 0 auto;
+}
