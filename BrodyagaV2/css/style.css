@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************/
+.gallery{
+	text-align: center;
+}
+.grid-item img{
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+.gallery-container{
+	width: 80%;
+	column-count: 5;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .gallery-container {
+    column-count: 2;
+  }
+}
+
+
+/******************************************/
+
+
+
+
+
+
+
+/******************************************/
+.map{
+	background-color: #212529;
+	color: #fff;
+	text-align: center;	
+}
+.map h2{
+	padding: 10px;
+}
+
+/******************************************/
+footer{
+	min-height: 100px;
+	background-color: #212529;
+	color: #fff;
+	padding-top: 25px;
+}
+footer hr{
+	min-width: 80px;
+	max-width: 80px;
+	border-width: 3px;
+	opacity: 0.4;
+	margin: 15px auto;
+	border-radius: 50px;
+	color: #fff;	
+}
+footer h3{
+	text-align: center;
+}
+footer p{
+	text-align: center;
+}
+footer ul{
+	padding: 0;
+}
+footer li{
+	text-align: center;
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;
+	color: #fff;
+}
+footer a:hover{
+	text-decoration: none;
+	color: #FA9512;
+}
+footer a i{
+	font-size: 24px;
+}
+/*вопрос по отступам*/
+footer i{
+	padding-right: 10px;
+}
+.bottom-fotter{
+	text-align: center;
+	background: #0F1011;
+	min-height: 10px;
+	padding: 10px;
+}
+.bottom-fotter p{
+	margin:0;
+}
