@@ -1,0 +1,466 @@
+/*подключаем шрифты*/
+@font-face{
+	font-family: Dancing Script;
+	src : url(../font/Dancing_Script/DancingScript-Regular.ttf); 
+}
+@font-face{
+	font-family: Montserrat;
+	src: url(../font/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: Roboto;
+	src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: Manrope;
+	src: url(../font/Manrope/static/Manrope-ExtraBold.ttf);
+}
+@font-face{
+	font-family: Lato;
+	src: url(../font/Lato/Lato-Regular.ttf);
+}
+
+
+
+
+/********************************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+/**********************************************/
+/*Общие*/
+h2{
+	font-family: 'Manrope', serif;
+	padding-bottom: 20px;
+}
+.centered{
+	text-align: center;
+}
+/**********************************************/
+/*header*/
+.navbar{
+	background-color: #212529;/*262f34*/
+}
+a.navbar-brand{
+	font-family: 'Dancing Script', serif;
+	font-size: 30px;
+}
+a.nav-link{
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	border-bottom: 2px solid transparent;
+	/*border-radius: 15px;*/
+}
+a.nav-link:hover{
+/*	color: #fff;
+	background-color: #FA9512;
+	border-radius: 15px;
+	transition: 0.5s; */
+	border-bottom: 2px solid #FA9512;
+	color: #FA9512;
+	transition: 0.5s;
+}
+a.nav-link:focus{
+/*	color: #fff;
+	background-color: #FA9512;
+	border-radius: 15px;
+	transition: 0.5s; */
+	border-bottom: 2px solid #FA9512;
+	color: #FA9512;
+}
+li.nav-item{
+	padding: 0 20px;
+		font-size: 22px; /*был 20*/
+		letter-spacing: 1px; /*добавлено*/
+}
+header ul.dropdown-menu{
+	background-color: #212529;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background-color: #FA9512;
+}
+header a.dropdown-item{
+	color: #fff;
+}
+.nav-btn{
+	padding: 5px 10px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.nav-btn:hover{
+	color: #fff;
+	border-color: #FA9512;
+	background-color: #FA9512;
+}
+/**********************************************/
+/*home page*/
+.home-page{
+	width: 100%;
+	height: 100vh;
+	background-color: #C9C9C9;
+	background-image: url(../img/canoeist.jpg);
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	/*Новый вариант позиционирования*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.home-page hr{
+	min-width: 80px;
+	max-width: 80px;
+	border-width: 3px;
+	opacity: 0.4;
+	margin: 15px auto;
+	border-radius: 50px;
+}
+.home-page h1{
+	font-family: 'Dancing Script', serif;
+	font-size: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .main-block h1 {
+    font-size: 65px;
+  }
+}
+.home-page h3{
+	font-family: 'Montserrat', serif;
+	letter-spacing: -0.5px;
+}
+.home-page p{
+	font-family: 'Montserrat', serif;
+	font-size: 1.3em;
+}
+/*стрелка на фоне*/
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+.arrow a {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+}
+/**********************************************/
+.programs{
+	min-height: 200px;
+	padding: 50px;	
+}
+.programs h2{
+	text-align: center;
+}
+.programs-block{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 15px;
+}
+.programs-block p{
+	margin: 0;
+}
+.programs-block img{
+	transition: 1.5s;
+	display: block;
+}
+.programs-block:hover img{
+	transform: scale(1.2);
+}
+.programs-block_text{
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: 2em;
+	padding: 3px 20px;
+	transition: 1s;
+}
+.programs-block:hover .programs-block_text{
+	bottom: 25%;
+	/*color: #FA9512;*/
+}
+@media only screen and (max-width: 768px) {
+  .programs-block_text{
+    font-size: 16px;
+  }
+}
+/**********************************************/
+.about-us{
+	min-height: 200px;
+	background-color: #DCDCDC;
+	color: #000;
+	text-align: center;
+	padding: 50px;
+-webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);	
+}
+.about-us h4{
+	font-weight: bold;
+}
+.about-us p{
+	font-size: 1.25em;
+	font-family: 'Roboto', serif;
+}
+@media only screen and (max-width: 768px) {
+  .about-us p{
+    font-size: 1em;
+  }
+}
+/**********************************************/
+.gallery{
+	padding: 50px;
+	text-align: center;
+}
+.grid-item img{
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+.gallery-container{
+	width: 80%;
+	column-count: 5;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    column-count: 3;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .gallery-container {
+    column-count: 2;
+  }
+}
+/**********************************************/
+.info{
+
+}
+/**********************************************/
+.map{
+	background-color: #212529;
+	color: #fff;
+	text-align: center;	
+}
+.map h2{
+	padding: 10px;
+}
+/**********************************************/
+footer{
+	min-height: 100px;
+	background-color: #212529;
+	color: #fff;
+	padding-top: 25px;
+}
+footer hr{
+	min-width: 80px;
+	max-width: 80px;
+	border-width: 3px;
+	opacity: 0.4;
+	margin: 15px auto;
+	border-radius: 50px;
+	color: #fff;	
+}
+footer h3{
+	text-align: center;
+}
+footer p{
+	text-align: center;
+}
+footer ul{
+	padding: 0;
+}
+footer li{
+	text-align: center;
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;
+	color: #fff;
+}
+footer a:hover{
+	text-decoration: none;
+	color: #FA9512;
+}
+footer a i{
+	font-size: 24px;
+}
+/*вопрос по отступам*/
+footer i{
+	padding-right: 10px;
+}
+.bottom-fotter{
+	text-align: center;
+	background: #0F1011;
+	min-height: 10px;
+	padding: 10px;
+}
+.bottom-fotter p{
+	margin:0;
+}
+/**********************************************/
+/*другие страницы*/
+/*заголовок*/
+.header-block{
+	width: 100%;
+	height: 40vh;
+	background-color: #C9C9C9;
+	background-image: url(../img/floats-river.jpg);
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	/*Новый вариант позиционирования*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.header-block h1{
+	font-family: 'Dancing Script', serif;
+	font-size: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .main-block h1 {
+    font-size: 65px;
+  }
+}
+.header-block h3{
+	font-family: 'Manrope', serif;
+	letter-spacing: 0.5em;
+}
+.header-block hr{
+	min-width: 80px;
+	max-width: 80px;
+	border-width: 3px;
+	opacity: 0.9;
+	margin: 15px auto;
+	border-radius: 50px;	
+}
+/**********************************************/
+/*текстовый блок общий*/
+.text-block{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.text-block h2{
+	text-align: center;
+}
+.text-block p, .text-block ul, .text-block ol, .text-block h3{
+	font-family: 'Roboto', serif;
+}
+.text-block p{
+	text-indent: 1em;
+	font-size: 20px;
+}
+.text-block ul{
+	font-size: 20px;
+}
+.text-block ol{
+	font-size: 20px;
+}
+.text-block ol ul{
+	list-style-type: none;
+}
+/**********************************************/
+/*мое*/
+.block-tabs{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.block-tabs button{
+	font-family: 'Manrope', serif;
+	font-size: 1.5em;
+	padding: 10px 10px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 3px solid #000;
+	color: #000;
+	margin: 0 20px;
+	transition: 0.5s;
+	min-width: 250px;	
+}
+.block-tabs button:hover, .block-tabs button:focus{
+	color: #fff;
+	border-color: #FA9512;
+	background-color: #FA9512;	
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /*border: 1px solid #ccc;
+  border-top: none;*/
+}
+/**********************************************/
+.prokat img{
+	transition: 1.5s;
+	display: block;
+	margin: auto;
+}
+.prokat img:hover{
+	transform: scale(1.2);
+}
+.table_price1{
+	min-width: 200px;
+	border-left: 3px solid #19232E;
+	border-right: 3px solid #19232E;
+	border-bottom: 3px solid #19232E;
+	margin: auto;
+}
+.table_price1 caption{
+	background: #19232E;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	padding: 10px;
+	box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
+	color: white;
+	font-size: 26px;
+	text-align: center;
+	margin: 0;
+}
+.table_price1 td, .table_price1 th {
+	padding: 10px;
+	min-width: 20px;
+ 	text-align: center;
+}
+.table_price1 th {
+ 	font-size: 16px;
+}
+.table_price1 tr:nth-child(2n) {
+ 	background: #E5E5E5;
+}
+.table_price1 td:last-of-type {
+ 	text-align: center;
+}
