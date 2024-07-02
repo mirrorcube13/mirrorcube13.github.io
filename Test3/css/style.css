@@ -209,6 +209,10 @@ header a.dropdown-item{
   .programs-block_text{
     font-size: 16px;
   }
+  .programs{
+	min-height: 200px;
+	padding: 0px;	
+  }
 }
 /**********************************************/
 .about-us{
@@ -345,19 +349,32 @@ footer i{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+@media only screen and (max-width: 768px) {
+  .header-block{
+    height: 30vh;
+    padding-top: 3em;
+  }
 }
 .header-block h1{
 	font-family: 'Dancing Script', serif;
 	font-size: 80px;
 }
 @media only screen and (max-width: 768px) {
-  .main-block h1 {
-    font-size: 65px;
+  .header-block h1 {
+    font-size: 40px;
   }
 }
 .header-block h3{
 	font-family: 'Manrope', serif;
 	letter-spacing: 0.5em;
+}
+@media only screen and (max-width: 768px) {
+   .header-block h3 {
+    font-size: 18px;
+    letter-spacing: 0.3em;
+  }
 }
 .header-block hr{
 	min-width: 80px;
@@ -402,14 +419,22 @@ footer i{
 .block-tabs button{
 	font-family: 'Manrope', serif;
 	font-size: 1.5em;
-	padding: 10px 10px;
+	padding: 10px;
 	background-color: transparent;
 	border-radius: 5px;
 	border: 3px solid #000;
 	color: #000;
-	margin: 0 20px;
+	margin: 20px;
 	transition: 0.5s;
 	min-width: 250px;	
+}
+@media only screen and (max-width: 768px) {
+  .block-tabs button {
+    min-width: 100px;
+    font-size: 1.1em;
+    padding: 10px;
+    margin: 10px;
+  }
 }
 .block-tabs button:hover, .block-tabs button:focus{
 	color: #fff;
