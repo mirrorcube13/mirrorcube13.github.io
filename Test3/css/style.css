@@ -99,6 +99,11 @@ header a.dropdown-item{
 	border-color: #FA9512;
 	background-color: #FA9512;
 }
+@media only screen and (max-width: 992px) {
+  .nav-btn{
+    margin: 20px;
+  }
+}
 /**********************************************/
 /*home page*/
 .home-page{
@@ -119,6 +124,7 @@ header a.dropdown-item{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
 .home-page hr{
 	min-width: 80px;
@@ -140,6 +146,7 @@ header a.dropdown-item{
 .home-page h3{
 	font-family: 'Montserrat', serif;
 	letter-spacing: -0.5px;
+	font-size: 1.1rem;
 }
 .home-page p{
 	font-family: 'Montserrat', serif;
@@ -211,7 +218,7 @@ header a.dropdown-item{
   }
   .programs{
 	min-height: 200px;
-	padding: 0px;	
+	padding: 50px 0;	
   }
 }
 /**********************************************/
@@ -241,15 +248,18 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 .gallery{
 	padding: 50px;
 	text-align: center;
+	padding-top: 100px;
+	margin-top: -50px;
 }
 .grid-item img{
   width: 100%;
   height: auto;
-  margin: 1em;
+  padding: 1em 0;
 }
 .gallery-container{
 	width: 80%;
 	column-count: 5;
+	padding: 0 1em;
 	margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
@@ -424,6 +434,15 @@ footer i{
 	padding-top: 20px;
 	padding-bottom: 0;
   }
+  .text-block p{
+  	font-size: 16px;
+  }
+  .text-block ul{
+	font-size: 16px;
+  }
+  .text-block ol{
+	font-size: 16px;
+  }  
 }
 /**********************************************/
 /*мое*/
