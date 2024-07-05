@@ -264,7 +264,7 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 768px) {
   .gallery{
-	padding: 50px 0;
+	padding: 100px 0 50px;
   }
   .gallery-container {
     column-count: 3;
