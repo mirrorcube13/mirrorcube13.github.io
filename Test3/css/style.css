@@ -172,6 +172,11 @@ header a.dropdown-item{
     position: absolute;
     bottom: 0;
 }
+@media only screen and (max-width: 768px) {
+  .arrow a {
+    margin-bottom: 50px;
+  }
+}
 /**********************************************/
 .programs{
 	min-height: 200px;
@@ -186,6 +191,7 @@ header a.dropdown-item{
 	position: relative;
 	padding: 0;
 	margin: 15px;
+	border-radius: 30px;
 }
 .programs-block p{
 	margin: 0;
@@ -198,6 +204,7 @@ header a.dropdown-item{
 	transform: scale(1.2);
 }
 .programs-block_text{
+	font-family: 'Montserrat', serif;
 	position: absolute;
 	bottom: 1px;
 	width: 100%;
