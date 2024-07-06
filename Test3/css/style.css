@@ -220,6 +220,9 @@ header a.dropdown-item{
 	min-height: 200px;
 	padding: 50px 0;	
   }
+  .programs-block{
+  	margin: 15px 0;
+  }
 }
 /**********************************************/
 .about-us{
