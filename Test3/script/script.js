@@ -16,3 +16,24 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   // Your custom options
   
 });
+
+let valuesDisplays = document.querySelectorAll(".num");
+let interval = 1000;
+
+// console.log(valuesDisplays);
+
+valuesDisplays.forEach((valuesDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valuesDisplay.getAttribute
+        ("data-val"));
+
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+        startValue += 10;
+        valuesDisplay.textContent = startValue;
+        if (startValue == endValue) {
+            clearInterval(counter);
+        }
+        // body...
+    },duration)
+})

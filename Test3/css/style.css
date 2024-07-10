@@ -246,8 +246,17 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 	font-weight: bold;
 }
 .about-us p{
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-family: 'Roboto', serif;
+	padding-bottom: 20px;
+}
+.about-us .col{
+	transition: 1s;
+}
+.about-us .col:hover{
+	color: #FA9512;
+	transition: 0.5s;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 @media only screen and (max-width: 768px) {
   .about-us p{
