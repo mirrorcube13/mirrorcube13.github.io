@@ -58,44 +58,7 @@
 
 
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-			    <h3>Информация</h3>
-			    <hr>
-			    <ul>
-			    	<li><a href="about.html">О компании</a></li>
-			        <li><a href="index.html#main-gallery">Галерея</a></li>
-			        <li><a href="index.html#map">Расположение</a></li>
-			        <li><a href="rule.html">Правила проката</a></li>
-			        <li><a href="oplata.html">Способы оплаты</a></li>
-			        <li><a href="safety.html">Техника безопасности</a></li>
-			        <li><a href="memo.html">Памятка Туристу</a></li>
-			    </ul>					
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>График работы</h3>
-        		<hr>
-        		<p>Вт-Вс: с 10:00 до 17:00 <br> Понедельник: выходной</p>
-        		<p>
-        			<a href=""><i class="fab fa-vk"></i></a>
-        			<a target="_blank" href="https://www.instagram.com/poehali.brodyaga/"><i class="fab fa-instagram"></i></a>
-        		</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>Контакты</h3>
-				<hr>
-				<p><i class="fas fa-phone"></i>+375 29 640-00-69</p>
-  				<p><i class="fas fa-phone"></i>+375 29 769-69-64</p>
-  				<p><i class="far fa-envelope"></i>kayak-sport@mail.ru</p>
-			</div>
-		</div>
-	</div><!-- container -->
-	<div class="container-fluid bottom-fotter">
-		<p>www.brodyaga.by © 2014-2024. Все права защищены.</p>
-	</div>
-</footer>
+<?php require "blocks/footer.php" ?>
 
 	<!-- scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

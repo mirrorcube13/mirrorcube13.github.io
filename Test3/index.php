@@ -14,41 +14,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="50">Brodyaga</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="prokat.html">Прокат</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="alloys.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Сплавы
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="alloys1.html">Сплавы по Минску</a></li>
-            <li><a class="dropdown-item" href="alloys2.html">Сплавы по Беларуси</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="alloys3.html">Программа Активного отдыха</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.poehaly.by/" target="_blank">Продажа</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="trening.html">Тренировки</a>
-        </li>
-      </ul>
-      <button class="nav-btn">Онлайн запись</button>
-    </div>
-  </div>
-</nav>	
-</header>
+
+<?php require "blocks/header.php" ?>
+
 <div class="home-page">
 	<h1>Brodyaga</h1>
 	<hr>
@@ -70,7 +38,7 @@
 				<div class="programs-block">
 					<a href="alloys1.html">
 						<img src="img/prorgam/p1.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Сплавы на байдарках по Минску</p>
+						<p class="programs-block_text">Экспресс сплав<br> по реке Ислочь</p>
 					</a>
 				</div>
 			</div>
@@ -78,7 +46,7 @@
 				<div class="programs-block">
 					<a href="alloys2.html">
 						<img src="img/prorgam/p2.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Сплавы на байдарках по Беларуси</p>
+						<p class="programs-block_text">Однодневный сплав<br> по реке Ислочь</p>
 					</a>
 				</div>
 			</div>
@@ -86,31 +54,31 @@
 				<div class="programs-block">
 					<a href="alloys3.html">
 						<img src="img/prorgam/p3.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Двухдневная программа Активного отдыха</p>
+						<p class="programs-block_text">Однодневный сплав тариф "Все включено"</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-6">
 				<div class="programs-block">
-					<a href="#">
+					<a href="alloys1.html">
 						<img src="img/prorgam/p4.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Продажа байдарок</p>
+						<p class="programs-block_text">Двухдневный сплав по реке Ислочь</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-6">
 				<div class="programs-block">
-					<a href="prokat.html">
+					<a href="alloys2.html">
 						<img src="img/prorgam/p5.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Прокат байдарок и оборудования</p>
+						<p class="programs-block_text">Двухдневный сплав тариф "Все включено"</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-6">
 				<div class="programs-block">
-					<a href="trening.html">
+					<a href="alloys3.html">
 						<img src="img/prorgam/p6.jpg" alt="" class="img-fluid">
-						<p class="programs-block_text">Тренировки (Обучение)</p>
+						<p class="programs-block_text">Двухдневная программа "Активного отдыха"</p>
 					</a>
 				</div>
 			</div>
@@ -142,6 +110,40 @@
 		</div> <!-- row -->
 	</div>
 </div> <!-- about-us -->
+
+<div id="programs" class="programs">
+	<div class="container">
+		<h2>Также мы занимаемся</h2>
+		<div class="row">
+			<div class="col-lg-4 col-6">
+				<div class="programs-block">
+					<a href="#">
+						<img src="img/prorgam/p4.jpg" alt="" class="img-fluid">
+						<p class="programs-block_text">Продажей байдарок</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-6">
+				<div class="programs-block">
+					<a href="prokat.html">
+						<img src="img/prorgam/p5.jpg" alt="" class="img-fluid">
+						<p class="programs-block_text">Прокатом байдарок и оборудования</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-6">
+				<div class="programs-block">
+					<a href="trening.html">
+						<img src="img/prorgam/p6.jpg" alt="" class="img-fluid">
+						<p class="programs-block_text">Тренировками (Обучением)</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- programs -->
+
+<div class="info"></div>
 
 <div id="main-gallery" class="gallery">
 	<h2>Галерея</h2>
@@ -190,44 +192,7 @@
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22267.676217643948!2d27.41836128663918!3d53.96547777488722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDU3JzQ0LjAiTiAyN8KwMjUnMzcuOCJF!5e0!3m2!1sru!2sru!4v1505381550464" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-			    <h3>Информация</h3>
-			    <hr>
-			    <ul>
-			    	<li><a href="about.html">О компании</a></li>
-			        <li><a href="index.html#main-gallery">Галерея</a></li>
-			        <li><a href="index.html#map">Расположение</a></li>
-			        <li><a href="rule.html">Правила проката</a></li>
-			        <li><a href="oplata.html">Способы оплаты</a></li>
-			        <li><a href="safety.html">Техника безопасности</a></li>
-			        <li><a href="memo.html">Памятка Туристу</a></li>
-			    </ul>					
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>График работы</h3>
-        		<hr>
-        		<p>Вт-Вс: с 10:00 до 17:00 <br> Понедельник: выходной</p>
-        		<p>
-        			<a href=""><i class="fab fa-vk"></i></a>
-        			<a target="_blank" href="https://www.instagram.com/poehali.brodyaga/"><i class="fab fa-instagram"></i></a>
-        		</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>Контакты</h3>
-				<hr>
-				<p><i class="fas fa-phone"></i>+375 29 640-00-69</p>
-  				<p><i class="fas fa-phone"></i>+375 29 769-69-64</p>
-  				<p><i class="far fa-envelope"></i>kayak-sport@mail.ru</p>
-			</div>
-		</div>
-	</div><!-- container -->
-	<div class="container-fluid bottom-fotter">
-		<p>www.brodyaga.by © 2014-2024. Все права защищены.</p>
-	</div>
-</footer>
+<?php require "blocks/footer.php" ?>
 	
 	<!-- scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

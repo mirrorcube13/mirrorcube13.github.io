@@ -14,41 +14,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="50">Brodyaga</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="prokat.html">Прокат</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Сплавы
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="alloys1.html">Сплавы по Минску</a></li>
-            <li><a class="dropdown-item" href="alloys2.html">Сплавы по Беларуси</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="alloys3.html">Программа Активного отдыха</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.poehaly.by/" target="_blank">Продажа</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="trening.html">Тренировки</a>
-        </li>
-      </ul>
-      <button class="nav-btn">Онлайн запись</button>
-    </div>
-  </div>
-</nav>	
-</header>
+<?php require "blocks/header.php" ?>
 
 <div class="header-block">
 	<h1>Brodyaga</h1>
@@ -103,11 +69,11 @@
 </div>
 
 <div class="container text-block">
-<h2>Модели байдарок, представленные в прокате</h2>
+<h2 class="centered">Модели байдарок, представленные в прокате</h2>
 	<hr class="long">
 	<div class="row align-items-center">
 		<div class="col-lg-6 col-md-6">
-			<h2>AQUARIUS RIO</h2>
+			<h2 class="centered">AQUARIUS RIO</h2>
 			<p>Байдарка имеет плоское дно, что делает её более стабильной и безопасной, оборудована удобными профилированными сидениями с откидными спинками. Данная модель сочетает в себе высокую маневренность и хорошие ходовые качества. Рекомендована для сплава по узким извилистым рекам.</p>
 			<ul>
                 <li>Материал - Полиэтилен</li>
@@ -118,14 +84,14 @@
                 <li>Мах вес байдарочников - 215 кг.</li>
             </ul>
 		</div>
-		<div class="col-lg-6 col-md-6">
+		<div class="col-lg-6 col-md-6 prokat">
 			<img src="img/prokat/l1.png" alt="" class="img-fluid">
 		</div>
 	</div>
 	<hr class="long">
 	<div class="row align-items-center">
 		<div class="col-lg-6 col-md-6 order-md-2">
-			<h2>PRO TOUR 470</h2>
+			<h2 class="centered">PRO TOUR 470</h2>
 			<p>Pro Tour - это туристическая двухместная байдарка с местом для ребёнка. Отличается повышенной грузоподъемностью и грузовместительностью. Имеет более высокие скоростные показатели, но требует от гребцов определенного навыка управления, т.к. на скорости менее маневренна. Рекомендована для более длительных сплавов по широким рекам и озёрам. Оборудована удобными анатомическими сидениями с откидными спинками, 90-литровым водонепроницаемым багажным отсеком.</p>
 			<ul>
               <li>Материал - Полиэтилен</li>
@@ -136,12 +102,12 @@
               <li>Мах вес байдарочников - 290 кг</li>
             </ul>
 		</div>
-		<div class="col-lg-6 col-md-6 order-md-1"><img src="img/prokat/l2.png" alt="" class="img-fluid"></div>
+		<div class="col-lg-6 col-md-6 order-md-1 prokat"><img src="img/prokat/l2.png" alt="" class="img-fluid"></div>
 	</div>
 	<hr class="long">
 	<div class="row align-items-center">
 		<div class="col-lg-6 col-md-6">
-			<h2>Feel Free Corona</h2>
+			<h2 class="centered">Feel Free Corona</h2>
             <p>Это большая байдарка конструкции  sit on top, Быстросъемные сиденья позволяют оперативно варьировать количество гребцов – от одного до трех в зависимости от ситуации. Соответственно, ее можно использовать как индивидуально (например,для рыбалки), так и для семейного отдыха с ребенком. Байдарка безопасная, устойчивая, непотопляемая. Превосходно подходит для пляжного отдыха, рыбалки, непродолжительных сплавов.</p>
             <ul>
                 <li>Материал - Полиэтилен</li>
@@ -152,12 +118,12 @@
                 <li>Мах вес байдарочников - 280 кг</li>
             </ul>
 		</div>
-		<div class="col-lg-6 col-md-6"><img src="img/prokat/l3.png" alt="" class="img-fluid"></div>
+		<div class="col-lg-6 col-md-6 prokat"><img src="img/prokat/l3.png" alt="" class="img-fluid"></div>
 	</div>
 	<hr class="long">
 	<div class="row align-items-center">
 		<div class="col-lg-6 col-md-6 order-md-2">
-			<h2>Aquarius TRAPER</h2>
+			<h2 class="centered">Aquarius TRAPER</h2>
 			<p>Traper - одноместный полиэтиленовый каяк фирмы AQUARIUS. Данная модель сочетает в себе высокую маневренность и хорошие ходовые качества. Позволяет осуществлять длительные водные походы за счет большой грузовместимости.  Это идеальная байдарка для путешествий как по озёрам, так и по рекам различной сложности, изобилующими завалами и различными препятствиями, как надводными, так и подводными.</p>
 			<ul>
                 <li>Длина (мм) -3850</li>
@@ -168,50 +134,13 @@
                 <li>MAX ВЕС БАЙДАРОЧНИКА -120 кг</li>
             </ul>
 		</div>
-		<div class="col-lg-6 col-md-6 order-md-1"><img src="img/prokat/l4.png" alt="" class="img-fluid"></div>
+		<div class="col-lg-6 col-md-6 order-md-1 prokat"><img src="img/prokat/l4.png" alt="" class="img-fluid"></div>
 	</div>	
 </div>
 
 
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-			    <h3>Информация</h3>
-			    <hr>
-			    <ul>
-			    	<li><a href="about.html">О компании</a></li>
-			        <li><a href="index.html#main-gallery">Галерея</a></li>
-			        <li><a href="index.html#map">Расположение</a></li>
-			        <li><a href="rule.html">Правила проката</a></li>
-			        <li><a href="oplata.html">Способы оплаты</a></li>
-			        <li><a href="safety.html">Техника безопасности</a></li>
-			        <li><a href="memo.html">Памятка Туристу</a></li>
-			    </ul>					
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>График работы</h3>
-        		<hr>
-        		<p>Вт-Вс: с 10:00 до 17:00 <br> Понедельник: выходной</p>
-        		<p>
-        			<a href=""><i class="fab fa-vk"></i></a>
-        			<a target="_blank" href="https://www.instagram.com/poehali.brodyaga/"><i class="fab fa-instagram"></i></a>
-        		</p>
-			</div>
-			<div class="col-md-4 col-sm-4">
-				<h3>Контакты</h3>
-				<hr>
-				<p><i class="fas fa-phone"></i>+375 29 640-00-69</p>
-  				<p><i class="fas fa-phone"></i>+375 29 769-69-64</p>
-  				<p><i class="far fa-envelope"></i>kayak-sport@mail.ru</p>
-			</div>
-		</div>
-	</div><!-- container -->
-	<div class="container-fluid bottom-fotter">
-		<p>www.brodyaga.by © 2014-2024. Все права защищены.</p>
-	</div>
-</footer>
+<?php require "blocks/footer.php" ?>
 
 	<!-- scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

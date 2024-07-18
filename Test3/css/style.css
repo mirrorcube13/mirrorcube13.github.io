@@ -41,6 +41,9 @@ h2{
 .centered{
 	text-align: center;
 }
+.red{
+	color: #FF0000;
+}
 /**********************************************/
 /*header*/
 .navbar{
@@ -98,6 +101,9 @@ header a.dropdown-item{
 	color: #fff;
 	border-color: #FA9512;
 	background-color: #FA9512;
+}
+span.navbar-text{
+	color: #FFFFFF;
 }
 @media only screen and (max-width: 992px) {
   .nav-btn{
@@ -211,10 +217,13 @@ header a.dropdown-item{
 	text-align: center;
 	background-color: rgba(0,0,0,0.7);
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.7em;
 	padding: 3px 20px;
 	transition: 1s;
 }
+/*.mini p{
+	font-size: 1.2em;
+}*/
 .programs-block:hover .programs-block_text{
 	bottom: 25%;
 	/*color: #FA9512;*/
@@ -296,7 +305,14 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 /**********************************************/
 .info{
-
+	min-height: 200px;
+	background-color: #DCDCDC;
+	color: #000;
+	text-align: center;
+	padding: 50px;
+	-webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 /**********************************************/
 .map{
@@ -382,6 +398,7 @@ footer i{
 	align-items: center;
 	flex-direction: column;
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+	margin-bottom: 50px;
 }
 @media only screen and (max-width: 768px) {
   .header-block{
@@ -426,26 +443,22 @@ footer i{
 /**********************************************/
 /*текстовый блок общий*/
 .text-block{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	/*padding-top: 50px;*/
+	/*padding-bottom: 50px;*/
 }
 .text-block h2{
-	text-align: center;
+	/*text-align: center;*/
 }
-.text-block p, .text-block ul, .text-block ol, .text-block h3{
+.text-block h3{
+	font-family: 'Manrope', serif;	
+}
+.text-block p, .text-block ul, .text-block ol{
 	font-family: 'Roboto', serif;
 }
-.text-block p{
-	text-indent: 1em;
+.text-block p, .text-block ul, .text-block ol{
 	font-size: 20px;
 }
-.text-block ul{
-	font-size: 20px;
-}
-.text-block ol{
-	font-size: 20px;
-}
-.text-block ol ul{
+.tabcontent li{
 	list-style-type: none;
 }
 @media only screen and (max-width: 768px) {
@@ -453,14 +466,8 @@ footer i{
 	padding-top: 20px;
 	padding-bottom: 0;
   }
-  .text-block p{
+  .text-block p, .text-block ul, .text-block ol{
   	font-size: 16px;
-  }
-  .text-block ul{
-	font-size: 16px;
-  }
-  .text-block ol{
-	font-size: 16px;
   }  
 }
 /**********************************************/
@@ -468,7 +475,8 @@ footer i{
 .block-tabs{
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	margin-top: 50px;	
 }
 .block-tabs button{
 	font-family: 'Manrope', serif;
@@ -495,10 +503,15 @@ footer i{
 	border-color: #FA9512;
 	background-color: #FA9512;	
 }
+button.active{
+	color: #fff;
+	border-color: #FA9512;
+	background-color: #FA9512;	
+}
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  /*padding: 6px 12px;*/
   /*border: 1px solid #ccc;
   border-top: none;*/
 }
@@ -517,6 +530,7 @@ footer i{
 	border-right: 3px solid #19232E;
 	border-bottom: 3px solid #19232E;
 	margin: auto;
+	margin-bottom: 50px;
 }
 .table_price1 caption{
 	background: #19232E;
@@ -542,4 +556,29 @@ footer i{
 }
 .table_price1 td:last-of-type {
  	text-align: center;
+}
+/**********************************************/
+.alloys-info{
+
+}
+.alloys-info h3{
+	font-weight: bold;
+	padding-left: 2rem;
+}
+.alloys-info img{
+	border-radius: 40px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	display: block;
+	padding: 1rem;
+}
+.alloys-info li{
+	list-style-type: none;
+}
+.fa-check.green{
+	color: white;
+	background-color: #3EAC3E;
+	padding: 2px 3px;
+	border-radius: 10%;
 }
