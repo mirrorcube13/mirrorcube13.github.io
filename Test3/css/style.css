@@ -458,7 +458,10 @@ footer i{
 .text-block p, .text-block ul, .text-block ol{
 	font-size: 20px;
 }
-.tabcontent li{
+.text-block ul, .text-block ol{
+	padding-left: 0;
+}
+.text-block li{
 	list-style-type: none;
 }
 @media only screen and (max-width: 768px) {
