@@ -20,7 +20,7 @@
         		<p>Вт-Вс: с 10:00 до 17:00 <br> Понедельник: выходной</p>
         		<p>
         			<a href=""><i class="fab fa-vk"></i></a>
-        			<a target="_blank" href="https://www.instagram.com/poehali.brodyaga/"><i class="fab fa-instagram"></i></a>
+        			<a target="_blank" href="https://www.instagram.com/poehali_brodyaga/"><i class="fab fa-instagram"></i></a>
         		</p>
 			</div>
 			<div class="col-md-4 col-sm-4">
@@ -33,6 +33,6 @@
 		</div>
 	</div><!-- container -->
 	<div class="container-fluid bottom-fotter">
-		<p>www.brodyaga.by © 2014-2024. Все права защищены.</p>
+		<p>www.brodyaga.by</p>
 	</div>
 </footer>

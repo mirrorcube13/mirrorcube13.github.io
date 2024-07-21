@@ -234,7 +234,8 @@ span.navbar-text{
   }
   .programs{
 	min-height: 200px;
-	padding: 50px 0;	
+	padding: 50px 0;
+	margin-bottom: 20px;	
   }
   .programs-block{
   	margin: 15px 0;
@@ -262,11 +263,6 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 .about-us .col{
 	transition: 1s;
 }
-.about-us .col:hover{
-	color: #FA9512;
-	transition: 0.5s;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-}
 @media only screen and (max-width: 768px) {
   .about-us p{
     font-size: 1em;
@@ -274,10 +270,11 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 /**********************************************/
 .gallery{
+	background-color: #DCDCDC;
 	padding: 50px;
 	text-align: center;
-	padding-top: 100px;
-	margin-top: -50px;
+	padding-top: 50px;
+	margin-top: -25px;
 }
 .grid-item img{
   width: 100%;
@@ -292,7 +289,7 @@ box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 768px) {
   .gallery{
-	padding: 100px 0 50px;
+	padding: 50px 0 50px;
   }
   .gallery-container {
     column-count: 3;
@@ -411,20 +408,17 @@ footer i{
 .header-block h1{
 	font-family: 'Dancing Script', serif;
 	font-size: 80px;
+	padding-top: 1em;
 }
 @media only screen and (max-width: 768px) {
   .header-block h1 {
-    /*font-size: 40px;*/
-    display: none;
-  }
-    .header-block hr {
-    /*font-size: 40px;*/
-    display: none;
+    font-size: 40px;
   }
 }
 .header-block h3{
 	font-family: 'Manrope', serif;
 	letter-spacing: 0.5em;
+	display: none;
 }
 @media only screen and (max-width: 768px) {
    .header-block h3 {
