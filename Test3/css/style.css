@@ -102,9 +102,6 @@ header a.dropdown-item{
 	border-color: #FA9512;
 	background-color: #FA9512;
 }
-.nav-padding{
-	padding: 20px;
-}
 span.navbar-text{
 	color: #FFFFFF;
 }
@@ -112,6 +109,9 @@ span.navbar-text{
   .nav-btn{
     margin: 20px;
   }
+  .nav-padding{
+	padding: 20px;
+}
 }
 /**********************************************/
 /*home page*/
