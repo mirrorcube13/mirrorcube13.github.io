@@ -582,3 +582,27 @@ button.active{
 	padding: 2px 3px;
 	border-radius: 10%;
 }
+/**********************************************/
+.dop-services{
+	/*background-color: #DCDCDC;*/
+	min-height: 300px;
+	padding: 10px;
+	border: 2px solid #DCDCDC;
+	border-radius: 20px;
+	margin: 1em 0;
+}
+/*.dop-services:hover{
+	border-color: #D4D4D4;
+	transition: 1s;
+}*/
+.dop-services p{
+	text-align: center;
+	margin-bottom: 0;
+}
+.dop-services img{
+	transition: 1.3s;
+}
+.dop-services img:hover{
+	transform: scale(1.1);
+	transition: 1.3s;
+}
